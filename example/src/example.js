@@ -5,7 +5,7 @@ export default class Example extends Component{
   render() {
     return (
       <Columns>
-        <Column>a</Column>
+        <Column size='isHalf'>a</Column>
         <Column>b</Column>
         <Column>c</Column>
         <Column>c</Column>

@@ -6,7 +6,7 @@ export default {
       }
     }
     @media screen and (min-width: 769px) {
-      .__react-bulma__column {
+      & {
         flex: 1;
       }
       .__react-bulma__column + .__react-bulma__column {
@@ -15,25 +15,25 @@ export default {
     }`,
   isDouble: `
     @media screen and (min-width: 769px) {
-      .__react-bulma__column {
+      & {
         flex: 2;
       }
     }`,
   isTriple: `
     @media screen and (min-width: 769px) {
-      .__react-bulma__column {
+      & {
         flex: 3;
       }
     }`,
   isQuadruple: `
     @media screen and (min-width: 769px) {
-      .__react-bulma__column {
+      & {
         flex: 4;
       }
     }`,
   isHalf: `
     @media screen and (min-width: 769px) {
-      .__react-bulma__column {
+      & {
         flex: none;
         width: 50%;
       }
@@ -41,10 +41,6 @@ export default {
 };
 
 /*
-          .__react-bulma__column.is-half {
-            flex: none;
-            width: 50%;
-          }
           .__react-bulma__column.is-third {
             flex: none;
             width: 33.3333%;
