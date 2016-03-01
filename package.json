@@ -9,7 +9,6 @@
     "test:watch": "karma start --auto-watch --no-single-run",
     "compile": "babel -d lib/ src/",
     "prepublish": "npm run compile",
-    "prepush": "npm run lint",
     "lint": "eslint src"
   },
   "repository": {
