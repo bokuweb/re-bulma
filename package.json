@@ -53,6 +53,7 @@
   ],
   "dependencies": {
     "babel-preset-stage-0": "^6.3.13",
+    "csjs": "^1.0.0",
     "react-inline-css": "^2.1.0"
   }
 }
