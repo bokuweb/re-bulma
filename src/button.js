@@ -1,10 +1,28 @@
-import React, {Component} from "react";
-import InlineCss from "react-inline-css";
+import React, { Component } from 'react';
+import csjs from 'csjs';
+import insertCss from 'insert-css';
+
+const styles = csjs`
+  .title {
+    color: red;
+    font-size: 32px;
+  }
+`;
+
+insertCss(csjs.getCss(styles));
 
 export default class Button extends Component {
   render () {
     return (
-      <InlineCss stylesheet={`
+      <h1 className={styles.title}>testa</h1>
+    );
+  }
+};
+
+
+
+
+      /*<InlineCss stylesheet={`
          & .button:hover { 
            z-index: 2;
          }
@@ -53,8 +71,4 @@ export default class Button extends Component {
            outline: none;
          }`}>
         <button className="button">{this.props.children}</button>
-      </InlineCss>
-    );
-  }
-};
-
+        </InlineCss>*/
