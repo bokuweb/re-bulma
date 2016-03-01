@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import csjs from 'csjs';
 import insertCss from 'insert-css';
 
@@ -55,9 +55,13 @@ const styles = csjs`
 insertCss(csjs.getCss(styles));
 
 export default class Button extends Component {
+  static propTypes = {
+    children: PropTypes.string.isRequired,
+  };
+
   render() {
     return (
       <button className={styles.button}>{ this.props.children }</button>
     );
   }
-};
+}
