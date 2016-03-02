@@ -1,24 +1,22 @@
-import React, {Component} from "react";
-import InlineCss from "react-inline-css";
+import React, { Component, PropTypes } from 'react';
+import csjs from 'csjs';
 import styles from './styles/column';
+import insertCss from 'insert-css';
+
+insertCss(csjs.getCss(styles));
 
 export default class Column extends Component {
-  render () {
-    console.log(`
-          ${styles.column}
-          ${styles[this.props.size] || ''}
-         `)
+  static propTypes = {
+    children: PropTypes.any,
+    size: PropTypes.string,
+  };
+
+  render() {
     return (
-      <InlineCss
-         className='__react-bulma__column'
-         style={{background: '#333'}}
-         stylesheet={`
-          ${styles.column}
-          ${styles[this.props.size] || ''}
-         `} >
-        {this.props.children}
-      </InlineCss>
+      <div className={ styles[this.props.size] || styles.column } style={{ background: '#333' }}>
+        { this.props.children }
+      </div>
     );
   }
-};
+}
 
