@@ -1,10 +1,25 @@
-import React, {Component} from 'react';
-import {Button} from '../../src';
+import React, { Component } from 'react';
+import { Button, Columns, Column } from '../../src';
 
-export default class Example extends Component{
+export default class Example extends Component {
   render() {
     return (
-      <Button >test</Button>
+      <div>
+        <Button >test</Button>
+        <Columns>
+          <Column size="is2">aaaa</Column>
+          <Column>bbbb</Column>
+          <Column>cccc</Column>
+          <Column>bbbb</Column>
+          <Column>cccc</Column>
+          <Column>bbbb</Column>
+          <Column>cccc</Column>
+          <Column>bbbb</Column>
+          <Column>cccc</Column>
+          <Column>bbbb</Column>
+          <Column>cccc</Column>
+        </Columns>
+      </div>
     );
   }
 }

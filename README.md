@@ -1,6 +1,7 @@
 ### Components
 
-- [ ] Button
+- [x] Button
+- [x] Grid (Columns, Column)
 - [ ] Input
 - [ ] Textarea
 - [ ] Select
@@ -13,7 +14,6 @@
 - [ ] Notification
 - [ ] Icon
 - [ ] Navbar
-- [ ] Grid (Columns, Column)
 - [ ] Tabs (Tabs, Tab)
 - [ ] Media
 - [ ] Card
