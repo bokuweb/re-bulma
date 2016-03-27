@@ -3,7 +3,7 @@ import csjs from 'csjs';
 import insertCss from 'insert-css';
 
 const styles = csjs`
-  .button:hover { 
+  .button:hover {
     z-index: 2;
   }
 
@@ -57,11 +57,16 @@ insertCss(csjs.getCss(styles));
 export default class Button extends Component {
   static propTypes = {
     children: PropTypes.string.isRequired,
+    style: PropTypes.object,
+  };
+
+  static defaultProps = {
+    style: {},
   };
 
   render() {
     return (
-      <button className={styles.button}>{ this.props.children }</button>
+      <button style={this.props.style} className={styles.button}>{ this.props.children }</button>
     );
   }
 }
