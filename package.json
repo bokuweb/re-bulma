@@ -61,7 +61,7 @@
     "react": ">=0.14.7"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "dependencies": {
     "csjs": "^1.0.0",
