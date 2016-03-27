@@ -2,7 +2,7 @@
   "name": "react-bulma",
   "version": "0.1.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "start": "node server.js",
     "test": "karma start",
@@ -61,7 +61,7 @@
     "react": ">=0.14.7"
   },
   "files": [
-    "src"
+    "lib"
   ],
   "dependencies": {
     "csjs": "^1.0.0",
