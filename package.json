@@ -65,7 +65,6 @@
   ],
   "dependencies": {
     "csjs": "^1.0.0",
-    "insert-css": "^0.2.0",
-    "react-inline-css": "^2.1.0"
+    "insert-css": "^0.2.0"
   }
 }
