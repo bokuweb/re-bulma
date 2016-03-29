@@ -58,15 +58,29 @@ export default class Button extends Component {
   static propTypes = {
     children: PropTypes.string.isRequired,
     style: PropTypes.object,
+    onClick: PropTypes.func,
+    onTouchStart: PropTypes.func,
+    onDoubleClick: PropTypes.func,
   };
 
   static defaultProps = {
     style: {},
+    onClick: () => null,
+    onTouchStart: () => null,
+    onDoubleClick: () => null,
   };
 
   render() {
     return (
-      <button style={this.props.style} className={styles.button}>{ this.props.children }</button>
+      <button
+        style={this.props.style}
+        className={styles.button}
+        onClick={this.props.onClick}
+        onTouchStart={this.props.onTouchStart}
+        onDoubleClick={this.props.onDoubleClick}
+      >
+        {this.props.children}
+      </button>
     );
   }
 }
