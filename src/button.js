@@ -52,7 +52,7 @@ const styles = csjs`
   }
 `;
 
-insertCss(csjs.getCss(styles));
+insertCss(csjs.getCss(styles), { prepend: true });
 
 export default class Button extends Component {
   static propTypes = {
