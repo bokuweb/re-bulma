@@ -1,85 +1,103 @@
 import React, { Component, PropTypes } from 'react';
 import csjs from 'csjs';
+import styles from './styles/button';
 import insertCss from 'insert-css';
-
-const styles = csjs`
-  .button:hover {
-    z-index: 2;
-  }
-
-  .button:active,
-  .button:focus {
-    z-index: 3;
-  }
-
-  .button {
-    margin-right: -1px;
-    margin: 0;
-    width: auto;
-    overflow: visible;
-    cursor: pointer;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background: white;
-    border: 1px solid #d3d6db;
-    border-radius: 3px;
-    color: #222324;
-    display: inline-block;
-    font-size: 14px;
-    height: 32px;
-    line-height: 24px;
-    padding: 3px 8px;
-    position: relative;
-    vertical-align: top;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    padding: 3px 10px;
-    text-align: center;
-    white-space: nowrap;
-  }
-
-  .button:hover {
-    border-color: #aeb1b5;
-  }
-
-  .button:active,
-  .button:focus {
-    border-color: #1fc8db;
-    outline: none;
-  }
-`;
+import kebabCase from 'lodash.kebabCase';
+import isEqual from 'lodash.isEqual';
 
 insertCss(csjs.getCss(styles), { prepend: true });
 
 export default class Button extends Component {
   static propTypes = {
     children: PropTypes.string.isRequired,
+    className: PropTypes.string,
     style: PropTypes.object,
     onClick: PropTypes.func,
+    onFocus: PropTypes.func,
+    onBlur: PropTypes.func,
     onTouchStart: PropTypes.func,
     onDoubleClick: PropTypes.func,
+    icon: PropTypes.string,
+    size: PropTypes.oneOf([
+      'isSmall',
+      'isMedium',
+      'isLarge',
+    ]),
+    type: PropTypes.oneOf([
+      'isPrimary',
+      'isInfo',
+      'isSuccess',
+      'isWarning',
+      'isDanger',
+      'isLink',
+    ]),
+    styles: PropTypes.oneOf([
+      'isOutlined',
+      'isInverted',
+    ]),
+    states: PropTypes.oneOf([
+      'isLoading',
+      'isActive',
+      'isDisabled',
+    ]),
   };
 
   static defaultProps = {
     style: {},
     onClick: () => null,
+    onFocus: () => null,
+    onBlur: () => null,
     onTouchStart: () => null,
     onDoubleClick: () => null,
+    className: '',
+    isLoading: false,
+    isActive: false,
   };
+
+  shouldComponentUpdate(next) {
+    return isEqual(this.props, next);
+  }
+
+  createClassName() {
+    return [
+      styles.button,
+      styles[kebabCase(this.props.size)],
+      styles[kebabCase(this.props.type)],
+      styles[kebabCase(this.props.styles)],
+      styles[kebabCase(this.props.states)],
+      this.props.className,
+    ].join(' ');
+  }
+
+  createIconSize() {
+    if (this.props.size === 'isLarge') return 'is-medium';
+    if (this.props.size === 'isSmall') return 'is-small';
+    return '';
+  }
 
   render() {
     return (
       <button
         style={this.props.style}
-        className={[styles.button, this.props.className].join(' ')}
+        className={this.createClassName()}
         onClick={this.props.onClick}
+        onFocus={this.props.onFocus}
+        onBlur={this.props.onBlur}
         onTouchStart={this.props.onTouchStart}
         onDoubleClick={this.props.onDoubleClick}
       >
-        {this.props.children}
+        {
+          this.props.icon
+            ? (
+              <span>
+                <span className={[styles.icon, styles[this.createIconSize()]].join(' ')}>
+                  <i className={[styles.fa, this.props.icon].join(' ')} />
+                </span>
+                <span>{this.props.children}</span>
+              </span>
+            )
+            : this.props.children
+        }
       </button>
     );
   }
