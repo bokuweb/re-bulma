@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Button, Columns, Column, initialize } from '../../src';
+import { Button, Columns, Column } from '../../src';
 
-initialize();
 
 export default class Example extends Component {
   render() {
@@ -11,7 +10,7 @@ export default class Example extends Component {
         <Button size="isLarge" states="isActive">Guthub</Button>
         <Button size="isSmall" states="isActive" icon="fa fa-github">Github</Button>
         <Columns>
-          <Column size="is2">aaaa</Column>
+          <Column size="is2" style={{ background: '#ccc' }}>aaaa</Column>
           <Column>bbbb</Column>
           <Column>cccc</Column>
           <Column>bbbb</Column>
