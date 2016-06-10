@@ -3,7 +3,6 @@ import csjs from 'csjs';
 import styles from './styles/button';
 import insertCss from 'insert-css';
 import kebabCase from 'lodash.kebabCase';
-import isEqual from 'lodash.isEqual';
 
 insertCss(csjs.getCss(styles), { prepend: true });
 
@@ -54,10 +53,6 @@ export default class Button extends Component {
     isActive: false,
   };
 
-  shouldComponentUpdate(next) {
-    return isEqual(this.props, next);
-  }
-
   createClassName() {
     return [
       styles.button,
@@ -66,7 +61,7 @@ export default class Button extends Component {
       styles[kebabCase(this.props.styles)],
       styles[kebabCase(this.props.states)],
       this.props.className,
-    ].join(' ');
+    ].join(' ').trim();
   }
 
   createIconSize() {
