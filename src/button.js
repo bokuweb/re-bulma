@@ -93,7 +93,9 @@ export default class Button extends Component {
                 <span className={[styles.icon, styles[this.createIconSize()]].join(' ')}>
                   <i className={[styles.fa, this.props.icon].join(' ')} />
                 </span>
-                <span>{this.props.children}</span>
+                <span style={{ lineHeight: this.props.size === 'isLarge' ? '32px' : 'auto' }}>
+                  {this.props.children}
+                </span>
               </span>
             )
             : this.props.children

@@ -8,7 +8,7 @@ export default class Example extends Component {
     return (
       <div>
         <Button >test</Button>
-        <Button size="isLarge" states="isActive" icon="fa fa-github" className="button2">test</Button>
+        <Button size="isLarge" states="isActive">Guthub</Button>
         <Button size="isSmall" states="isActive" icon="fa fa-github">Github</Button>
         <Columns>
           <Column size="is2">aaaa</Column>
