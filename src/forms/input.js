@@ -8,9 +8,8 @@ insertCss(csjs.getCss(styles), { prepend: true });
 
 export default class Input extends Component {
   static propTypes = {
-    children: PropTypes.string.isRequired,
     className: PropTypes.string,
-    style: PropTypes.object,
+    customStyle: PropTypes.object,
     onClick: PropTypes.func,
     onFocus: PropTypes.func,
     onBlur: PropTypes.func,
@@ -24,7 +23,7 @@ export default class Input extends Component {
     placeholder: PropTypes.string,
     defaultValue: PropTypes.string,
     value: PropTypes.string,
-    colors: PropTypes.oneOf([
+    color: PropTypes.oneOf([
       'isPrimary',
       'isInfo',
       'isSuccess',
@@ -84,7 +83,7 @@ export default class Input extends Component {
 
   render() {
     return (
-      <p className={this.createControlClassName()}>
+      <p className={this.createControlClassName()} style={this.props.customStyle}>
         <input
           className={this.createInputClassName()}
           type={this.props.type}

@@ -10,19 +10,20 @@ export default class Button extends Component {
   static propTypes = {
     children: PropTypes.string.isRequired,
     className: PropTypes.string,
-    style: PropTypes.object,
+    customStyle: PropTypes.object,
     onClick: PropTypes.func,
     onFocus: PropTypes.func,
     onBlur: PropTypes.func,
     onTouchStart: PropTypes.func,
     onDoubleClick: PropTypes.func,
     icon: PropTypes.string,
+    type: PropTypes.string,
     size: PropTypes.oneOf([
       'isSmall',
       'isMedium',
       'isLarge',
     ]),
-    type: PropTypes.oneOf([
+    color: PropTypes.oneOf([
       'isPrimary',
       'isInfo',
       'isSuccess',
@@ -30,11 +31,11 @@ export default class Button extends Component {
       'isDanger',
       'isLink',
     ]),
-    styles: PropTypes.oneOf([
+    style: PropTypes.oneOf([
       'isOutlined',
       'isInverted',
     ]),
-    states: PropTypes.oneOf([
+    state: PropTypes.oneOf([
       'isLoading',
       'isActive',
       'isDisabled',
@@ -58,8 +59,8 @@ export default class Button extends Component {
       styles.button,
       styles[kebabCase(this.props.size)],
       styles[kebabCase(this.props.type)],
-      styles[kebabCase(this.props.styles)],
-      styles[kebabCase(this.props.states)],
+      styles[kebabCase(this.props.style)],
+      styles[kebabCase(this.props.state)],
       this.props.className,
     ].join(' ').trim();
   }
@@ -73,13 +74,14 @@ export default class Button extends Component {
   render() {
     return (
       <button
-        style={this.props.style}
+        style={this.props.customStyle}
         className={this.createClassName()}
         onClick={this.props.onClick}
         onFocus={this.props.onFocus}
         onBlur={this.props.onBlur}
         onTouchStart={this.props.onTouchStart}
         onDoubleClick={this.props.onDoubleClick}
+        type={this.props.type}
       >
         {
           this.props.icon
