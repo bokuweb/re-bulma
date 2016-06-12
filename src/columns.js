@@ -8,6 +8,7 @@ insertCss(csjs.getCss(styles), { prepend: true });
 
 export class Columns extends Component {
   static propTypes = {
+    customStyle: PropTypes.object,
     children: PropTypes.any,
     className: PropTypes.string,
     responsive: PropTypes.oneOf([
@@ -31,7 +32,7 @@ export class Columns extends Component {
 
   render() {
     return (
-      <div className={this.createClassName()}>
+      <div className={this.createClassName()} style={this.props.customStyle}>
         { this.props.children }
       </div>
     );
@@ -42,6 +43,7 @@ export class Columns extends Component {
 export class Column extends Component {
   static propTypes = {
     children: PropTypes.any,
+    customStyle: PropTypes.object,
     className: PropTypes.string,
     isMultiline: PropTypes.bool,
     size: PropTypes.oneOf([
@@ -167,14 +169,13 @@ export class Column extends Component {
       styles.column,
       styles[kebabCase(this.props.size)],
       styles[kebabCase(this.props.offset)],
-
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
     return (
-      <div className={this.createClassName()}>
+      <div className={this.createClassName()} style={this.props.customStyle}>
         { this.props.children }
       </div>
     );

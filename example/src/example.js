@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Columns, Column } from '../../src';
+import { Button, Columns, Column, Input } from '../../src';
 
 
 export default class Example extends Component {
@@ -22,6 +22,16 @@ export default class Example extends Component {
           <Column>bbbb</Column>
           <Column>cccc</Column>
         </Columns>
+        <Input
+          hasIcon
+          icon="fa fa-check"
+          colors="isDanger"
+          size="isSmall"
+          help={{
+            text: 'help text',
+            color: 'isSuccess',
+          }}
+        />
       </div>
     );
   }

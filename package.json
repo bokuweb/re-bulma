@@ -1,6 +1,6 @@
 {
   "name": "re-bulma",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -52,7 +52,7 @@
     "lib"
   ],
   "dependencies": {
-    "csjs": "^1.0.3",
+    "csjs": "^1.0.4",
     "insert-css": "^0.2.0",
     "lodash.isequal": "^4.2.0",
     "lodash.kebabcase": "^4.0.1"
