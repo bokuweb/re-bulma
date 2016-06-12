@@ -13,10 +13,11 @@ npm i -S re-bulma
 - [x] Button
 - [x] Grid (Columns, Column)
 - [x] Input
-- [ ] Textarea
-- [ ] Select
+- [x] Textarea
+- [x] Select
 - [ ] Checkbox
 - [ ] Radio
+- [x] Label
 - [ ] Titles
 - [ ] Content
 - [ ] Tag

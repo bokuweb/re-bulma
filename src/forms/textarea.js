@@ -6,7 +6,7 @@ import kebabCase from 'lodash.kebabCase';
 
 insertCss(csjs.getCss(styles), { prepend: true });
 
-export default class Input extends Component {
+export default class Textarea extends Component {
   static propTypes = {
     className: PropTypes.string,
     customStyle: PropTypes.object,
@@ -29,11 +29,6 @@ export default class Input extends Component {
       'isSuccess',
       'isWarning',
       'isDanger',
-    ]),
-    size: PropTypes.oneOf([
-      'isSmall',
-      'isMedium',
-      'isLarge',
     ]),
     state: PropTypes.oneOf([
       'isLoading',
@@ -62,18 +57,14 @@ export default class Input extends Component {
     return [
       styles.control,
       styles[kebabCase(this.props.state)],
-      this.props.icon ? styles['has-icon'] : '',
-      // Add has-icon-left class because can not user not: selector( csjs bug )
-      this.props.hasIconRight ? styles['has-icon-right'] : styles['has-icon-left'],
       this.props.className,
     ].join(' ').trim();
   }
 
-  createInputClassName() {
+  createTextareaClassName() {
     return [
-      styles.input,
+      styles.textarea,
       styles[kebabCase(this.props.color)],
-      styles[kebabCase(this.props.size)],
     ].join(' ').trim();
   }
 
@@ -89,8 +80,8 @@ export default class Input extends Component {
   render() {
     return (
       <p className={this.createControlClassName()} style={this.props.customStyle}>
-        <input
-          className={this.createInputClassName()}
+        <textarea
+          className={this.createTextareaClassName()}
           type={this.props.type}
           placeholder={this.props.placeholder}
           defaultValue={this.props.defaultValue}
@@ -103,7 +94,6 @@ export default class Input extends Component {
           onChange={this.props.onChange}
           disabled={this.props.state === 'isDisabled'}
         />
-        <i className={[styles.fa, this.props.icon].join(' ')} />
         {this.renderHelp()}
       </p>
     );

@@ -605,35 +605,35 @@ input[type=button].input {
   top: 12px;
 }
 
-.control.has-icon.has-icon-left > .fa {
+.control.has-icon:not(.has-icon-right) > .fa {
   left: 4px;
 }
 
-.control.has-icon.has-icon-left .input, .control.has-icon.has-icon-left .textarea {
+.control.has-icon:not(.has-icon-right) .input, .control.has-icon:not(.has-icon-right) .textarea {
   padding-left: 32px;
 }
 
-.control.has-icon.has-icon-left .input.is-small, .control.has-icon.has-icon-left .is-small.textarea {
+.control.has-icon:not(.has-icon-right) .input.is-small, .control.has-icon:not(.has-icon-right) .is-small.textarea {
   padding-left: 24px;
 }
 
-.control.has-icon.has-icon-left .input.is-small + .fa, .control.has-icon.has-icon-left .is-small.textarea + .fa {
+.control.has-icon:not(.has-icon-right) .input.is-small + .fa, .control.has-icon:not(.has-icon-right) .is-small.textarea + .fa {
   left: 0;
 }
 
-.control.has-icon.has-icon-left .input.is-medium, .control.has-icon.has-icon-left .is-medium.textarea {
+.control.has-icon:not(.has-icon-right) .input.is-medium, .control.has-icon:not(.has-icon-right) .is-medium.textarea {
   padding-left: 40px;
 }
 
-.control.has-icon.has-icon-left .input.is-medium + .fa, .control.has-icon.has-icon-left .is-medium.textarea + .fa {
+.control.has-icon:not(.has-icon-right) .input.is-medium + .fa, .control.has-icon:not(.has-icon-right) .is-medium.textarea + .fa {
   left: 8px;
 }
 
-.control.has-icon.has-icon-left .input.is-large, .control.has-icon.has-icon-left .is-large.textarea {
+.control.has-icon:not(.has-icon-right) .input.is-large, .control.has-icon:not(.has-icon-right) .is-large.textarea {
   padding-left: 48px;
 }
 
-.control.has-icon.has-icon-left .input.is-large + .fa, .control.has-icon.has-icon-left .is-large.textarea + .fa {
+.control.has-icon:not(.has-icon-right) .input.is-large + .fa, .control.has-icon:not(.has-icon-right) .is-large.textarea + .fa {
   left: 12px;
 }
 
@@ -722,6 +722,48 @@ input[type=button].input {
     -webkit-flex: 5;
         -ms-flex: 5;
             flex: 5;
+  }
+}
+
+.control.is-loading:after {
+  position: absolute !important;
+  right: 8px;
+  top: 8px;
+}
+
+.control.is-loading:after {
+  -webkit-animation: spin-around 500ms infinite linear;
+          animation: spin-around 500ms infinite linear;
+  border: 2px solid #d3d6db;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 16px;
+  position: relative;
+  width: 16px;
+}
+
+@-webkit-keyframes spin-around {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes spin-around {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 
