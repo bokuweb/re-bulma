@@ -1,15 +1,19 @@
 import Button from './button';
 import { Columns, Column } from './columns';
+import Label from './label';
 import Input from './forms/input';
 import Textarea from './forms/textarea';
 import Select from './forms/select';
+import Checkbox from './forms/checkbox';
 
 export {
   Button,
   Columns,
   Column,
+  Label,
   Input,
   Textarea,
   Select,
+  Checkbox,
 };
 

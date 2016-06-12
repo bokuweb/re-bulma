@@ -209,6 +209,10 @@ input[type=button].input {
 }
 
 .checkbox, .radio {
+  /* add */
+  color: #69707a;
+  font-size: 14px;
+
   cursor: pointer;
   display: inline-block;
   line-height: 16px;

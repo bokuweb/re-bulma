@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Columns, Column, Input, Textarea, Select } from '../../src';
+import { Button, Columns, Column, Input, Textarea, Select, Label, Checkbox } from '../../src';
 
 
 export default class Example extends Component {
@@ -23,6 +23,7 @@ export default class Example extends Component {
           <Column>cccc</Column>
         </Columns>
         <Input
+          hasAddons
           state="isDisabled"
           color="isDanger"
           size="isSmall"
@@ -38,11 +39,13 @@ export default class Example extends Component {
             text: 'help text',
             color: 'isSuccess',
           }}
-           />
+        />
+        <Label>examples</Label>
         <Select>
           <option>Select dropdown</option>
           <option>With options</option>
         </Select>
+        <Checkbox>Remember me</Checkbox>
       </div>
     );
   }
