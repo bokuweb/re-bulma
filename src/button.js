@@ -8,7 +8,7 @@ insertCss(csjs.getCss(styles), { prepend: true });
 
 export default class Button extends Component {
   static propTypes = {
-    children: PropTypes.string.isRequired,
+    children: PropTypes.string,
     className: PropTypes.string,
     customStyle: PropTypes.object,
     onClick: PropTypes.func,

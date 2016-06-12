@@ -1,6 +1,6 @@
 # re-bulma
 
-Bulma components build with reacjs
+Bulma components build with react
 
 ## Install
 

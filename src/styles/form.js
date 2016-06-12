@@ -25,7 +25,6 @@ select.select, textarea.textarea {
   font: 99% sans-serif;
 }
 
-label.label,
 input[type=button].input,
 input[type=submit].input,
 input[type=file].input,
@@ -36,14 +35,6 @@ input[type=file].input,
 input.input,
 textarea.textarea {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-label.label,
-input[type=button].input,
-input[type=submit].input,
-input[type=file].input,
-{
-  cursor: pointer;
 }
 
 input.input,
@@ -428,16 +419,6 @@ input[type=button].input {
   padding-left: 12px;
   padding-right: 12px;
   padding-right: 52px;
-}
-
-.label {
-  color: #222324;
-  display: block;
-  font-weight: bold;
-}
-
-.label:not(:last-child) {
-  margin-bottom: 5px;
 }
 
 .help {
