@@ -1,8 +1,18 @@
+# re-bulma
+
+Bulma components build with reacjs
+
+## Install
+
+``` js
+npm i -S re-bulma
+```
+
 ### Components
 
 - [x] Button
 - [x] Grid (Columns, Column)
-- [ ] Input
+- [x] Input
 - [ ] Textarea
 - [ ] Select
 - [ ] Checkbox
