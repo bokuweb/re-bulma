@@ -1,6 +1,6 @@
 # re-bulma
 
-Bulma components build with reacjs
+Bulma components build with react
 
 ## Install
 
@@ -13,10 +13,11 @@ npm i -S re-bulma
 - [x] Button
 - [x] Grid (Columns, Column)
 - [x] Input
-- [ ] Textarea
-- [ ] Select
-- [ ] Checkbox
+- [x] Textarea
+- [x] Select
+- [x] Checkbox
 - [ ] Radio
+- [x] Label
 - [ ] Titles
 - [ ] Content
 - [ ] Tag
@@ -28,7 +29,7 @@ npm i -S re-bulma
 - [ ] Media
 - [ ] Card
 - [ ] Menu
-- [ ] Table
+- [x] Table
 - [ ] Header
 - [ ] Footer
 - [ ] Hero

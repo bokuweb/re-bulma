@@ -6,8 +6,9 @@ import kebabCase from 'lodash.kebabCase';
 
 insertCss(csjs.getCss(styles), { prepend: true });
 
-export default class Input extends Component {
+export default class Select extends Component {
   static propTypes = {
+    children: PropTypes.node,
     className: PropTypes.string,
     customStyle: PropTypes.object,
     onClick: PropTypes.func,
@@ -23,21 +24,12 @@ export default class Input extends Component {
     placeholder: PropTypes.string,
     defaultValue: PropTypes.string,
     value: PropTypes.string,
-    hasAddons: PropTypes.bool,
-    color: PropTypes.oneOf([
-      'isPrimary',
-      'isInfo',
-      'isSuccess',
-      'isWarning',
-      'isDanger',
-    ]),
     size: PropTypes.oneOf([
       'isSmall',
       'isMedium',
       'isLarge',
     ]),
     state: PropTypes.oneOf([
-      'isLoading',
       'isDisabled',
     ]),
     help: PropTypes.shape({
@@ -63,17 +55,13 @@ export default class Input extends Component {
     return [
       styles.control,
       styles[kebabCase(this.props.state)],
-      this.props.icon ? styles['has-icon'] : '',
-      // Add has-icon-left class because can not user not: selector( csjs bug )
-      this.props.hasIconRight ? styles['has-icon-right'] : styles['has-icon-left'],
       this.props.className,
     ].join(' ').trim();
   }
 
-  createInputClassName() {
+  createSelectClassName() {
     return [
-      styles.input,
-      styles[kebabCase(this.props.color)],
+      styles.select,
       styles[kebabCase(this.props.size)],
     ].join(' ').trim();
   }
@@ -87,36 +75,25 @@ export default class Input extends Component {
     );
   }
 
-  renderForm() {
-    return (
-      <span>
-        <input
-          className={this.createInputClassName()}
-          type={this.props.type}
-          placeholder={this.props.placeholder}
-          defaultValue={this.props.defaultValue}
-          value={this.props.value}
-          onClick={this.props.onClick}
-          onFocus={this.props.onFocus}
-          onBlur={this.props.onBlur}
-          onTouchStart={this.props.onTouchStart}
-          onDoubleClick={this.props.onDoubleClick}
-          onChange={this.props.onChange}
-          disabled={this.props.state === 'isDisabled'}
-        />
-        <i className={[styles.fa, this.props.icon].join(' ')} />
-        {this.renderHelp()}
-      </span>
-    );
-  }
-
   render() {
-    if (this.props.hasAddons) {
-      return this.renderForm();
-    }
     return (
       <p className={this.createControlClassName()} style={this.props.customStyle}>
-        {this.renderForm()}
+        <span className={this.createSelectClassName()}>
+          <select
+            defaultValue={this.props.defaultValue}
+            value={this.props.value}
+            onClick={this.props.onClick}
+            onFocus={this.props.onFocus}
+            onBlur={this.props.onBlur}
+            onTouchStart={this.props.onTouchStart}
+            onDoubleClick={this.props.onDoubleClick}
+            onChange={this.props.onChange}
+            disabled={this.props.state === 'isDisabled'}
+          >
+            {this.props.children}
+          </select>
+          {this.renderHelp()}
+        </span>
       </p>
     );
   }

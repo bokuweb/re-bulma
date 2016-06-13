@@ -8,7 +8,7 @@ insertCss(csjs.getCss(styles), { prepend: true });
 
 export default class Button extends Component {
   static propTypes = {
-    children: PropTypes.string.isRequired,
+    children: PropTypes.string,
     className: PropTypes.string,
     customStyle: PropTypes.object,
     onClick: PropTypes.func,
@@ -43,7 +43,7 @@ export default class Button extends Component {
   };
 
   static defaultProps = {
-    style: {},
+    customStyle: {},
     onClick: () => null,
     onFocus: () => null,
     onBlur: () => null,
@@ -58,7 +58,7 @@ export default class Button extends Component {
     return [
       styles.button,
       styles[kebabCase(this.props.size)],
-      styles[kebabCase(this.props.type)],
+      styles[kebabCase(this.props.color)],
       styles[kebabCase(this.props.style)],
       styles[kebabCase(this.props.state)],
       this.props.className,
