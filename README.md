@@ -15,7 +15,7 @@ npm i -S re-bulma
 - [x] Input
 - [x] Textarea
 - [x] Select
-- [ ] Checkbox
+- [x] Checkbox
 - [ ] Radio
 - [x] Label
 - [ ] Titles
@@ -29,7 +29,7 @@ npm i -S re-bulma
 - [ ] Media
 - [ ] Card
 - [ ] Menu
-- [ ] Table
+- [x] Table
 - [ ] Header
 - [ ] Footer
 - [ ] Hero
