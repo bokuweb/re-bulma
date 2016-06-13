@@ -5,6 +5,7 @@ import Input from './forms/input';
 import Textarea from './forms/textarea';
 import Select from './forms/select';
 import Checkbox from './forms/checkbox';
+import { Table, Td, Th, Tr, Tbody, Thead, Tfoot } from './table';
 
 export {
   Button,
@@ -15,5 +16,12 @@ export {
   Textarea,
   Select,
   Checkbox,
+  Table,
+  Td,
+  Th,
+  Tr,
+  Tbody,
+  Thead,
+  Tfoot,
 };
 
