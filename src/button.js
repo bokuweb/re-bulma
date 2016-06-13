@@ -43,7 +43,7 @@ export default class Button extends Component {
   };
 
   static defaultProps = {
-    style: {},
+    customStyle: {},
     onClick: () => null,
     onFocus: () => null,
     onBlur: () => null,
