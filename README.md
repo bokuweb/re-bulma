@@ -23,7 +23,7 @@ npm i -S re-bulma
 - [ ] Tag
 - [ ] Message
 - [ ] Notification
-- [ ] Icon
+- [x] Icon
 - [ ] Navbar
 - [ ] Tabs (Tabs, Tab)
 - [ ] Media

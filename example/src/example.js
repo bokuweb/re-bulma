@@ -18,6 +18,7 @@ import {
   Title,
   Subtitle,
   Box,
+  Icon,
 } from '../../src';
 
 
@@ -160,6 +161,10 @@ export default class Example extends Component {
         <p><Subtitle size="is5">Title</Subtitle></p>
         <p><Subtitle size="is6">Title</Subtitle></p>
         <Box>sadasdasdsad</Box>
+        <Icon icon="fa fa-heart" size="isSmall" />
+        <Icon icon="fa fa-heart" />
+        <Icon icon="fa fa-heart" size="isMedium" />
+        <Icon icon="fa fa-heart" size="isLarge" />
       </div>
     );
   }
