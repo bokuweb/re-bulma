@@ -34,3 +34,4 @@ npm i -S re-bulma
 - [ ] Footer
 - [ ] Hero
 - [ ] Section
+- [x] Box

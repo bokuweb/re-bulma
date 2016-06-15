@@ -17,6 +17,7 @@ import {
   Tfoot,
   Title,
   Subtitle,
+  Box,
 } from '../../src';
 
 
@@ -158,6 +159,7 @@ export default class Example extends Component {
         <p><Subtitle size="is4">Title</Subtitle></p>
         <p><Subtitle size="is5">Title</Subtitle></p>
         <p><Subtitle size="is6">Title</Subtitle></p>
+        <Box>sadasdasdsad</Box>
       </div>
     );
   }

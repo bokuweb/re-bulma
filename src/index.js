@@ -7,6 +7,7 @@ import Select from './forms/select';
 import Checkbox from './forms/checkbox';
 import { Table, Td, Th, Tr, Tbody, Thead, Tfoot } from './table';
 import { Title, Subtitle } from './title';
+import Box from './box';
 
 export {
   Button,
@@ -26,5 +27,6 @@ export {
   Tfoot,
   Title,
   Subtitle,
+  Box,
 };
 
