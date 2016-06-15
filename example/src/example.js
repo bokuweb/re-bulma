@@ -15,6 +15,8 @@ import {
   Tbody,
   Thead,
   Tfoot,
+  Title,
+  Subtitle,
 } from '../../src';
 
 
@@ -143,6 +145,19 @@ export default class Example extends Component {
             </Tr>
           </Tbody>
         </Table>
+        <p><Title size="is1">Title</Title></p>
+        <p><Title size="is2">Title</Title></p>
+        <p><Title size="is3">Title</Title></p>
+        <p><Title size="is4">Title</Title></p>
+        <p><Title size="is5">Title</Title></p>
+        <p><Title size="is6">Title</Title></p>
+
+        <p><Subtitle size="is1">Title</Subtitle></p>
+        <p><Subtitle size="is2">Title</Subtitle></p>
+        <p><Subtitle size="is3">Title</Subtitle></p>
+        <p><Subtitle size="is4">Title</Subtitle></p>
+        <p><Subtitle size="is5">Title</Subtitle></p>
+        <p><Subtitle size="is6">Title</Subtitle></p>
       </div>
     );
   }

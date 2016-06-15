@@ -18,7 +18,7 @@ npm i -S re-bulma
 - [x] Checkbox
 - [ ] Radio
 - [x] Label
-- [ ] Titles
+- [x] Titles
 - [ ] Content
 - [ ] Tag
 - [ ] Message
