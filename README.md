@@ -19,7 +19,7 @@ npm i -S re-bulma
 - [x] Radio
 - [x] Label
 - [x] Titles
-- [ ] Content
+- [x] Content
 - [x] Tag
 - [ ] Message
 - [ ] Notification

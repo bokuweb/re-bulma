@@ -13,6 +13,7 @@ import Icon from './icon';
 import { Tabs, TabGroup, Tab } from './tabs';
 import Tag from './tag';
 import Progress from './progress';
+import Content from './content';
 import Styles from './styles';
 
 const initialize = () => {
@@ -46,6 +47,7 @@ export {
   Tab,
   Tag,
   Progress,
+  Content,
   initialize,
 };
 
