@@ -12,6 +12,7 @@ import tag from './styles/tag';
 import title from './styles/title';
 import content from './styles/content';
 import progress from './styles/progress';
+import message from './styles/message';
 
 const styles = {
   box,
@@ -26,6 +27,7 @@ const styles = {
   title,
   content,
   progress,
+  message,
 };
 
 const defaultOptions = {
@@ -43,6 +45,7 @@ const defaultOptions = {
     title: true,
     content: true,
     progress: true,
+    message: true,
   },
 };
 

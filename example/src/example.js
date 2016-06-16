@@ -27,6 +27,7 @@ import {
   Tag,
   Progress,
   Content,
+  Message,
 } from '../../src';
 
 initialize();
@@ -303,7 +304,34 @@ export default class Example extends Component {
         <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
         <h6>Sixth level</h6>
         <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
-</Content>
+      </Content>
+
+      <Message header="Hello World">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque risus mi, tempus quis placerat ut, porta nec
+        nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+        gravida purus diam, et dictum felis venenatis efficitur.
+        Aenean ac eleifend lacus, in mollis lectus. Donec sodales,
+        arcu et sollicitudin porttitor, tortor urna tempor ligula,
+        id porttitor mi magna a neque. Donec dui urna, vehicula et
+        sem eget, facilisis sodales sem.</Message>
+
+      <Message header="Hello World" color="isPrimary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque risus mi, tempus quis placerat ut, porta nec
+        nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+        gravida purus diam, et dictum felis venenatis efficitur.
+        Aenean ac eleifend lacus, in mollis lectus. Donec sodales,
+        arcu et sollicitudin porttitor, tortor urna tempor ligula,
+        id porttitor mi magna a neque. Donec dui urna, vehicula et
+        sem eget, facilisis sodales sem.</Message>
+
+      <Message color="isPrimary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque risus mi, tempus quis placerat ut, porta nec
+        nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+        gravida purus diam, et dictum felis venenatis efficitur.
+        Aenean ac eleifend lacus, in mollis lectus. Donec sodales,
+        arcu et sollicitudin porttitor, tortor urna tempor ligula,
+        id porttitor mi magna a neque. Donec dui urna, vehicula et
+        sem eget, facilisis sodales sem.</Message>
 </div>
 
     );

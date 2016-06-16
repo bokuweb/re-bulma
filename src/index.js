@@ -14,6 +14,7 @@ import { Tabs, TabGroup, Tab } from './tabs';
 import Tag from './tag';
 import Progress from './progress';
 import Content from './content';
+import Message from './message';
 import Styles from './styles';
 
 const initialize = () => {
@@ -48,6 +49,7 @@ export {
   Tag,
   Progress,
   Content,
+  Message,
   initialize,
 };
 

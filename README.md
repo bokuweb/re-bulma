@@ -21,7 +21,7 @@ npm i -S re-bulma
 - [x] Titles
 - [x] Content
 - [x] Tag
-- [ ] Message
+- [x] Message
 - [ ] Notification
 - [x] Icon
 - [ ] Navbar
