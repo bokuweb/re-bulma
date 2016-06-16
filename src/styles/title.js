@@ -1,6 +1,4 @@
-const csjs = require('csjs');
-
-module.exports = csjs`
+export default () => `
 .title,
 .subtitle {
   font-weight: 300;

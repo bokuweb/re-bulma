@@ -1,12 +1,8 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import csjs from 'csjs';
-import styles from './styles/tabs';
-import insertCss from 'insert-css';
+import Styles from './styles';
 import kebabCase from 'lodash.kebabCase';
-
-insertCss(csjs.getCss(styles), { prepend: true });
 
 export class Tabs extends Component {
   static propTypes = {
@@ -35,6 +31,7 @@ export class Tabs extends Component {
   };
 
   createClassName() {
+    const styles = new Styles().getStyles();
     return [
       styles.tabs,
       styles[kebabCase(this.props.alignment)],
@@ -70,6 +67,7 @@ export class TabGroup extends Component {
   };
 
   createClassName() {
+    const styles = new Styles().getStyles();
     return [
       styles[kebabCase(this.props.alignment)],
       this.props.className,
@@ -97,6 +95,7 @@ export class Tab extends Component {
   };
 
   createClassName() {
+    const styles = new Styles().getStyles();
     return [
       this.props.isActive ? styles['is-active'] : '',
       this.props.className,

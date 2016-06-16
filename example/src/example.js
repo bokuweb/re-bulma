@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+  initialize,
   Button,
   Columns,
   Column,
@@ -23,8 +24,10 @@ import {
   Tabs,
   TabGroup,
   Tab,
+  Tag,
 } from '../../src';
 
+initialize();
 
 export default class Example extends Component {
   render() {
@@ -256,6 +259,10 @@ export default class Example extends Component {
               <Tab>ccc</Tab>
             </TabGroup>
           </Tabs>
+
+          <Tag>tag sample</Tag>
+          <Tag color="isPrimary">tag sample</Tag>
+          <Tag color="isPrimary">tag sample<Button delete /></Tag>
       </div>
     );
   }

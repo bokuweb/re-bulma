@@ -1,10 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import csjs from 'csjs';
-import styles from '../styles/form';
-import insertCss from 'insert-css';
+import Styles from '../styles';
 import kebabCase from 'lodash.kebabCase';
-
-insertCss(csjs.getCss(styles), { prepend: true });
 
 export default class Select extends Component {
   static propTypes = {
@@ -41,6 +37,7 @@ export default class Select extends Component {
   };
 
   createControlClassName() {
+    const styles = new Styles().getStyles();
     return [
       styles.control,
       styles[kebabCase(this.props.state)],
@@ -49,6 +46,7 @@ export default class Select extends Component {
   }
 
   createSelectClassName() {
+    const styles = new Styles().getStyles();
     return [
       styles.select,
       styles[kebabCase(this.props.size)],
@@ -56,6 +54,7 @@ export default class Select extends Component {
   }
 
   renderHelp() {
+    const styles = new Styles().getStyles();
     if (!this.props.help) return null;
     return (
       <span className={[styles.help, styles[kebabCase(this.props.help.color)]].join(' ')}>

@@ -1,6 +1,4 @@
-const csjs = require('csjs');
-
-module.exports = csjs`
+export default () => `
 .tabs {
   margin: 0;
   padding: 0;

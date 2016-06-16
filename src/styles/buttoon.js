@@ -1,6 +1,4 @@
-const csjs = require('csjs');
-
-module.exports = csjs`
+export default () => `
 .button {
   cursor: pointer;
   margin: 0;
@@ -621,5 +619,4 @@ button:active,
   vertical-align: top;
   width: 48px;
 }
-
 `;

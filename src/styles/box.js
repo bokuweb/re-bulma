@@ -1,7 +1,4 @@
-const csjs = require('csjs');
-
-module.exports = csjs`
-
+export default () => `
 .box,
 .box:before,
 .box:after {

@@ -1,6 +1,4 @@
-const csjs = require('csjs');
-
-module.exports = csjs`
+export default () => `
 .table {
   border-collapse: collapse;
   border-spacing: 0;
