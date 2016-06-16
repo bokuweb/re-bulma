@@ -36,7 +36,7 @@ export class Title extends Component {
 
   render() {
     return (
-      <span {...this.props} className={this.createClassName()>
+      <span {...this.props} className={this.createClassName()}>
         {this.props.children}
       </span>
     );

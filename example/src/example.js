@@ -166,8 +166,11 @@ export default class Example extends Component {
         <Icon icon="fa fa-heart" />
         <Icon icon="fa fa-heart" size="isMedium" />
         <Icon icon="fa fa-heart" size="isLarge" />
-        <Radio onChange={() => console.log('asdasdas')} />
-      </div>
+        <Radio data={[
+            { label: 'b', inputProps: { name: 'a', onChange: () => console.log('asdasd')}},
+            { label: 'd', inputProps: { name: 'a', onChange: () => console.log('asdasd')}},
+            { label: 'f', inputProps: { name: 'a', onChange: () => console.log('asdasd')}}
+        ]} />     </div>
     );
   }
 }
