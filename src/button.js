@@ -1,10 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import csjs from 'csjs';
-import styles from './styles/button';
-import insertCss from 'insert-css';
 import kebabCase from 'lodash.kebabCase';
-
-insertCss(csjs.getCss(styles), { prepend: true });
+import Styles from './styles';
 
 export default class Button extends Component {
   static propTypes = {
@@ -39,6 +35,7 @@ export default class Button extends Component {
       'isActive',
       'isDisabled',
     ]),
+    delete: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -48,12 +45,14 @@ export default class Button extends Component {
   };
 
   createClassName() {
+    const styles = new Styles().getStyles();
     return [
       styles.button,
       styles[kebabCase(this.props.size)],
       styles[kebabCase(this.props.color)],
       styles[kebabCase(this.props.buttonStyle)],
       styles[kebabCase(this.props.state)],
+      this.props.delete ? styles.delete : '',
       this.props.className,
     ].join(' ').trim();
   }
@@ -65,6 +64,7 @@ export default class Button extends Component {
   }
 
   render() {
+    const styles = new Styles().getStyles();
     return (
       <button
         {...this.props}

@@ -1,6 +1,10 @@
-const csjs = require('csjs');
+export default () => `
+.box,
+.box:before,
+.box:after {
+  box-sizing: inherit;
+}
 
-module.exports = csjs`
 .box {
   margin: 0;
   padding: 0;

@@ -14,16 +14,16 @@ export default class Label extends Component {
   createClassName() {
     const styles = new Styles().getStyles();
     return [
-      styles.label,
+      styles.content,
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
     return (
-      <label {...this.props} className={this.createClassName()}>
+      <div {...this.props} className={this.createClassName()}>
         {this.props.children}
-      </label>
+      </div>
     );
   }
 }

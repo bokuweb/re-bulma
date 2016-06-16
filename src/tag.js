@@ -1,39 +1,44 @@
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
 import kebabCase from 'lodash.kebabCase';
+import Styles from './styles';
 
-export default class Icon extends Component {
+export default class Tag extends Component {
   static propTypes = {
-    children: PropTypes.string,
-    style: PropTypes.object,
+    children: PropTypes.any,
     className: PropTypes.string,
-    icon: PropTypes.string,
     size: PropTypes.oneOf([
       'isSmall',
       'isMedium',
       'isLarge',
     ]),
+    color: PropTypes.oneOf([
+      'isPrimary',
+      'isInfo',
+      'isSuccess',
+      'isWarning',
+      'isDanger',
+      'isDark',
+    ]),
   };
 
   static defaultProps = {
-    style: {},
     className: '',
   };
 
   createClassName() {
     const styles = new Styles().getStyles();
     return [
-      styles.icon,
+      styles.tag,
       styles[kebabCase(this.props.size)],
+      styles[kebabCase(this.props.color)],
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
-    const styles = new Styles().getStyles();
     return (
       <span {...this.props} className={this.createClassName()}>
-        <i className={[styles.fa, this.props.icon].join(' ').trim()} />
+        {this.props.children}
       </span>
     );
   }

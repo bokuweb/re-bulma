@@ -1,9 +1,6 @@
 /* eslint-disable max-len */
 
-const csjs = require('csjs');
-
-module.exports = csjs`
-
+export default () => `
 .input {
   vertical-align: middle;
   font: 99% sans-serif;

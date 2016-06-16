@@ -1,10 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import csjs from 'csjs';
-import styles from '../styles/form';
-import insertCss from 'insert-css';
+import Styles from '../styles';
 import kebabCase from 'lodash.kebabCase';
-
-insertCss(csjs.getCss(styles), { prepend: true });
 
 export default class Checkbox extends Component {
   static propTypes = {
@@ -34,6 +30,7 @@ export default class Checkbox extends Component {
   };
 
   createLabelClassName() {
+    const styles = new Styles().getStyles();
     return [
       styles.checkbox,
       styles[kebabCase(this.props.state)],
@@ -41,6 +38,7 @@ export default class Checkbox extends Component {
   }
 
   createControlClassName() {
+    const styles = new Styles().getStyles();
     return [
       styles.control,
       this.props.className,
@@ -49,6 +47,7 @@ export default class Checkbox extends Component {
 
   renderHelp() {
     if (!this.props.help) return null;
+    const styles = new Styles().getStyles();
     return (
       <span className={[styles.help, styles[kebabCase(this.props.help.color)]].join(' ')}>
         {this.props.help.text}
@@ -70,7 +69,7 @@ export default class Checkbox extends Component {
       return this.renderForm();
     }
     return (
-      <p className={this.createControlClassName()} style={this.props.customStyle}>
+      <p className={this.createControlClassName()} style={this.props.style}>
         {this.renderForm()}
       </p>
     );

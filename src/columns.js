@@ -1,10 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import csjs from 'csjs';
-import insertCss from 'insert-css';
-import styles from './styles/columns';
+import Styles from './styles';
 import kebabCase from 'lodash.kebabCase';
-
-insertCss(csjs.getCss(styles), { prepend: true });
 
 export class Columns extends Component {
   static propTypes = {
@@ -20,6 +16,7 @@ export class Columns extends Component {
   };
 
   createClassName() {
+    const styles = new Styles().getStyles();
     return [
       styles.columns,
       styles[kebabCase(this.props.responsive)],
@@ -164,6 +161,7 @@ export class Column extends Component {
   };
 
   createClassName() {
+    const styles = new Styles().getStyles();
     return [
       styles.column,
       styles[kebabCase(this.props.size)],

@@ -1,6 +1,4 @@
-const csjs = require('csjs');
-
-module.exports = csjs`
+export default () => `
   .icon {
     display: inline-block;
     font-size: 21px;
