@@ -20,7 +20,7 @@ npm i -S re-bulma
 - [x] Label
 - [x] Titles
 - [ ] Content
-- [ ] Tag
+- [x] Tag
 - [ ] Message
 - [ ] Notification
 - [x] Icon
@@ -38,3 +38,4 @@ npm i -S re-bulma
 - [ ] FormAddons
 - [ ] ButtonAddons
 - [ ] Tile
+- [x] Progress 

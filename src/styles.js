@@ -10,6 +10,7 @@ import table from './styles/table';
 import tabs from './styles/tabs';
 import tag from './styles/tag';
 import title from './styles/title';
+import progress from './styles/progress';
 
 const styles = {
   box,
@@ -22,21 +23,14 @@ const styles = {
   tag,
   tabs,
   title,
+  progress,
 };
 
 const defaultOptions = {
   prepend: true,
   components: {
-    box: true,
-    button: true,
-    columns: true,
-    form: true,
-    icon: true,
-    label: true,
-    table: true,
-    tabs: true,
-    tag: true,
-    title: true,
+
+    progress: true,
   },
 };
 

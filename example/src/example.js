@@ -25,6 +25,7 @@ import {
   TabGroup,
   Tab,
   Tag,
+  Progress,
 } from '../../src';
 
 initialize();
@@ -263,7 +264,11 @@ export default class Example extends Component {
           <Tag>tag sample</Tag>
           <Tag color="isPrimary">tag sample</Tag>
           <Tag color="isPrimary">tag sample<Button delete /></Tag>
+          <Tag color="isDanger">tag sample<Button delete /></Tag>
+          <Progress value="45" max="100" />
+          <Progress color="isPrimary" size="isLarge" value="15" max="100" />
       </div>
+
     );
   }
 }

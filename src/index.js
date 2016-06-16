@@ -12,6 +12,7 @@ import Box from './box';
 import Icon from './icon';
 import { Tabs, TabGroup, Tab } from './tabs';
 import Tag from './tag';
+import Progress from './progress';
 import Styles from './styles';
 
 const initialize = () => {
@@ -44,6 +45,7 @@ export {
   TabGroup,
   Tab,
   Tag,
+  Progress,
   initialize,
 };
 
