@@ -8,21 +8,12 @@ insertCss(csjs.getCss(styles), { prepend: true });
 
 export default class Textarea extends Component {
   static propTypes = {
+    style: PropTypes.object,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
-    onClick: PropTypes.func,
-    onFocus: PropTypes.func,
-    onBlur: PropTypes.func,
-    onChange: PropTypes.func,
-    onTouchStart: PropTypes.func,
-    onDoubleClick: PropTypes.func,
     hasIcon: PropTypes.bool,
     hasIconRight: PropTypes.bool,
     icon: PropTypes.string,
     type: PropTypes.string,
-    placeholder: PropTypes.string,
-    defaultValue: PropTypes.string,
-    value: PropTypes.string,
     color: PropTypes.oneOf([
       'isPrimary',
       'isInfo',
@@ -79,19 +70,11 @@ export default class Textarea extends Component {
 
   render() {
     return (
-      <p className={this.createControlClassName()} style={this.props.customStyle}>
+      <p className={this.createControlClassName()} style={this.props.style}>
         <textarea
+          {...this.props}
+          style={{}}
           className={this.createTextareaClassName()}
-          type={this.props.type}
-          placeholder={this.props.placeholder}
-          defaultValue={this.props.defaultValue}
-          value={this.props.value}
-          onClick={this.props.onClick}
-          onFocus={this.props.onFocus}
-          onBlur={this.props.onBlur}
-          onTouchStart={this.props.onTouchStart}
-          onDoubleClick={this.props.onDoubleClick}
-          onChange={this.props.onChange}
           disabled={this.props.state === 'isDisabled'}
         />
         {this.renderHelp()}

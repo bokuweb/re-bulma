@@ -9,15 +9,9 @@ insertCss(csjs.getCss(styles), { prepend: true });
 export default class Input extends Component {
   static propTypes = {
     className: PropTypes.string,
-    customStyle: PropTypes.object,
-    onClick: PropTypes.func,
-    onFocus: PropTypes.func,
-    onBlur: PropTypes.func,
-    onChange: PropTypes.func,
-    onTouchStart: PropTypes.func,
-    onDoubleClick: PropTypes.func,
     hasIcon: PropTypes.bool,
     hasIconRight: PropTypes.bool,
+    style: PropTypes.object,
     icon: PropTypes.string,
     type: PropTypes.string,
     placeholder: PropTypes.string,
@@ -91,17 +85,9 @@ export default class Input extends Component {
     return (
       <span>
         <input
+          {...this.props}
+          style={{}}
           className={this.createInputClassName()}
-          type={this.props.type}
-          placeholder={this.props.placeholder}
-          defaultValue={this.props.defaultValue}
-          value={this.props.value}
-          onClick={this.props.onClick}
-          onFocus={this.props.onFocus}
-          onBlur={this.props.onBlur}
-          onTouchStart={this.props.onTouchStart}
-          onDoubleClick={this.props.onDoubleClick}
-          onChange={this.props.onChange}
           disabled={this.props.state === 'isDisabled'}
         />
         <i className={[styles.fa, this.props.icon].join(' ')} />
@@ -115,7 +101,7 @@ export default class Input extends Component {
       return this.renderForm();
     }
     return (
-      <p className={this.createControlClassName()} style={this.props.customStyle}>
+      <p className={this.createControlClassName()} style={this.props.style}>
         {this.renderForm()}
       </p>
     );

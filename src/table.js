@@ -11,14 +11,13 @@ export class Table extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
     isBordered: PropTypes.bool,
     isStriped: PropTypes.bool,
     isNarrow: PropTypes.bool,
   };
 
   static defaultProps = {
-    customStyle: {},
+    style: {},
     className: '',
   };
 
@@ -36,7 +35,6 @@ export class Table extends Component {
     return (
       <table
         {...this.props}
-        style={this.props.customStyle}
         className={this.createClassName()}
       >
         {this.props.children}
@@ -49,12 +47,10 @@ export class Td extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
     isIcon: PropTypes.bool,
   };
 
   static defaultProps = {
-    customStyle: {},
     className: '',
   };
 
@@ -70,7 +66,6 @@ export class Td extends Component {
     return (
       <td
         {...this.props}
-        style={this.props.customStyle}
         className={this.createClassName()}
       >
         {this.props.children}
@@ -83,11 +78,9 @@ export class Th extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
   };
 
   static defaultProps = {
-    customStyle: {},
     className: '',
   };
 
@@ -102,7 +95,6 @@ export class Th extends Component {
     return (
       <th
         {...this.props}
-        style={this.props.customStyle}
         className={this.createClassName()}
       >
         {this.props.children}
@@ -115,11 +107,9 @@ export class Tr extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
   };
 
   static defaultProps = {
-    customStyle: {},
     className: '',
   };
 
@@ -134,7 +124,6 @@ export class Tr extends Component {
     return (
       <tr
         {...this.props}
-        style={this.props.customStyle}
         className={this.createClassName()}
       >
         {this.props.children}
@@ -147,11 +136,9 @@ export class Tbody extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
   };
 
   static defaultProps = {
-    customStyle: {},
     className: '',
   };
 
@@ -166,7 +153,6 @@ export class Tbody extends Component {
     return (
       <tbody
         {...this.props}
-        style={this.props.customStyle}
         className={this.createClassName()}
       >
        {this.props.children}
@@ -179,11 +165,9 @@ export class Thead extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
   };
 
   static defaultProps = {
-    customStyle: {},
     className: '',
   };
 
@@ -198,7 +182,6 @@ export class Thead extends Component {
     return (
       <thead
         {...this.props}
-        style={this.props.customStyle}
         className={this.createClassName()}
       >
        {this.props.children}
@@ -211,11 +194,9 @@ export class Tfoot extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
   };
 
   static defaultProps = {
-    customStyle: {},
     className: '',
   };
 
@@ -230,7 +211,6 @@ export class Tfoot extends Component {
     return (
       <tfoot
         {...this.props}
-        style={this.props.customStyle}
         className={this.createClassName()}
       >
        {this.props.children}

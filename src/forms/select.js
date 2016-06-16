@@ -10,18 +10,7 @@ export default class Select extends Component {
   static propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
-    onClick: PropTypes.func,
-    onFocus: PropTypes.func,
-    onBlur: PropTypes.func,
-    onChange: PropTypes.func,
-    onTouchStart: PropTypes.func,
-    onDoubleClick: PropTypes.func,
-    hasIcon: PropTypes.bool,
-    hasIconRight: PropTypes.bool,
-    icon: PropTypes.string,
-    type: PropTypes.string,
-    placeholder: PropTypes.string,
+    style: PropTypes.object,
     defaultValue: PropTypes.string,
     value: PropTypes.string,
     size: PropTypes.oneOf([
@@ -77,17 +66,11 @@ export default class Select extends Component {
 
   render() {
     return (
-      <p className={this.createControlClassName()} style={this.props.customStyle}>
+      <p className={this.createControlClassName()} style={this.props.style}>
         <span className={this.createSelectClassName()}>
           <select
-            defaultValue={this.props.defaultValue}
-            value={this.props.value}
-            onClick={this.props.onClick}
-            onFocus={this.props.onFocus}
-            onBlur={this.props.onBlur}
-            onTouchStart={this.props.onTouchStart}
-            onDoubleClick={this.props.onDoubleClick}
-            onChange={this.props.onChange}
+            {...this.props}
+            style={{}}
             disabled={this.props.state === 'isDisabled'}
           >
             {this.props.children}

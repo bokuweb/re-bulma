@@ -19,6 +19,7 @@ import {
   Subtitle,
   Box,
   Icon,
+  Radio,
 } from '../../src';
 
 
@@ -30,7 +31,7 @@ export default class Example extends Component {
         <Button size="isLarge" states="isActive">Guthub</Button>
         <Button size="isSmall" states="isActive" icon="fa fa-github">Github</Button>
         <Columns>
-          <Column size="is2" customStyle={{ background: '#ccc' }}>aaaa</Column>
+          <Column size="is2" style={{ background: '#ccc' }}>aaaa</Column>
           <Column>bbbb</Column>
           <Column>cccc</Column>
           <Column>bbbb</Column>
@@ -161,10 +162,11 @@ export default class Example extends Component {
         <p><Subtitle size="is5">Title</Subtitle></p>
         <p><Subtitle size="is6">Title</Subtitle></p>
         <Box>sadasdasdsad</Box>
-        <Icon icon="fa fa-heart" size="isSmall" />
+        <Icon icon="fa fa-heart" size="isSmall" style={{color: 'red'}} className="hge" />
         <Icon icon="fa fa-heart" />
         <Icon icon="fa fa-heart" size="isMedium" />
         <Icon icon="fa fa-heart" size="isLarge" />
+        <Radio onChange={() => console.log('asdasdas')} />
       </div>
     );
   }

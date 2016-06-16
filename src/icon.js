@@ -9,8 +9,8 @@ insertCss(csjs.getCss(styles), { prepend: true });
 export default class Icon extends Component {
   static propTypes = {
     children: PropTypes.string,
+    style: PropTypes.object,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
     icon: PropTypes.string,
     size: PropTypes.oneOf([
       'isSmall',
@@ -20,7 +20,7 @@ export default class Icon extends Component {
   };
 
   static defaultProps = {
-    customStyle: {},
+    style: {},
     className: '',
   };
 
@@ -34,7 +34,7 @@ export default class Icon extends Component {
 
   render() {
     return (
-      <span className={this.createClassName()} style={this.props.customStyle}>
+      <span {...this.props} className={this.createClassName()}>
         <i className={[styles.fa, this.props.icon].join(' ').trim()} />
       </span>
     );

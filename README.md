@@ -35,3 +35,5 @@ npm i -S re-bulma
 - [ ] Hero
 - [ ] Section
 - [x] Box
+- [ ] Addon
+- [ ] Tile

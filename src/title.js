@@ -12,7 +12,6 @@ export class Title extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
     size: PropTypes.oneOf([
       'is1',
       'is2',
@@ -24,7 +23,6 @@ export class Title extends Component {
   };
 
   static defaultProps = {
-    customStyle: {},
     className: '',
   };
 
@@ -38,7 +36,7 @@ export class Title extends Component {
 
   render() {
     return (
-      <span className={this.createClassName()} style={this.props.customStyle}>
+      <span {...this.props} className={this.createClassName()>
         {this.props.children}
       </span>
     );
@@ -50,7 +48,6 @@ export class Subtitle extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
     size: PropTypes.oneOf([
       'is1',
       'is2',
@@ -62,7 +59,6 @@ export class Subtitle extends Component {
   };
 
   static defaultProps = {
-    customStyle: {},
     className: '',
   };
 
@@ -76,7 +72,7 @@ export class Subtitle extends Component {
 
   render() {
     return (
-      <span className={this.createClassName()} style={this.props.customStyle}>
+      <span {...this.props} className={this.createClassName()}>
         {this.props.children}
       </span>
     );

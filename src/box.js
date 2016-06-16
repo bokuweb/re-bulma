@@ -9,11 +9,9 @@ export default class Box extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
-    customStyle: PropTypes.object,
   };
 
   static defaultProps = {
-    customStyle: {},
     className: '',
   };
 
@@ -26,7 +24,7 @@ export default class Box extends Component {
 
   render() {
     return (
-      <div className={this.createClassName()} style={this.props.customStyle}>
+      <div {...this.props} className={this.createClassName()} >
         {this.props.children}
       </div>
     );
