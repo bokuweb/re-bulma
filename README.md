@@ -16,7 +16,7 @@ npm i -S re-bulma
 - [x] Textarea
 - [x] Select
 - [x] Checkbox
-- [ ] Radio
+- [x] Radio
 - [x] Label
 - [x] Titles
 - [ ] Content
@@ -25,7 +25,7 @@ npm i -S re-bulma
 - [ ] Notification
 - [x] Icon
 - [ ] Navbar
-- [ ] Tabs (Tabs, Tab)
+- [x] Tabs
 - [ ] Media
 - [ ] Card
 - [ ] Menu
@@ -35,5 +35,6 @@ npm i -S re-bulma
 - [ ] Hero
 - [ ] Section
 - [x] Box
-- [ ] Addon
+- [ ] FormAddons
+- [ ] ButtonAddons
 - [ ] Tile

@@ -10,6 +10,7 @@ import { Table, Td, Th, Tr, Tbody, Thead, Tfoot } from './table';
 import { Title, Subtitle } from './title';
 import Box from './box';
 import Icon from './icon';
+import { Tabs, TabGroup, Tab } from './tabs';
 
 export {
   Button,
@@ -32,5 +33,8 @@ export {
   Subtitle,
   Box,
   Icon,
+  Tabs,
+  TabGroup,
+  Tab,
 };
 

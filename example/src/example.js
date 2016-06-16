@@ -20,6 +20,9 @@ import {
   Box,
   Icon,
   Radio,
+  Tabs,
+  TabGroup,
+  Tab,
 } from '../../src';
 
 
@@ -170,7 +173,90 @@ export default class Example extends Component {
             { label: 'b', inputProps: { name: 'a', onChange: () => console.log('asdasd')}},
             { label: 'd', inputProps: { name: 'a', onChange: () => console.log('asdasd')}},
             { label: 'f', inputProps: { name: 'a', onChange: () => console.log('asdasd')}}
-        ]} />     </div>
+          ]} />
+          <Tabs>
+            <TabGroup>
+              <Tab isActive >aaa</Tab>
+              <Tab>aaa</Tab>
+              <Tab>ccc</Tab>
+            </TabGroup>
+          </Tabs>
+
+          <Tabs alignment="isCentered">
+            <TabGroup>
+              <Tab isActive >aaa</Tab>
+              <Tab>aaa</Tab>
+              <Tab>ccc</Tab>
+            </TabGroup>
+          </Tabs>
+
+          <Tabs alignment="isRight">
+            <TabGroup>
+              <Tab isActive >aaa</Tab>
+              <Tab>aaa</Tab>
+              <Tab>ccc</Tab>
+            </TabGroup>
+          </Tabs>
+
+          <Tabs>
+            <TabGroup alignment="isLeft">
+              <Tab isActive >aaa</Tab>
+              <Tab>aaa</Tab>
+              <Tab>ccc</Tab>
+            </TabGroup>
+
+            <TabGroup alignment="isCenter">
+              <Tab isActive >aaa</Tab>
+              <Tab>aaa</Tab>
+              <Tab>ccc</Tab>
+            </TabGroup>
+
+            <TabGroup alignment="isRight">
+              <Tab isActive >aaa</Tab>
+              <Tab>aaa</Tab>
+              <Tab>ccc</Tab>
+            </TabGroup>
+          </Tabs>
+
+          <Tabs size="isMedium">
+            <TabGroup>
+              <Tab isActive >aaa</Tab>
+              <Tab>aaa</Tab>
+              <Tab>ccc</Tab>
+            </TabGroup>
+          </Tabs>
+
+          <Tabs size="isLarge">
+            <TabGroup>
+              <Tab isActive >aaa</Tab>
+              <Tab>aaa</Tab>
+              <Tab>ccc</Tab>
+            </TabGroup>
+          </Tabs>
+
+          <Tabs tabStyle="isToggle">
+            <TabGroup>
+              <Tab isActive >aaa</Tab>
+              <Tab>aaa</Tab>
+              <Tab>ccc</Tab>
+            </TabGroup>
+          </Tabs>
+
+          <Tabs isFullwidth>
+            <TabGroup>
+              <Tab isActive >aaa</Tab>
+              <Tab>aaa</Tab>
+              <Tab>ccc</Tab>
+            </TabGroup>
+          </Tabs>
+          <Tabs tabStyle="isBoxed" isFullwidth>
+            <TabGroup>
+              <Tab isActive >aaa</Tab>
+              <Tab>aaa</Tab>
+              <Tab>ccc</Tab>
+            </TabGroup>
+          </Tabs>
+      </div>
     );
   }
 }

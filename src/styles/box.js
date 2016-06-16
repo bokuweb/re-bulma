@@ -1,6 +1,13 @@
 const csjs = require('csjs');
 
 module.exports = csjs`
+
+.box,
+.box:before,
+.box:after {
+  box-sizing: inherit;
+}
+
 .box {
   margin: 0;
   padding: 0;
