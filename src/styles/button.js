@@ -6,6 +6,7 @@ module.exports = csjs`
   margin: 0;
   width: auto;
   overflow: visible;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .button:hover {

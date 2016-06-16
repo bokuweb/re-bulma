@@ -1,11 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import csjs from 'csjs';
-import styles from './styles/label';
+import styles from './styles/box';
 import insertCss from 'insert-css';
 
 insertCss(csjs.getCss(styles), { prepend: true });
 
-export default class Label extends Component {
+export default class Box extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
@@ -17,16 +17,16 @@ export default class Label extends Component {
 
   createClassName() {
     return [
-      styles.label,
+      styles.box,
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
     return (
-      <label {...this.props} className={this.createClassName()}>
+      <div {...this.props} className={this.createClassName()} >
         {this.props.children}
-      </label>
+      </div>
     );
   }
 }

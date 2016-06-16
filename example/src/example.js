@@ -15,6 +15,11 @@ import {
   Tbody,
   Thead,
   Tfoot,
+  Title,
+  Subtitle,
+  Box,
+  Icon,
+  Radio,
 } from '../../src';
 
 
@@ -26,7 +31,7 @@ export default class Example extends Component {
         <Button size="isLarge" states="isActive">Guthub</Button>
         <Button size="isSmall" states="isActive" icon="fa fa-github">Github</Button>
         <Columns>
-          <Column size="is2" customStyle={{ background: '#ccc' }}>aaaa</Column>
+          <Column size="is2" style={{ background: '#ccc' }}>aaaa</Column>
           <Column>bbbb</Column>
           <Column>cccc</Column>
           <Column>bbbb</Column>
@@ -143,7 +148,29 @@ export default class Example extends Component {
             </Tr>
           </Tbody>
         </Table>
-      </div>
+        <p><Title size="is1">Title</Title></p>
+        <p><Title size="is2">Title</Title></p>
+        <p><Title size="is3">Title</Title></p>
+        <p><Title size="is4">Title</Title></p>
+        <p><Title size="is5">Title</Title></p>
+        <p><Title size="is6">Title</Title></p>
+
+        <p><Subtitle size="is1">Title</Subtitle></p>
+        <p><Subtitle size="is2">Title</Subtitle></p>
+        <p><Subtitle size="is3">Title</Subtitle></p>
+        <p><Subtitle size="is4">Title</Subtitle></p>
+        <p><Subtitle size="is5">Title</Subtitle></p>
+        <p><Subtitle size="is6">Title</Subtitle></p>
+        <Box>sadasdasdsad</Box>
+        <Icon icon="fa fa-heart" size="isSmall" style={{color: 'red'}} className="hge" />
+        <Icon icon="fa fa-heart" />
+        <Icon icon="fa fa-heart" size="isMedium" />
+        <Icon icon="fa fa-heart" size="isLarge" />
+        <Radio data={[
+            { label: 'b', inputProps: { name: 'a', onChange: () => console.log('asdasd')}},
+            { label: 'd', inputProps: { name: 'a', onChange: () => console.log('asdasd')}},
+            { label: 'f', inputProps: { name: 'a', onChange: () => console.log('asdasd')}}
+        ]} />     </div>
     );
   }
 }

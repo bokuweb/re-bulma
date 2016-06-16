@@ -8,7 +8,6 @@ insertCss(csjs.getCss(styles), { prepend: true });
 
 export class Columns extends Component {
   static propTypes = {
-    customStyle: PropTypes.object,
     children: PropTypes.any,
     className: PropTypes.string,
     responsive: PropTypes.oneOf([
@@ -32,7 +31,7 @@ export class Columns extends Component {
 
   render() {
     return (
-      <div className={this.createClassName()} style={this.props.customStyle}>
+      <div {...this.props} className={this.createClassName()}>
         { this.props.children }
       </div>
     );

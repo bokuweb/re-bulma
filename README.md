@@ -18,12 +18,12 @@ npm i -S re-bulma
 - [x] Checkbox
 - [ ] Radio
 - [x] Label
-- [ ] Titles
+- [x] Titles
 - [ ] Content
 - [ ] Tag
 - [ ] Message
 - [ ] Notification
-- [ ] Icon
+- [x] Icon
 - [ ] Navbar
 - [ ] Tabs (Tabs, Tab)
 - [ ] Media
@@ -34,3 +34,6 @@ npm i -S re-bulma
 - [ ] Footer
 - [ ] Hero
 - [ ] Section
+- [x] Box
+- [ ] Addon
+- [ ] Tile
