@@ -15,6 +15,7 @@ import Tag from './tag';
 import Progress from './progress';
 import Content from './content';
 import Message from './message';
+import Image from './image';
 import Styles from './styles';
 
 const initialize = () => {
@@ -50,6 +51,7 @@ export {
   Progress,
   Content,
   Message,
+  Image,
   initialize,
 };
 

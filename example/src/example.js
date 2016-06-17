@@ -28,6 +28,7 @@ import {
   Progress,
   Content,
   Message,
+  Image,
 } from '../../src';
 
 initialize();
@@ -332,6 +333,8 @@ export default class Example extends Component {
         arcu et sollicitudin porttitor, tortor urna tempor ligula,
         id porttitor mi magna a neque. Donec dui urna, vehicula et
         sem eget, facilisis sodales sem.</Message>
+
+      <Image src="http://placehold.it/256x256" size="is128x128" onClick={()=> console.log('asdasd')}/>
 </div>
 
     );
