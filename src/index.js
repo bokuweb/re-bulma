@@ -16,6 +16,7 @@ import Progress from './progress';
 import Content from './content';
 import Message from './message';
 import Image from './image';
+import Notification from './notification';
 import Styles from './styles';
 
 const initialize = () => {
@@ -52,6 +53,7 @@ export {
   Content,
   Message,
   Image,
+  Notification,
   initialize,
 };
 

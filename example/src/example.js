@@ -29,6 +29,7 @@ import {
   Content,
   Message,
   Image,
+  Notification,
 } from '../../src';
 
 initialize();
@@ -335,6 +336,18 @@ export default class Example extends Component {
         sem eget, facilisis sodales sem.</Message>
 
       <Image src="http://placehold.it/256x256" size="is128x128" onClick={()=> console.log('asdasd')}/>
+
+        <Notification>
+          Warning lorem ipsum dolor sit amet, consectetur
+          adipiscing elit lorem ipsum dolor sit amet,
+          consectetur adipiscing elit
+        </Notification>
+
+        <Notification color="isPrimary" closeButtonProps={{ onClick: () => console.log('asdasd')}}>
+          Warning lorem ipsum dolor sit amet, consectetur
+          adipiscing elit lorem ipsum dolor sit amet,
+          consectetur adipiscing elit
+        </Notification>
 </div>
 
     );

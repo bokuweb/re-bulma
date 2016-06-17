@@ -36,8 +36,8 @@ export default class Image extends Component {
     const styles = new Styles().getStyles();
     return [
       styles.image,
-      styles[this.props.size.replace('is', 'is-')],
-      styles[this.props.ratio.replace('is', 'is-')],
+      this.props.size && styles[this.props.size.replace('is', 'is-')],
+      this.props.ratio && styles[this.props.ratio.replace('is', 'is-')],
       this.props.className,
     ].join(' ').trim();
   }

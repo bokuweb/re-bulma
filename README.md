@@ -23,7 +23,7 @@ npm i -S re-bulma
 - [x] Form
 - [x] Icon
 - [x] Image
-- [ ] Notification
+- [x] Notification
 - [x] Progress 
 - [x] Table
 - [x] Tag
