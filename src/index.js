@@ -17,6 +17,8 @@ import Content from './content';
 import Message from './message';
 import Image from './image';
 import Notification from './notification';
+import { Card, CardHeader, CardImage, CardContent, CardHeaderTitle,
+         CardHeaderIcon, CardFooter, CardFooterItem } from './card';
 import Styles from './styles';
 
 const initialize = () => {
@@ -25,6 +27,7 @@ const initialize = () => {
 };
 
 export {
+  initialize,
   Button,
   Columns,
   Column,
@@ -54,6 +57,13 @@ export {
   Message,
   Image,
   Notification,
-  initialize,
+  Card,
+  CardHeader,
+  CardImage,
+  CardContent,
+  CardHeaderTitle,
+  CardHeaderIcon,
+  CardFooter,
+  CardFooterItem,
 };
 

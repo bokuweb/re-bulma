@@ -1,5 +1,10 @@
 export default () => `
 .button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
   margin: 0;
   width: auto;

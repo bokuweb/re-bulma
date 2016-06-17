@@ -15,6 +15,7 @@ import progress from './styles/progress';
 import image from './styles/image';
 import message from './styles/message';
 import notification from './styles/notification';
+import card from './styles/card';
 
 const styles = {
   box,
@@ -32,6 +33,7 @@ const styles = {
   message,
   image,
   notification,
+  card,
 };
 
 const defaultOptions = {
@@ -52,6 +54,7 @@ const defaultOptions = {
     message: true,
     image: true,
     notification: true,
+    card,
   },
 };
 

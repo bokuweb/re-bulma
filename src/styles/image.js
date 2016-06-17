@@ -1,5 +1,8 @@
+import common from './common';
+
 export default () => `
 .image {
+  ${common()}
   display: block;
   position: relative;
 }
