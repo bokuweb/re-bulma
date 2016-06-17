@@ -15,6 +15,10 @@ import Tag from './tag';
 import Progress from './progress';
 import Content from './content';
 import Message from './message';
+import Image from './image';
+import Notification from './notification';
+import { Card, CardHeader, CardImage, CardContent, CardHeaderTitle,
+         CardHeaderIcon, CardFooter, CardFooterItem } from './card';
 import Styles from './styles';
 
 const initialize = () => {
@@ -23,6 +27,7 @@ const initialize = () => {
 };
 
 export {
+  initialize,
   Button,
   Columns,
   Column,
@@ -50,6 +55,15 @@ export {
   Progress,
   Content,
   Message,
-  initialize,
+  Image,
+  Notification,
+  Card,
+  CardHeader,
+  CardImage,
+  CardContent,
+  CardHeaderTitle,
+  CardHeaderIcon,
+  CardFooter,
+  CardFooterItem,
 };
 

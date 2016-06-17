@@ -114,6 +114,11 @@ export default () => `
   position: relative;
   vertical-align: top;
   width: 24px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .delete:before, .delete:after {

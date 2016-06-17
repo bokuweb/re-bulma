@@ -12,7 +12,10 @@ import tag from './styles/tag';
 import title from './styles/title';
 import content from './styles/content';
 import progress from './styles/progress';
+import image from './styles/image';
 import message from './styles/message';
+import notification from './styles/notification';
+import card from './styles/card';
 
 const styles = {
   box,
@@ -28,6 +31,9 @@ const styles = {
   content,
   progress,
   message,
+  image,
+  notification,
+  card,
 };
 
 const defaultOptions = {
@@ -46,6 +52,9 @@ const defaultOptions = {
     content: true,
     progress: true,
     message: true,
+    image: true,
+    notification: true,
+    card,
   },
 };
 
@@ -53,9 +62,7 @@ let instance = null;
 
 export default class Styles {
   constructor() {
-    if (!instance) {
-      instance = this;
-    }
+    if (!instance) instance = this;
     return instance;
   }
 
