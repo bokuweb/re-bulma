@@ -19,11 +19,15 @@ import Image from './image';
 import Notification from './notification';
 import { Card, CardHeader, CardImage, CardContent, CardHeaderTitle,
          CardHeaderIcon, CardFooter, CardFooterItem } from './card';
+import Heading from './heading';
+import { Level, LevelRight, LevelLeft, LevelItem } from './level';
 import Styles from './styles';
 
 const initialize = () => {
+  console.time('initialize');
   const styles = new Styles();
   styles.initialize();
+  console.timeEnd('initialize');
 };
 
 export {
@@ -65,5 +69,10 @@ export {
   CardHeaderIcon,
   CardFooter,
   CardFooterItem,
+  Heading,
+  Level,
+  LevelRight,
+  LevelLeft,
+  LevelItem,
 };
 
