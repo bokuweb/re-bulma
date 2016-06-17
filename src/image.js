@@ -7,6 +7,7 @@ export default class Image extends Component {
     style: PropTypes.object,
     className: PropTypes.string,
     src: PropTypes.string,
+    alt: PropTypes.string,
     size: PropTypes.oneOf([
       'is16x16',
       'is24x24',
@@ -49,7 +50,7 @@ export default class Image extends Component {
         style={this.props.style}
         className={this.createClassName()}
       >
-        <img src={this.props.src} />
+        <img src={this.props.src} alt={this.props.alt} />
       </figure>
     );
   }

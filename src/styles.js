@@ -16,6 +16,8 @@ import image from './styles/image';
 import message from './styles/message';
 import notification from './styles/notification';
 import card from './styles/card';
+import level from './styles/level';
+import heading from './styles/heading';
 
 const styles = {
   box,
@@ -34,6 +36,8 @@ const styles = {
   image,
   notification,
   card,
+  level,
+  heading,
 };
 
 const defaultOptions = {
@@ -54,7 +58,9 @@ const defaultOptions = {
     message: true,
     image: true,
     notification: true,
-    card,
+    card: true,
+    level: true,
+    heading: true,
   },
 };
 

@@ -32,7 +32,7 @@ npm i -S re-bulma
 #### Components
 
 - [x] Card
-- [ ] Level
+- [x] Level
 - [ ] Media object
 - [ ] Menu
 - [x] Message
