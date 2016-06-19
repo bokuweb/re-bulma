@@ -428,7 +428,7 @@ export default class Example extends Component {
         </Level>
         <Button onClick={() => this.setState({ isModalOpen: !this.state.isModalOpen})}>open</Button>
 
-        <Modal type="card" isActive={this.state.isModalOpen} onCloseRequest={() => this.setState({ isModalOpen: false })}>
+        <Modal type="card" footerContent="1" isActive={this.state.isModalOpen} onCloseRequest={() => this.setState({ isModalOpen: false })}>
           <Content>
           {`Hello World
 

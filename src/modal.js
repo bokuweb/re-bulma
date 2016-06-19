@@ -10,6 +10,7 @@ export default class Modal extends Component {
     isActive: PropTypes.bool.isRequired,
     onCloseRequest: PropTypes.func,
     showOverlayCloseButton: PropTypes.bool,
+    footerContent: PropTypes.node,
     type: PropTypes.oneOf(['card', 'image']),
   };
 
@@ -48,9 +49,15 @@ export default class Modal extends Component {
           <section className={styles['modal-card-body']}>
             {this.props.children}
           </section>
-          <footer className={styles['modal-card-foot']}>
-            {'as'}
-          </footer>
+          {
+            this.props.footerContent
+              ? (
+                <footer className={styles['modal-card-foot']}>
+                  {this.props.footerContent}
+                </footer>
+              )
+              : null
+          }
         </div>
 
       );
