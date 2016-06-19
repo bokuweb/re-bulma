@@ -21,6 +21,7 @@ import { Card, CardHeader, CardImage, CardContent, CardHeaderTitle,
          CardHeaderIcon, CardFooter, CardFooterItem } from './card';
 import Heading from './heading';
 import { Level, LevelRight, LevelLeft, LevelItem } from './level';
+import Modal from './modal';
 import Styles from './styles';
 
 const initialize = () => {
@@ -74,5 +75,6 @@ export {
   LevelRight,
   LevelLeft,
   LevelItem,
+  Modal,
 };
 

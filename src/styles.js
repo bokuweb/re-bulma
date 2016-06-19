@@ -18,6 +18,7 @@ import notification from './styles/notification';
 import card from './styles/card';
 import level from './styles/level';
 import heading from './styles/heading';
+import modal from './styles/modal';
 
 const styles = {
   box,
@@ -38,6 +39,7 @@ const styles = {
   card,
   level,
   heading,
+  modal,
 };
 
 const defaultOptions = {
@@ -61,6 +63,7 @@ const defaultOptions = {
     card: true,
     level: true,
     heading: true,
+    modal: true,
   },
 };
 
