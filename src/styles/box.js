@@ -1,3 +1,5 @@
+import font from './font';
+
 export default () => `
 .box,
 .box:before,
@@ -6,13 +8,7 @@ export default () => `
 }
 
 .box {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font-weight: normal;
-  vertical-align: baseline;
-
+  ${font()}
   background: transparent;
   background: #fff;
   border-radius: 5px;
