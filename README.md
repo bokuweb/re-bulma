@@ -34,10 +34,10 @@ npm i -S re-bulma
 - [x] Card
 - [x] Level
 - [x] Media object
-- [ ] Menu
+- [x] Menu
 - [x] Message
-- [ ] Modal
-- [ ] Nav
+- [x] Modal
+- [x] Nav
 - [ ] Pagination
 - [ ] Panel
 - [x] Tabs

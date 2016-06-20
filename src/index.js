@@ -23,6 +23,8 @@ import Heading from './heading';
 import { Level, LevelRight, LevelLeft, LevelItem } from './level';
 import Modal from './modal';
 import { Media, MediaLeft, MediaContent, MediaRight } from './media-object';
+import { Menu, MenuLabel, MenuList, MenuLink } from './menu';
+import { Nav, NavGloup, NavItem, NavToggle, NavContainer } from './nav';
 import Styles from './styles';
 
 const initialize = () => {
@@ -81,5 +83,14 @@ export {
   MediaLeft,
   MediaContent,
   MediaRight,
+  Menu,
+  MenuLabel,
+  MenuList,
+  MenuLink,
+  Nav,
+  NavGloup,
+  NavItem,
+  NavToggle,
+  NavContainer,
 };
 
