@@ -52,6 +52,11 @@ import {
   MenuLabel,
   MenuLink,
   MenuList,
+  Nav,
+  NavContainer,
+  NavGloup,
+  NavItem,
+  NavToggle,
 } from '../../src';
 
 initialize();
@@ -530,6 +535,42 @@ export default class Example extends Component {
             <li><a href="#">Balance</a></li>
           </MenuList>
         </Menu>
+
+
+        <Nav>
+          <NavGloup align="left">
+            <NavItem>
+              hoge
+            </NavItem>
+          </NavGloup>
+
+          <NavGloup align="center">
+            <NavItem>
+              <Icon icon="fa fa-github" />
+            </NavItem>
+            <NavItem>
+              <Icon icon="fa fa-twitter" />
+            </NavItem>
+          </NavGloup>
+          <NavToggle />
+          <NavGloup align="right" isMenu>
+            <NavItem>
+              Home
+            </NavItem>
+            <NavItem>
+              Documentation
+            </NavItem>
+            <NavItem>
+              Blog
+            </NavItem>
+
+            <NavItem>
+              <Button icon="fa fa-twitter">Tweet</Button>
+              <Button icon="fa fa-download">Download</Button>
+            </NavItem>
+          </NavGloup>
+        </Nav>
+
       </div>
     );
   }
