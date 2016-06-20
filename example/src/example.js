@@ -44,6 +44,10 @@ import {
   LevelLeft,
   LevelItem,
   Modal,
+  Media,
+  MediaLeft,
+  MediaContent,
+  MediaRight,
 } from '../../src';
 
 initialize();
@@ -428,7 +432,7 @@ export default class Example extends Component {
         </Level>
         <Button onClick={() => this.setState({ isModalOpen: !this.state.isModalOpen})}>open</Button>
 
-        <Modal type="card" isActive={this.state.isModalOpen} onCloseRequest={() => this.setState({ isModalOpen: false })}>
+        <Modal type="card" footerContent="1" isActive={this.state.isModalOpen} onCloseRequest={() => this.setState({ isModalOpen: false })}>
           <Content>
           {`Hello World
 
@@ -466,6 +470,27 @@ export default class Example extends Component {
           `}
           </Content>
         </Modal>
+
+
+
+        <Media>
+          <MediaLeft>
+            <Image src="http://placehold.it/128x128" />
+          </MediaLeft>
+          <MediaContent>
+            <Content>
+              <p>
+                <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                <br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+              </p>
+            </Content>
+          </MediaContent>
+          <MediaRight>
+            <Button delete />
+          </MediaRight>
+        </Media>
+
 </div>
 
     );

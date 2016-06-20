@@ -33,7 +33,7 @@ npm i -S re-bulma
 
 - [x] Card
 - [x] Level
-- [ ] Media object
+- [x] Media object
 - [ ] Menu
 - [x] Message
 - [ ] Modal

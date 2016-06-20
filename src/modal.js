@@ -10,6 +10,8 @@ export default class Modal extends Component {
     isActive: PropTypes.bool.isRequired,
     onCloseRequest: PropTypes.func,
     showOverlayCloseButton: PropTypes.bool,
+    headerContent: PropTypes.node,
+    footerContent: PropTypes.node,
     type: PropTypes.oneOf(['card', 'image']),
   };
 
@@ -40,17 +42,23 @@ export default class Modal extends Component {
 
     if (this.props.type === 'card') {
       return (
-        <div className={styles['modal-card']}>
+        <div className={[styles['modal-card'], '__re-bulma_modal_card'].join(' ')}>
           <header className={styles['modal-card-head']}>
-            <p className={styles['modal-card-title']}>Modal title</p>
+            <p className={styles['modal-card-title']}>{this.props.headerContent}</p>
             <button className={styles.delete} onClick={this.props.onCloseRequest} />
           </header>
           <section className={styles['modal-card-body']}>
             {this.props.children}
           </section>
-          <footer className={styles['modal-card-foot']}>
-            {'as'}
-          </footer>
+          {
+            this.props.footerContent
+              ? (
+                <footer className={styles['modal-card-foot']}>
+                  {this.props.footerContent}
+                </footer>
+              )
+              : null
+          }
         </div>
 
       );

@@ -1,4 +1,4 @@
-import common from './common';
+import font from './font';
 
 export default () => `
 .modal-close {
@@ -13,6 +13,7 @@ export default () => `
   position: relative;
   vertical-align: top;
   width: 24px;
+  padding: 0;
 }
 
 .modal-close:before, .modal-close:after {
@@ -161,6 +162,9 @@ export default () => `
 }
 
 .modal-card-foot {
+  ${font()}
+  font-weight: normal;
+  vertical-align: baseline;
   border-top: 1px solid #d3d6db;
 }
 
@@ -169,6 +173,7 @@ export default () => `
 }
 
 .modal-card-body {
+  ${font()}
 /* FIXME: 
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -206,5 +211,61 @@ export default () => `
   display: flex;
 }
 
+.modal .delete {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: rgba(17, 17, 17, 0.2);
+  border: none;
+  border-radius: 290486px;
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  vertical-align: top;
+  width: 24px;
+  padding: 0;
+}
+
+.modal .delete:before, .delete:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  margin-left: -25%;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+}
+
+.modal .delete:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal .delete:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.modal .delete:hover {
+  background: rgba(17, 17, 17, 0.5);
+}
+
+.modal .delete.is-small {
+  height: 16px;
+  width: 16px;
+}
+
+.modal .delete.is-medium {
+  height: 32px;
+  width: 32px;
+}
+
+.modal .delete.is-largee {
+  height: 40px;
+  width: 40px;
+}
 
 `;

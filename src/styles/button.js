@@ -624,4 +624,61 @@ button:active,
   vertical-align: top;
   width: 48px;
 }
+
+.delete, .modal-close {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: rgba(17, 17, 17, 0.2);
+  border: none;
+  border-radius: 290486px;
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  vertical-align: top;
+  width: 24px;
+}
+
+.delete:before, .modal-close:before, .delete:after, .modal-close:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  margin-left: -25%;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+}
+
+.button.delete:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.button.delete:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.button.delete:hover {
+  background: rgba(17, 17, 17, 0.5);
+}
+
+.button.delete.is-small {
+  height: 16px;
+  width: 16px;
+}
+
+.button.delete.is-medium {
+  height: 32px;
+  width: 32px;
+}
+
+.button.delete.is-large {
+  height: 40px;
+  width: 40px;
+}
+
 `;
