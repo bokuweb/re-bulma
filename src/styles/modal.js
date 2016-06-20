@@ -223,7 +223,7 @@ export default () => `
   position: relative;
   vertical-align: top;
   width: 24px;
-  pading: 0;
+  padding: 0;
 }
 
 .modal .delete:before, .delete:after {

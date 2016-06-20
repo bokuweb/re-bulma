@@ -19,6 +19,7 @@ import card from './styles/card';
 import level from './styles/level';
 import heading from './styles/heading';
 import modal from './styles/modal';
+import mediaObject from './styles/media-Object';
 
 const styles = {
   box,
@@ -40,6 +41,7 @@ const styles = {
   level,
   heading,
   modal,
+  mediaObject,
 };
 
 const defaultOptions = {
@@ -64,6 +66,7 @@ const defaultOptions = {
     level: true,
     heading: true,
     modal: true,
+    mediaObject: true,
   },
 };
 

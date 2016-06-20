@@ -22,6 +22,7 @@ import { Card, CardHeader, CardImage, CardContent, CardHeaderTitle,
 import Heading from './heading';
 import { Level, LevelRight, LevelLeft, LevelItem } from './level';
 import Modal from './modal';
+import { Media, MediaLeft, MediaContent, MediaRight } from './media-object';
 import Styles from './styles';
 
 const initialize = () => {
@@ -76,5 +77,9 @@ export {
   LevelLeft,
   LevelItem,
   Modal,
+  Media,
+  MediaLeft,
+  MediaContent,
+  MediaRight,
 };
 
