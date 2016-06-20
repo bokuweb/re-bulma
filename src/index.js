@@ -25,6 +25,7 @@ import Modal from './modal';
 import { Media, MediaLeft, MediaContent, MediaRight } from './media-object';
 import { Menu, MenuLabel, MenuList, MenuLink } from './menu';
 import { Nav, NavGloup, NavItem, NavToggle, NavContainer } from './nav';
+import { Pagination, PageButton } from './pagination';
 import Styles from './styles';
 
 const initialize = () => {
@@ -92,5 +93,7 @@ export {
   NavItem,
   NavToggle,
   NavContainer,
+  Pagination,
+  PageButton,
 };
 

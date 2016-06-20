@@ -48,4 +48,6 @@ export default () => `
 .menu-label:not(:first-child) {
   margin-top: 20px;
 }
+
+
 `;

@@ -22,6 +22,7 @@ import modal from './styles/modal';
 import mediaObject from './styles/media-Object';
 import menu from './styles/menu';
 import nav from './styles/nav';
+import pagination from './styles/pagination';
 
 const styles = {
   box,
@@ -46,6 +47,7 @@ const styles = {
   mediaObject,
   menu,
   nav,
+  pagination,
 };
 
 const defaultOptions = {
@@ -73,6 +75,7 @@ const defaultOptions = {
     mediaObject: true,
     menu: true,
     nav: true,
+    pagination: true,
   },
 };
 
