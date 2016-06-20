@@ -1,4 +1,3 @@
-export default () => `
 .content div,.content span,.content object,.content iframe,.content h1,.content h2,.content h3,.content h4,.content h5,.content h6,.content p,.content blockquote,.content pre,.content abbr,.content address,.content cite,.content code,.content del,.content dfn,.content em,.content img,.content ins,.content kbd,.content q,.content samp,.content small,.content strong,.content sub,.content sup,.content var,.content b,.content i,.content dl,.content dt,.content dd,.content ol,.content ul,.content li,.content fieldset,.content form,.content label,.content legend,.content table,.content caption,.content tbody,.content tfoot,.content thead,.content tr,.content th,.content td,.content article,.content aside,.content figure,.content footer,.content header,.content menu,.content nav,.content section,.content time,.content mark,.content audio,.content video,.content details,.content summary {
   margin: 0;
   padding: 0;
@@ -154,5 +153,3 @@ export default () => `
   font-weight: normal;
   padding: 1px 2px 2px;
 }
-
-`;

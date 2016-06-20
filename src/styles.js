@@ -1,5 +1,6 @@
 import csjs from 'csjs';
 import insertCss from 'insert-css';
+/*
 import box from './styles/box';
 import button from './styles/button';
 import columns from './styles/columns';
@@ -23,7 +24,11 @@ import mediaObject from './styles/media-Object';
 import menu from './styles/menu';
 import nav from './styles/nav';
 import pagination from './styles/pagination';
+*/
+import css from '../dist/css';
+import style from '../dist/styles';
 
+/*
 const styles = {
   box,
   button,
@@ -49,6 +54,7 @@ const styles = {
   nav,
   pagination,
 };
+ */
 
 const defaultOptions = {
   prepend: true,
@@ -92,16 +98,18 @@ export default class Styles {
   }
 
   initialize(options = defaultOptions) {
+    /*
     const combinedStyles = Object
             .keys(options.components)
             .filter(key => options.components[key])
             .reduce((pre, cur) => pre + styles[cur](), '');
+     */
     console.time('1')
-    this.styles = csjs`${combinedStyles}`;
+    this.styles = style;
     console.timeEnd('1')
-    console.dir(this.styles);
+    console.dir(this.styles.box);
     console.time('2')
-    insertCss(csjs.getCss(this.styles), { prepend: options.prepend });
+    insertCss(css, { prepend: options.prepend });
     console.timeEnd('2')
   }
 }

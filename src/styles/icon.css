@@ -1,5 +1,4 @@
-export default () => `
-  .icon {
+.icon {
     display: inline-block;
     font-size: 21px;
     height: 24px;
@@ -42,5 +41,4 @@ export default () => `
     text-align: center;
     vertical-align: top;
     width: 48px;
-  }
-`;
+}

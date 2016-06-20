@@ -1,6 +1,3 @@
-import font from './font';
-
-export default () => `
 .box,
 .box:before,
 .box:after {
@@ -8,7 +5,13 @@ export default () => `
 }
 
 .box {
-  ${font()}
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #69707a;
+  line-height: 1.428571428571429;
+  font-size: 14px;
   background: transparent;
   background: #fff;
   border-radius: 5px;
@@ -28,5 +31,3 @@ a.box:active {
 .box:not(:last-child) {
   margin-bottom: 20px;
 }
-`;
-
