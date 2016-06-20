@@ -96,7 +96,12 @@ export default class Styles {
             .keys(options.components)
             .filter(key => options.components[key])
             .reduce((pre, cur) => pre + styles[cur](), '');
+    console.time('1')
     this.styles = csjs`${combinedStyles}`;
+    console.timeEnd('1')
+    console.dir(this.styles);
+    console.time('2')
     insertCss(csjs.getCss(this.styles), { prepend: options.prepend });
+    console.timeEnd('2')
   }
 }
