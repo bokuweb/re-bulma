@@ -20,6 +20,7 @@ import level from './styles/level';
 import heading from './styles/heading';
 import modal from './styles/modal';
 import mediaObject from './styles/media-Object';
+import menu from './styles/menu';
 
 const styles = {
   box,
@@ -42,6 +43,7 @@ const styles = {
   heading,
   modal,
   mediaObject,
+  menu,
 };
 
 const defaultOptions = {
@@ -67,6 +69,7 @@ const defaultOptions = {
     heading: true,
     modal: true,
     mediaObject: true,
+    menu: true,
   },
 };
 
