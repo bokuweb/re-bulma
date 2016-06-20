@@ -38,7 +38,7 @@ npm i -S re-bulma
 - [x] Message
 - [x] Modal
 - [x] Nav
-- [ ] Pagination
+- [x] Pagination
 - [ ] Panel
 - [x] Tabs
 

@@ -4,7 +4,7 @@ export default () => `
 .nav, .nav-item, .nav > .container,
 .nav-left, .nav-center, .nav-right, .nav-menu {
   ${common()}
-}
+};
 
 .nav-toggle {
   cursor: pointer;
