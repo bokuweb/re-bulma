@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 
 export default class Label extends Component {
   static propTypes = {
@@ -12,7 +12,6 @@ export default class Label extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.content,
       this.props.className,

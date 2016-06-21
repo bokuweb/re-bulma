@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import { getCallbacks } from './helper/helper';
 
 export class Card extends Component {
@@ -18,7 +18,7 @@ export class Card extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+    
     return [
       styles.card,
       this.props.isFullwidth ? styles['is-fullwidth'] : '',
@@ -52,7 +52,7 @@ export class CardImage extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+    
     return [
       styles['card-image'],
       this.props.className,
@@ -85,7 +85,7 @@ export class CardContent extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+    
     return [
       styles['card-content'],
       this.props.className,
@@ -118,7 +118,7 @@ export class CardHeader extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+    
     return [
       styles['card-header'],
       this.props.className,
@@ -151,7 +151,7 @@ export class CardHeaderTitle extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+    
     return [
       styles['card-header-title'],
       this.props.className,
@@ -184,7 +184,7 @@ export class CardHeaderIcon extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+    
     return [
       styles['card-header-icon'],
       this.props.className,
@@ -192,7 +192,7 @@ export class CardHeaderIcon extends Component {
   }
 
   render() {
-    const styles = new Styles().getStyles();
+    
     return (
       <a
         {...getCallbacks(this.props)}
@@ -223,7 +223,7 @@ export class CardFooter extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+    
     return [
       styles['card-footer'],
       this.props.className,
@@ -256,7 +256,6 @@ export class CardFooterItem extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles['card-footer-item'],
       this.props.className,

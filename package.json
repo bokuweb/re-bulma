@@ -7,7 +7,8 @@
     "start": "node server.js",
     "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
-    "compile": "babel -d lib/ src/",
+    "build:style": "node scripts/transform.js src/styles/ build/",
+    "compile": "npm run build:style && babel -d lib/ src/",
     "prepublish": "npm run compile",
     "lint": "eslint src"
   },
@@ -49,12 +50,11 @@
     "react": ">=0.14.0"
   },
   "files": [
-    "lib"
+      "lib",
+      "build"
   ],
   "dependencies": {
-    "csjs": "^1.0.4",
     "insert-css": "^0.2.0",
-    "lodash.isequal": "^4.2.0",
     "lodash.kebabcase": "^4.0.1"
   }
 }

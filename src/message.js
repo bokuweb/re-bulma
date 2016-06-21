@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import kebabCase from 'lodash.kebabCase';
-import Styles from './styles';
+import styles from '../build/styles';
 
 export default class Message extends Component {
   static propTypes = {
@@ -28,7 +28,6 @@ export default class Message extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.message,
       styles[kebabCase(this.props.color)],
@@ -37,7 +36,6 @@ export default class Message extends Component {
   }
 
   render() {
-    const styles = new Styles().getStyles();
     return (
       <article {...this.props} className={this.createClassName()} >
         {

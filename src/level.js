@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import { getCallbacks } from './helper/helper';
 
 export class Level extends Component {
@@ -17,7 +17,6 @@ export class Level extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.level,
       this.props.className,
@@ -50,7 +49,7 @@ export class LevelRight extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+    
     return [
       styles['level-right'],
       this.props.className,
@@ -83,7 +82,7 @@ export class LevelLeft extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+    
     return [
       styles['level-left'],
       this.props.className,
@@ -117,7 +116,7 @@ export class LevelItem extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+    
     return [
       styles['level-item'],
       this.props.hasTextCentered ? styles['has-text-centered'] : '',

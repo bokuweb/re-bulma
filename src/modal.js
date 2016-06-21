@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import { getCallbacks } from './helper/helper';
 
 export default class Modal extends Component {
@@ -22,7 +22,6 @@ export default class Modal extends Component {
   };
 
   createModalClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.modal,
       this.props.isActive ? styles['is-active'] : '',
@@ -31,7 +30,6 @@ export default class Modal extends Component {
   }
 
   renderContent() {
-    const styles = new Styles().getStyles();
     if (this.props.type === 'image') {
       return (
         <div className={styles['modal-content']} {...getCallbacks(this.props)}>
@@ -73,7 +71,6 @@ export default class Modal extends Component {
     );
   }
   render() {
-    const styles = new Styles().getStyles();
     return (
       <div className={this.createModalClassName()}>
         <div className={styles['modal-background']} onClick={this.props.onCloseRequest} />
