@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bokuweb/react-develop-boilerplate.git"
+    "url": "git+https://github.com/bokuweb/re-bulma.git"
   },
   "author": "bokuweb",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bokuweb/react-develop-boilerplate/issues"
+    "url": "https://github.com/bokuweb/re-bulma/issues"
   },
-  "homepage": "https://github.com/bokuweb/react-develop-boilerplate#readme",
+  "homepage": "https://github.com/bokuweb/re-bulma#readme",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.9.0",
