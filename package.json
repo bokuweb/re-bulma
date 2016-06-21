@@ -1,6 +1,6 @@
 {
   "name": "re-bulma",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -50,8 +50,8 @@
     "react": ">=0.14.0"
   },
   "files": [
-      "lib",
-      "build"
+    "lib",
+    "build"
   ],
   "dependencies": {
     "insert-css": "^0.2.0",
