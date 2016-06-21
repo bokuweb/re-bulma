@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 
 export class Table extends Component {
   static propTypes = {
@@ -18,7 +18,6 @@ export class Table extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.table,
       this.props.isBordered ? styles['is-bordered'] : '',
@@ -52,7 +51,6 @@ export class Td extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.td,
       this.props.isIcon ? styles['is-icon'] : '',
@@ -83,7 +81,6 @@ export class Th extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.th,
       this.props.className,
@@ -113,7 +110,6 @@ export class Tr extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.tr,
       this.props.className,
@@ -143,7 +139,6 @@ export class Tbody extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.tr,
       this.props.className,
@@ -173,7 +168,6 @@ export class Thead extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.tr,
       this.props.className,
@@ -203,7 +197,6 @@ export class Tfoot extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.tr,
       this.props.className,

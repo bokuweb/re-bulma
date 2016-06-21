@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import kebabCase from 'lodash.kebabCase';
 import { getCallbacks } from './helper/helper';
 
@@ -25,7 +25,6 @@ export default class Notification extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.notification,
       styles[kebabCase(this.props.color)],
@@ -34,7 +33,6 @@ export default class Notification extends Component {
   }
 
   render() {
-    const styles = new Styles().getStyles();
     return (
       <div {...getCallbacks(this.props)} className={this.createClassName()}>
         <button className={styles.delete} {...this.props.closeButtonProps} />

@@ -26,17 +26,12 @@ import { Media, MediaLeft, MediaContent, MediaRight } from './media-object';
 import { Menu, MenuLabel, MenuList, MenuLink } from './menu';
 import { Nav, NavGloup, NavItem, NavToggle, NavContainer } from './nav';
 import { Pagination, PageButton } from './pagination';
-import Styles from './styles';
+import insertCss from 'insert-css';
+import css from '../build/css.js';
 
-const initialize = () => {
-  console.time('initialize');
-  const styles = new Styles();
-  styles.initialize();
-  console.timeEnd('initialize');
-};
+insertCss(css, { prepend: true });
 
 export {
-  initialize,
   Button,
   Columns,
   Column,

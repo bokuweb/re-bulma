@@ -16,11 +16,17 @@ files.forEach(file => {
 const csjsObj = csjs`${combinedCss}`;
 
 fs.writeFileSync(
-  `${dist}styles.js`,
-  `module.exports = ${JSON.stringify(csjsObj)}`
- );
-
-fs.writeFileSync(
   `${dist}css.js`,
   `module.exports = \`${csjs.getCss(csjsObj)}\`\;`
 );
+
+Object.keys(csjsObj).forEach(c => {
+  csjsObj[c] = csjsObj[c].toString();
+});
+
+
+fs.writeFileSync(
+  `${dist}styles.js`,
+  `module.exports = ${JSON.stringify(csjsObj)}`
+);
+

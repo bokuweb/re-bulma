@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import kebabCase from 'lodash.kebabCase';
 
 export class Title extends Component {
@@ -23,7 +23,6 @@ export class Title extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.title,
       styles[kebabCase(this.props.size)],
@@ -59,7 +58,7 @@ export class Subtitle extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+   
     return [
       styles.subtitle,
       styles[kebabCase(this.props.size)],

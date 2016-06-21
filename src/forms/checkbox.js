@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Styles from '../styles';
+import styles from '../../build/styles';
 import kebabCase from 'lodash.kebabCase';
 
 export default class Checkbox extends Component {
@@ -30,7 +30,6 @@ export default class Checkbox extends Component {
   };
 
   createLabelClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.checkbox,
       styles[kebabCase(this.props.state)],
@@ -38,7 +37,6 @@ export default class Checkbox extends Component {
   }
 
   createControlClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.control,
       this.props.className,
@@ -47,7 +45,6 @@ export default class Checkbox extends Component {
 
   renderHelp() {
     if (!this.props.help) return null;
-    const styles = new Styles().getStyles();
     return (
       <span className={[styles.help, styles[kebabCase(this.props.help.color)]].join(' ')}>
         {this.props.help.text}

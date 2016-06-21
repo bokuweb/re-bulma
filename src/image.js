@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import { getCallbacks } from './helper/helper';
 
 export default class Image extends Component {
@@ -34,7 +34,6 @@ export default class Image extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.image,
       this.props.size && styles[this.props.size.replace('is', 'is-')],

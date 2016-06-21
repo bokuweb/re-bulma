@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import kebabCase from 'lodash.kebabCase';
 import { getCallbacks } from './helper/helper';
 
@@ -18,7 +18,7 @@ export class Pagination extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+   
     return [
       styles.pagination,
       this.props.className,
@@ -66,7 +66,6 @@ export class PageButton extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.button,
       styles[kebabCase(this.props.color)],

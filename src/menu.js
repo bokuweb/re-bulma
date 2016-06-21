@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import { getCallbacks } from './helper/helper';
 
 export class Menu extends Component {
@@ -17,7 +17,7 @@ export class Menu extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+   
     return [
       styles.menu,
       this.props.className,
@@ -50,7 +50,7 @@ export class MenuLabel extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+   
     return [
       styles['menu-label'],
       this.props.className,
@@ -83,7 +83,7 @@ export class MenuList extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+   
     return [
       styles['menu-list'],
       this.props.className,
@@ -118,7 +118,6 @@ export class MenuLink extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       this.props.isActive ? styles['is-active'] : '',
       this.props.className,

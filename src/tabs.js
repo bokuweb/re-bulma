@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import kebabCase from 'lodash.kebabCase';
 
 export class Tabs extends Component {
@@ -31,7 +31,7 @@ export class Tabs extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+   
     return [
       styles.tabs,
       styles[kebabCase(this.props.alignment)],
@@ -67,7 +67,6 @@ export class TabGroup extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles[kebabCase(this.props.alignment)],
       this.props.className,
@@ -95,7 +94,6 @@ export class Tab extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       this.props.isActive ? styles['is-active'] : '',
       this.props.className,

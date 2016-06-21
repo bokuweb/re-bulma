@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  initialize,
   Button,
   Columns,
   Column,
@@ -60,8 +59,6 @@ import {
   Pagination,
   PageButton,
 } from '../../src';
-
-initialize();
 
 export default class Example extends Component {
   constructor(props) {
