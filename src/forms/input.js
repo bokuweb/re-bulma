@@ -50,7 +50,6 @@ export default class Input extends Component {
   };
 
   createControlClassName() {
-    
     return [
       styles.control,
       styles[kebabCase(this.props.state)],
@@ -94,12 +93,19 @@ export default class Input extends Component {
   }
 
   render() {
-    if (this.props.hasAddons) {
-      return this.renderForm();
-    }
+    // if (this.props.hasAddons) {
+    //   return this.renderForm();
+    // }
     return (
       <p className={this.createControlClassName()} style={this.props.style}>
-        {this.renderForm()}
+        <input
+          {...this.props}
+          style={{}}
+          className={this.createInputClassName()}
+          disabled={this.props.state === 'isDisabled'}
+        />
+        <i className={[styles.fa, this.props.icon].join(' ')} />
+        {this.renderHelp()}
       </p>
     );
   }

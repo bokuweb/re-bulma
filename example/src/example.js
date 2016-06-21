@@ -90,7 +90,7 @@ export default class Example extends Component {
           hasAddons
           state="isDisabled"
           color="isDanger"
-          size="isSmall"
+          icon="fa fa-heart"
           help={{
             text: 'help text',
             color: 'isSuccess',
