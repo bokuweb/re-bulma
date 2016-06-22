@@ -45,7 +45,6 @@ export default class Button extends Component {
   };
 
   createClassName() {
-    
     return [
       styles.button,
       styles[kebabCase(this.props.size)],
