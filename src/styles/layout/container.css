@@ -1,0 +1,28 @@
+.container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  position: relative;
+}
+
+@media screen and (min-width: 980px) {
+  .container {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  .container.is-fluid {
+    margin: 0 20px;
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .container {
+    max-width: 1200px;
+  }
+}

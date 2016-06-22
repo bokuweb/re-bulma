@@ -39,12 +39,12 @@ npm i -S re-bulma
 - [x] Modal
 - [x] Nav
 - [x] Pagination
-- [ ] Panel
+- [x] Panel
 - [x] Tabs
 
 #### Layout
 
-- [ ] Container
+- [x] Container
 - [ ] Hero
 - [ ] Section
 - [ ] Footer
