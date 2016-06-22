@@ -29,6 +29,7 @@ import { Pagination, PageButton } from './pagination';
 import { Panel, PanelBlock, PanelCheckbox, PanelHeading, PanelTabs } from './panel';
 import Container from './layout/container';
 import Footer from './layout/footer';
+import Section from './layout/section';
 import insertCss from 'insert-css';
 import css from '../build/css.js';
 
@@ -99,5 +100,6 @@ export {
   PanelHeading,
   Container,
   Footer,
+  Section,
 };
 

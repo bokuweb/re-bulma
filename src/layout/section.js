@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
 
-export default class Footer extends Component {
+export default class Section extends Component {
   static propTypes = {
     children: PropTypes.any,
     style: PropTypes.object,
@@ -15,16 +15,16 @@ export default class Footer extends Component {
 
   createClassName() {
     return [
-      styles.footer,
+      styles.section,
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
     return (
-      <Footer {...this.props} className={this.createClassName()}>
+      <Section {...this.props} className={this.createClassName()}>
         {this.props.children}
-      </Footer>
+      </Section>
     );
   }
 }
