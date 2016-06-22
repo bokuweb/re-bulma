@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import kebabCase from 'lodash.kebabCase';
 
 export class Columns extends Component {
@@ -18,7 +18,7 @@ export class Columns extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+    
     return [
       styles.columns,
       styles[kebabCase(this.props.responsive)],
@@ -163,7 +163,6 @@ export class Column extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.column,
       styles[kebabCase(this.props.size)],

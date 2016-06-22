@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import { getCallbacks } from './helper/helper';
 
 export class Media extends Component {
@@ -17,7 +17,6 @@ export class Media extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.media,
       this.props.className,
@@ -50,7 +49,6 @@ export class MediaLeft extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles['media-left'],
       this.props.className,
@@ -83,7 +81,7 @@ export class MediaContent extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+   
     return [
       styles['media-content'],
       this.props.className,
@@ -116,7 +114,6 @@ export class MediaRight extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles['media-right'],
       this.props.className,

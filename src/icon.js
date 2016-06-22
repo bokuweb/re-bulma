@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import kebabCase from 'lodash.kebabCase';
 
 export default class Icon extends Component {
@@ -21,7 +21,6 @@ export default class Icon extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.icon,
       styles[kebabCase(this.props.size)],
@@ -30,7 +29,6 @@ export default class Icon extends Component {
   }
 
   render() {
-    const styles = new Styles().getStyles();
     return (
       <span {...this.props} className={this.createClassName()}>
         <i className={[styles.fa, this.props.icon].join(' ').trim()} />

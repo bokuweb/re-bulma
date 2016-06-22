@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import {
-  initialize,
   Button,
   Columns,
   Column,
@@ -59,9 +59,11 @@ import {
   NavToggle,
   Pagination,
   PageButton,
+  Panel,
+  PanelTabs,
+  PanelBlock,
+  PanelHeading,
 } from '../../src';
-
-initialize();
 
 export default class Example extends Component {
   constructor(props) {
@@ -93,7 +95,7 @@ export default class Example extends Component {
           hasAddons
           state="isDisabled"
           color="isDanger"
-          size="isSmall"
+          icon="fa fa-heart"
           help={{
             text: 'help text',
             color: 'isSuccess',
@@ -602,6 +604,34 @@ export default class Example extends Component {
           </ul>
         </Pagination>
 
+
+        <Panel>
+          <PanelHeading>
+            Repositories
+          </PanelHeading>
+          <PanelTabs>
+            <span className="is-active" href="#">All</span>
+            <span href="#">Public</span>
+            <span href="#">Private</span>
+            <span href="#">Sources</span>
+            <span href="#">Forks</span>
+          </PanelTabs>
+          <PanelBlock icon="fa fa-book">
+            bulma-website
+          </PanelBlock>
+          <PanelBlock icon="fa fa-heart">
+            bulma-website
+          </PanelBlock>
+          <PanelBlock>
+            <input type="checkbox"/>aasd
+          </PanelBlock>
+          <PanelBlock icon="fa fa-heart">
+            bulma-website
+          </PanelBlock>
+          <PanelBlock>
+            <Button isFullwidth>asdasd</Button>
+          </PanelBlock>
+        </Panel>
       </div>
     );
   }

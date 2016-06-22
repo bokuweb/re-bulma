@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import kebabCase from 'lodash.kebabCase';
-import Styles from './styles';
+import styles from '../build/styles';
 
 export default class Progress extends Component {
   static propTypes = {
@@ -24,7 +24,6 @@ export default class Progress extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.progress,
       styles[kebabCase(this.props.size)],

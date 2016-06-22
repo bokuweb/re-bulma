@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import Styles from './styles';
+import styles from '../build/styles';
 import { getCallbacks } from './helper/helper';
 
 export class Nav extends Component {
@@ -18,7 +18,7 @@ export class Nav extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+   
     return [
       styles.nav,
       this.props.hasShadow ? styles['has-shadow'] : '',
@@ -54,7 +54,7 @@ export class NavGloup extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+   
     return [
       styles[`nav-${this.props.align}`],
       this.props.isMenu ? styles['nav-menu'] : '',
@@ -90,7 +90,7 @@ export class NavItem extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+   
     return [
       styles['nav-item'],
       this.props.isActive ? styles['is-active'] : '',
@@ -126,7 +126,7 @@ export class NavToggle extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
+   
     return [
       styles['nav-toggle'],
       this.props.isActive ? styles['is-active'] : '',
@@ -164,7 +164,6 @@ export class NavContainer extends Component {
   };
 
   createClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.container,
       this.props.className,

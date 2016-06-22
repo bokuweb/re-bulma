@@ -1,0 +1,22 @@
+.section {
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  background: #fff;
+  padding: 40px 20px;
+}
+
+@media screen and (min-width: 980px) {
+  .section.is-medium {
+    padding: 120px 20px;
+  }
+  .section.is-large {
+    padding: 240px 20px;
+  }
+}

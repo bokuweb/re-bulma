@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Styles from '../styles';
+import styles from '../../build/styles';
 
 export default class Radio extends Component {
   static propTypes = {
@@ -15,7 +15,6 @@ export default class Radio extends Component {
   };
 
   createControlClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.control,
       this.props.className,
@@ -23,7 +22,6 @@ export default class Radio extends Component {
   }
 
   renderForm() {
-    const styles = new Styles().getStyles();
     return this.props.data.map((d, i) => (
       <label className={styles.radio} key={i}>
         <input {...d.inputProps} type="radio" />

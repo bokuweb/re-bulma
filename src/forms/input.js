@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Styles from '../styles';
+import styles from '../../build/styles';
 import kebabCase from 'lodash.kebabCase';
 
 export default class Input extends Component {
@@ -50,7 +50,6 @@ export default class Input extends Component {
   };
 
   createControlClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.control,
       styles[kebabCase(this.props.state)],
@@ -62,7 +61,6 @@ export default class Input extends Component {
   }
 
   createInputClassName() {
-    const styles = new Styles().getStyles();
     return [
       styles.input,
       styles[kebabCase(this.props.color)],
@@ -72,7 +70,6 @@ export default class Input extends Component {
 
   renderHelp() {
     if (!this.props.help) return null;
-    const styles = new Styles().getStyles();
     return (
       <span className={[styles.help, styles[kebabCase(this.props.help.color)]].join(' ')}>
         {this.props.help.text}
@@ -81,7 +78,6 @@ export default class Input extends Component {
   }
 
   renderForm() {
-    const styles = new Styles().getStyles();
     return (
       <span>
         <input
@@ -97,12 +93,19 @@ export default class Input extends Component {
   }
 
   render() {
-    if (this.props.hasAddons) {
-      return this.renderForm();
-    }
+    // if (this.props.hasAddons) {
+    //   return this.renderForm();
+    // }
     return (
       <p className={this.createControlClassName()} style={this.props.style}>
-        {this.renderForm()}
+        <input
+          {...this.props}
+          style={{}}
+          className={this.createInputClassName()}
+          disabled={this.props.state === 'isDisabled'}
+        />
+        <i className={[styles.fa, this.props.icon].join(' ')} />
+        {this.renderHelp()}
       </p>
     );
   }
