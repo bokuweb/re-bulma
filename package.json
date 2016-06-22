@@ -34,7 +34,7 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-1": "^6.3.13",
-    "bulma": "^0.0.28",
+    "bulma": "0.0.28",
     "eslint": "^2.11.1",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-react": "^5.1.1",
