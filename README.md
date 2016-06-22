@@ -47,7 +47,7 @@ npm i -S re-bulma
 - [x] Container
 - [ ] Hero
 - [ ] Section
-- [ ] Footer
+- [x] Footer
 
 
 
