@@ -13,7 +13,7 @@ npm i -S re-bulma
 #### Grid
 
 - [x] Columns
-- [ ] Tile
+- [x] Tile
 
 #### Elements
 
