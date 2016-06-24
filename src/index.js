@@ -1,5 +1,6 @@
 import insertCss from 'insert-css';
-import css from '../build/css.js';
+import css from '../build/css';
+import styles from '../build/styles';
 import Button from './button';
 import { Columns, Column } from './columns';
 import Label from './label';
@@ -107,5 +108,6 @@ export {
   HeroFoot,
   HeroHead,
   HeroBody,
+  styles,
 };
 
