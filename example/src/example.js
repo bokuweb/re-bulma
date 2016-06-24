@@ -70,6 +70,7 @@ import {
   HeroFoot,
   HeroHead,
   styles,
+  Tile,
 } from '../../src';
 
 export default class Example extends Component {
@@ -757,7 +758,26 @@ export default class Example extends Component {
           </HeroFoot>
         </Hero>
 
-
+        <Tile context="isAncestor">
+          <Tile size="is4" isVertical context="isParent">
+            <Tile context="isChild">
+              <Box>
+                <p class="title">One</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+              </Box>
+              <Box>
+                <p class="title">Two</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+              </Box>
+            </Tile>
+          </Tile>
+          <Tile context="isParent">
+            <Box>
+              <p class="title">Three</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            </Box>
+          </Tile>
+        </Tile>
       </div>
     );
   }

@@ -35,6 +35,8 @@ import Container from './layout/container';
 import Footer from './layout/footer';
 import Section from './layout/section';
 import { Hero, HeroFoot, HeroHead, HeroBody } from './layout/hero';
+// Grid
+import Tile from './grid/tile';
 
 insertCss(css, { prepend: true });
 
@@ -108,6 +110,7 @@ export {
   HeroFoot,
   HeroHead,
   HeroBody,
+  Tile,
   styles,
 };
 
