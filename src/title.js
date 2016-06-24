@@ -2,7 +2,6 @@
 
 import React, { Component, PropTypes } from 'react';
 import styles from '../build/styles';
-import kebabCase from 'lodash.kebabCase';
 
 export class Title extends Component {
   static propTypes = {
@@ -25,16 +24,16 @@ export class Title extends Component {
   createClassName() {
     return [
       styles.title,
-      styles[kebabCase(this.props.size)],
+      styles[this.props.size],
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
     return (
-      <span {...this.props} className={this.createClassName()}>
+      <p {...this.props} className={this.createClassName()}>
         {this.props.children}
-      </span>
+      </p>
     );
   }
 }
@@ -58,19 +57,18 @@ export class Subtitle extends Component {
   };
 
   createClassName() {
-   
     return [
       styles.subtitle,
-      styles[kebabCase(this.props.size)],
+      styles[this.props.size],
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
     return (
-      <span {...this.props} className={this.createClassName()}>
+      <p {...this.props} className={this.createClassName()}>
         {this.props.children}
-      </span>
+      </p>
     );
   }
 }

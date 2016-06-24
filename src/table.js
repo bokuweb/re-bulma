@@ -20,9 +20,9 @@ export class Table extends Component {
   createClassName() {
     return [
       styles.table,
-      this.props.isBordered ? styles['is-bordered'] : '',
-      this.props.isStriped ? styles['is-striped'] : '',
-      this.props.isNarrow ? styles['is-narrow'] : '',
+      this.props.isBordered ? styles.isBordered : '',
+      this.props.isStriped ? styles.isStriped : '',
+      this.props.isNarrow ? styles.isNarrow : '',
       this.props.className,
     ].join(' ').trim();
   }
@@ -53,7 +53,7 @@ export class Td extends Component {
   createClassName() {
     return [
       styles.td,
-      this.props.isIcon ? styles['is-icon'] : '',
+      this.props.isIcon ? styles.isIcon : '',
       this.props.className,
     ].join(' ').trim();
   }

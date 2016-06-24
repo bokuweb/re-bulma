@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
-import kebabCase from 'lodash.kebabCase';
 
 export default class Input extends Component {
   static propTypes = {
@@ -52,10 +51,10 @@ export default class Input extends Component {
   createControlClassName() {
     return [
       styles.control,
-      styles[kebabCase(this.props.state)],
-      this.props.icon ? styles['has-icon'] : '',
+      styles[this.props.state],
+      this.props.icon ? styles.hasIcon : '',
       // Add has-icon-left class because can not user not: selector( csjs bug )
-      this.props.hasIconRight ? styles['has-icon-right'] : styles['has-icon-left'],
+      this.props.hasIconRight ? styles.hasIconRight : styles.hasIconLeft,
       this.props.className,
     ].join(' ').trim();
   }
@@ -63,15 +62,15 @@ export default class Input extends Component {
   createInputClassName() {
     return [
       styles.input,
-      styles[kebabCase(this.props.color)],
-      styles[kebabCase(this.props.size)],
+      styles[this.props.color],
+      styles[this.props.size],
     ].join(' ').trim();
   }
 
   renderHelp() {
     if (!this.props.help) return null;
     return (
-      <span className={[styles.help, styles[kebabCase(this.props.help.color)]].join(' ')}>
+      <span className={[styles.help, styles[this.props.help.color]].join(' ')}>
         {this.props.help.text}
       </span>
     );

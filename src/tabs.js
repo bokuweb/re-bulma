@@ -2,7 +2,6 @@
 
 import React, { Component, PropTypes } from 'react';
 import styles from '../build/styles';
-import kebabCase from 'lodash.kebabCase';
 
 export class Tabs extends Component {
   static propTypes = {
@@ -31,13 +30,12 @@ export class Tabs extends Component {
   };
 
   createClassName() {
-   
     return [
       styles.tabs,
-      styles[kebabCase(this.props.alignment)],
-      styles[kebabCase(this.props.size)],
-      styles[kebabCase(this.props.tabStyle)],
-      this.props.isFullwidth ? styles['is-fullwidth'] : '',
+      styles[this.props.alignment],
+      styles[this.props.size],
+      styles[this.props.tabStyle],
+      this.props.isFullwidth ? styles.isFullwidth : '',
       this.props.className,
     ].join(' ').trim();
   }
@@ -68,7 +66,7 @@ export class TabGroup extends Component {
 
   createClassName() {
     return [
-      styles[kebabCase(this.props.alignment)],
+      styles[this.props.alignment],
       this.props.className,
     ].join(' ').trim();
   }
@@ -95,7 +93,7 @@ export class Tab extends Component {
 
   createClassName() {
     return [
-      this.props.isActive ? styles['is-active'] : '',
+      this.props.isActive ? styles.isActive : '',
       this.props.className,
     ].join(' ').trim();
   }

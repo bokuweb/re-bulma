@@ -1,5 +1,7 @@
 .title,
 .subtitle {
+  margin: 0;
+  padding: 0;
   font-weight: 300;
   word-break: break-word;
   -moz-osx-font-smoothing: grayscale;

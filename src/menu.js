@@ -52,7 +52,7 @@ export class MenuLabel extends Component {
   createClassName() {
    
     return [
-      styles['menu-label'],
+      styles.menuLabel,
       this.props.className,
     ].join(' ').trim();
   }
@@ -85,7 +85,7 @@ export class MenuList extends Component {
   createClassName() {
    
     return [
-      styles['menu-list'],
+      styles.menuList,
       this.props.className,
     ].join(' ').trim();
   }
@@ -119,7 +119,7 @@ export class MenuLink extends Component {
 
   createClassName() {
     return [
-      this.props.isActive ? styles['is-active'] : '',
+      this.props.isActive ? styles.isActive : '',
       this.props.className,
     ].join(' ').trim();
   }

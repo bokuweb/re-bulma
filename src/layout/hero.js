@@ -1,14 +1,34 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import styles from '../build/styles';
-import { getCallbacks } from './helper/helper';
+import styles from '../../build/styles';
+import { getCallbacks } from '../helper/helper';
 
-export class Media extends Component {
+export class Hero extends Component {
   static propTypes = {
     style: PropTypes.object,
     children: PropTypes.any,
     className: PropTypes.string,
+    isBold: PropTypes.bool,
+    size: PropTypes.oneOf([
+      'isSmall',
+      'isMedium',
+      'isLarge',
+      'isFullhieght',
+    ]),
+    color: PropTypes.oneOf([
+      'isPrimary',
+      'isInfo',
+      'isSuccess',
+      'isWarning',
+      'isDanger',
+      'isLink',
+      'isWhite',
+      'isLight',
+      'isDark',
+      'isBlack',
+      'isLink',
+    ]),
   };
 
   static defaultProps = {
@@ -18,25 +38,28 @@ export class Media extends Component {
 
   createClassName() {
     return [
-      styles.media,
+      styles.hero,
+      this.props.isBold ? styles.isBold : '',
+      styles[this.props.size],
+      styles[this.props.color],
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
     return (
-      <article
+      <section
         {...getCallbacks(this.props)}
         style={this.props.style}
         className={this.createClassName()}
       >
         {this.props.children}
-      </article>
+      </section>
     );
   }
 }
 
-export class MediaLeft extends Component {
+export class HeroBody extends Component {
   static propTypes = {
     style: PropTypes.object,
     children: PropTypes.any,
@@ -50,25 +73,25 @@ export class MediaLeft extends Component {
 
   createClassName() {
     return [
-      styles.mediaLeft,
+      styles.heroBody,
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
     return (
-      <figure
+      <section
         {...getCallbacks(this.props)}
         style={this.props.style}
         className={this.createClassName()}
       >
         {this.props.children}
-      </figure>
+      </section>
     );
   }
 }
 
-export class MediaContent extends Component {
+export class HeroHead extends Component {
   static propTypes = {
     style: PropTypes.object,
     children: PropTypes.any,
@@ -81,27 +104,26 @@ export class MediaContent extends Component {
   };
 
   createClassName() {
-   
     return [
-      styles.mediaContent,
+      styles.heroHead,
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
     return (
-      <div
+      <section
         {...getCallbacks(this.props)}
         style={this.props.style}
         className={this.createClassName()}
       >
         {this.props.children}
-      </div>
+      </section>
     );
   }
 }
 
-export class MediaRight extends Component {
+export class HeroFoot extends Component {
   static propTypes = {
     style: PropTypes.object,
     children: PropTypes.any,
@@ -115,20 +137,20 @@ export class MediaRight extends Component {
 
   createClassName() {
     return [
-      styles.mediaRight,
+      styles.heroFoot,
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
     return (
-      <div
+      <section
         {...getCallbacks(this.props)}
         style={this.props.style}
         className={this.createClassName()}
       >
         {this.props.children}
-      </div>
+      </section>
     );
   }
 }

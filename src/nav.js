@@ -18,10 +18,9 @@ export class Nav extends Component {
   };
 
   createClassName() {
-   
     return [
       styles.nav,
-      this.props.hasShadow ? styles['has-shadow'] : '',
+      this.props.hasShadow ? styles.hasShadow : '',
       this.props.className,
     ].join(' ').trim();
   }
@@ -54,10 +53,10 @@ export class NavGloup extends Component {
   };
 
   createClassName() {
-   
+    const align = this.props.align && this.props.align.substring(0, 1).toUpperCase() + this.props.align.substring(1);
     return [
-      styles[`nav-${this.props.align}`],
-      this.props.isMenu ? styles['nav-menu'] : '',
+      styles[`nav${align}`],
+      this.props.isMenu ? styles.navMenu : '',
       this.props.className,
     ].join(' ').trim();
   }
@@ -92,9 +91,9 @@ export class NavItem extends Component {
   createClassName() {
    
     return [
-      styles['nav-item'],
-      this.props.isActive ? styles['is-active'] : '',
-      this.props.isTab ? styles['is-tab'] : '',
+      styles.navItem,
+      this.props.isActive ? styles.isActive : '',
+      this.props.isTab ? styles.isTab : '',
       this.props.className,
     ].join(' ').trim();
   }
@@ -126,10 +125,9 @@ export class NavToggle extends Component {
   };
 
   createClassName() {
-   
     return [
-      styles['nav-toggle'],
-      this.props.isActive ? styles['is-active'] : '',
+      styles.navToggle,
+      this.props.isActive ? styles.isActive : '',
       this.props.className,
     ].join(' ').trim();
   }

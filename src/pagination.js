@@ -2,7 +2,6 @@
 
 import React, { Component, PropTypes } from 'react';
 import styles from '../build/styles';
-import kebabCase from 'lodash.kebabCase';
 import { getCallbacks } from './helper/helper';
 
 export class Pagination extends Component {
@@ -68,7 +67,7 @@ export class PageButton extends Component {
   createClassName() {
     return [
       styles.button,
-      styles[kebabCase(this.props.color)],
+      styles[this.props.color],
       this.props.className,
     ].join(' ').trim();
   }

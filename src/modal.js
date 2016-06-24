@@ -24,7 +24,7 @@ export default class Modal extends Component {
   createModalClassName() {
     return [
       styles.modal,
-      this.props.isActive ? styles['is-active'] : '',
+      this.props.isActive ? styles.isActive : '',
       this.props.className,
     ].join(' ').trim();
   }
@@ -32,7 +32,7 @@ export default class Modal extends Component {
   renderContent() {
     if (this.props.type === 'image') {
       return (
-        <div className={styles['modal-content']} {...getCallbacks(this.props)}>
+        <div className={styles.modalContent} {...getCallbacks(this.props)}>
           {this.props.children}
         </div>
       );
@@ -40,18 +40,18 @@ export default class Modal extends Component {
 
     if (this.props.type === 'card') {
       return (
-        <div className={[styles['modal-card'], '__re-bulma_modal_card'].join(' ')}>
-          <header className={styles['modal-card-head']}>
-            <p className={styles['modal-card-title']}>{this.props.headerContent}</p>
+        <div className={[styles.modalCard, '__re-bulma_modal_card'].join(' ')}>
+          <header className={styles.modalCardHead}>
+            <p className={styles.modalCardTitle}>{this.props.headerContent}</p>
             <button className={styles.delete} onClick={this.props.onCloseRequest} />
           </header>
-          <section className={styles['modal-card-body']}>
+          <section className={styles.modalCardBody}>
             {this.props.children}
           </section>
           {
             this.props.footerContent
               ? (
-                <footer className={styles['modal-card-foot']}>
+                <footer className={styles.modalCardFoot}>
                   {this.props.footerContent}
                 </footer>
               )
@@ -63,8 +63,8 @@ export default class Modal extends Component {
     }
 
     return (
-      <div className={styles['modal-container']}>
-        <div className={styles['modal-content']} {...getCallbacks(this.props)}>
+      <div className={styles.modalContainer}>
+        <div className={styles.modalContent} {...getCallbacks(this.props)}>
           {this.props.children}
         </div>
       </div>
@@ -73,11 +73,11 @@ export default class Modal extends Component {
   render() {
     return (
       <div className={this.createModalClassName()}>
-        <div className={styles['modal-background']} onClick={this.props.onCloseRequest} />
+        <div className={styles.modalBackground} onClick={this.props.onCloseRequest} />
         {this.renderContent()}
         {
           this.props.showOverlayCloseButton
-            ? <button className={styles['modal-close']} onClick={this.props.onCloseRequest} />
+            ? <button className={styles.modalClose} onClick={this.props.onCloseRequest} />
             : null
         }
       </div>

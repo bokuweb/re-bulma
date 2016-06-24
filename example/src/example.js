@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import {
   Button,
   Columns,
@@ -63,6 +62,14 @@ import {
   PanelTabs,
   PanelBlock,
   PanelHeading,
+  Container,
+  Footer,
+  Section,
+  Hero,
+  HeroBody,
+  HeroFoot,
+  HeroHead,
+  styles,
 } from '../../src';
 
 export default class Example extends Component {
@@ -196,19 +203,19 @@ export default class Example extends Component {
             </Tr>
           </Tbody>
         </Table>
-        <p><Title size="is1">Title</Title></p>
-        <p><Title size="is2">Title</Title></p>
-        <p><Title size="is3">Title</Title></p>
-        <p><Title size="is4">Title</Title></p>
-        <p><Title size="is5">Title</Title></p>
-        <p><Title size="is6">Title</Title></p>
+        <Title size="is1">Title</Title>
+        <Title size="is2">Title</Title>
+        <Title size="is3">Title</Title>
+        <Title size="is4">Title</Title>
+        <Title size="is5">Title</Title>
+        <Title size="is6">Title</Title>
 
-        <p><Subtitle size="is1">Title</Subtitle></p>
-        <p><Subtitle size="is2">Title</Subtitle></p>
-        <p><Subtitle size="is3">Title</Subtitle></p>
-        <p><Subtitle size="is4">Title</Subtitle></p>
-        <p><Subtitle size="is5">Title</Subtitle></p>
-        <p><Subtitle size="is6">Title</Subtitle></p>
+        <Subtitle size="is1">Title</Subtitle>
+        <Subtitle size="is2">Title</Subtitle>
+        <Subtitle size="is3">Title</Subtitle>
+        <Subtitle size="is4">Title</Subtitle>
+        <Subtitle size="is5">Title</Subtitle>
+        <Subtitle size="is6">Title</Subtitle>
         <Box>sadasdasdsad</Box>
         <Icon icon="fa fa-heart" size="isSmall" style={{color: 'red'}} className="hge" />
         <Icon icon="fa fa-heart" />
@@ -372,7 +379,7 @@ export default class Example extends Component {
         id porttitor mi magna a neque. Donec dui urna, vehicula et
         sem eget, facilisis sodales sem.</Message>
 
-      <Image src="http://placehold.it/256x256" size="is128x128" onClick={()=> console.log('asdasd')}/>
+      <Image src="http://placehold.it/256x256" size="is128X128" onClick={()=> console.log('asdasd')}/>
 
         <Notification>
           Warning lorem ipsum dolor sit amet, consectetur
@@ -410,7 +417,7 @@ export default class Example extends Component {
 
         <Card>
           <CardImage>
-            <Image src="http://placehold.it/300x225" ratio="is4by3" onClick={()=> console.log('asdasd')}/>
+            <Image src="http://placehold.it/300x225" ratio="is4By3" onClick={()=> console.log('asdasd')}/>
           </CardImage>
           <CardContent>
             <Content>
@@ -632,6 +639,125 @@ export default class Example extends Component {
             <Button isFullwidth>asdasd</Button>
           </PanelBlock>
         </Panel>
+
+        <Container>
+          <Notification>
+            This container is <strong>centered</strong> on desktop.
+          </Notification>
+        </Container>
+
+        <Footer>
+          <Content>
+            <p>
+              <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+              <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+              is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+            </p>
+          </Content>
+        </Footer>
+
+        <Section>
+          asdsadsadsa
+        </Section>
+
+        <Hero>
+          <HeroBody>
+            <Container>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+        </Hero>
+
+        <Hero color="isPrimary">
+          <HeroBody>
+            <Container>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+        </Hero>
+
+        <Hero color="isDanger">
+          <HeroBody>
+            <Container>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+        </Hero>
+
+        <Hero color="isSuccess" isBold size="isMedium">
+          <HeroBody>
+            <Container>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+        </Hero>
+
+        <Hero color="isInfo" isBold size="isLarge">
+          <HeroBody>
+            <Container>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+        </Hero>
+
+
+        <Hero color="isPrimary" size="isMedium">
+          <HeroHead>
+            <Nav>
+              <Container>
+                <NavGloup align="left">
+                  <NavItem>
+                    <img src="images/bulma-white.png" alt="Logo" />
+                  </NavItem>
+                </NavGloup>
+                <NavToggle />
+
+                <NavGloup align="right" isMenu>
+                  <NavItem isActive>
+                    Home
+                  </NavItem>
+                  <NavItem>
+                    Examples
+                  </NavItem>
+                  <NavItem>
+                    Documentation
+                  </NavItem>
+                  <NavItem>
+                    <Button states="isInverted" icon="fa fa-github">Github</Button>
+                  </NavItem>
+                </NavGloup>
+              </Container>
+            </Nav>
+          </HeroHead>
+
+          <HeroBody>
+            <Container hasTextCentered>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+          <HeroFoot>
+            <Tabs tabStyle="isBoxed">
+              <Container>
+                <ul>
+                  <Tab className={styles.isActive}>Overview</Tab>
+                  <Tab>Modifiers</Tab>
+                  <Tab>Grid</Tab>
+                  <Tab>Elements</Tab>
+                  <Tab>Components</Tab>
+                  <Tab>Layout</Tab>
+                </ul>
+              </Container>
+            </Tabs>
+          </HeroFoot>
+        </Hero>
+
+
       </div>
     );
   }

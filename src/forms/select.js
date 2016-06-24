@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
-import kebabCase from 'lodash.kebabCase';
 
 export default class Select extends Component {
   static propTypes = {
@@ -39,7 +38,7 @@ export default class Select extends Component {
   createControlClassName() {
     return [
       styles.control,
-      styles[kebabCase(this.props.state)],
+      styles[this.props.state],
       this.props.className,
     ].join(' ').trim();
   }
@@ -47,14 +46,14 @@ export default class Select extends Component {
   createSelectClassName() {
     return [
       styles.select,
-      styles[kebabCase(this.props.size)],
+      styles[this.props.size],
     ].join(' ').trim();
   }
 
   renderHelp() {
     if (!this.props.help) return null;
     return (
-      <span className={[styles.help, styles[kebabCase(this.props.help.color)]].join(' ')}>
+      <span className={[styles.help, styles[this.props.help.color]].join(' ')}>
         {this.props.help.text}
       </span>
     );

@@ -7,6 +7,7 @@ export default class Container extends Component {
     style: PropTypes.object,
     className: PropTypes.string,
     isFluid: PropTypes.bool,
+    hasTextCentered: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -17,7 +18,8 @@ export default class Container extends Component {
   createClassName() {
     return [
       styles.container,
-      this.props.isFluid ? styles['is-fluid'],
+      this.props.isFluid ? styles.isFluid : '',
+      this.props.hasTextCentered ? styles.hasTextCentered : '',
       this.props.className,
     ].join(' ').trim();
   }

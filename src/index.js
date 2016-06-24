@@ -1,3 +1,6 @@
+import insertCss from 'insert-css';
+import css from '../build/css';
+import styles from '../build/styles';
 import Button from './button';
 import { Columns, Column } from './columns';
 import Label from './label';
@@ -26,12 +29,12 @@ import { Media, MediaLeft, MediaContent, MediaRight } from './media-object';
 import { Menu, MenuLabel, MenuList, MenuLink } from './menu';
 import { Nav, NavGloup, NavItem, NavToggle, NavContainer } from './nav';
 import { Pagination, PageButton } from './pagination';
-import { Panel, PanelBlock, PanelCheckbox, PanelHeading, PanelTabs } from './panel';
+import { Panel, PanelBlock, PanelHeading, PanelTabs } from './panel';
+// Layout
 import Container from './layout/container';
 import Footer from './layout/footer';
 import Section from './layout/section';
-import insertCss from 'insert-css';
-import css from '../build/css.js';
+import { Hero, HeroFoot, HeroHead, HeroBody } from './layout/hero';
 
 insertCss(css, { prepend: true });
 
@@ -101,5 +104,10 @@ export {
   Container,
   Footer,
   Section,
+  Hero,
+  HeroFoot,
+  HeroHead,
+  HeroBody,
+  styles,
 };
 
