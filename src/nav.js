@@ -125,6 +125,7 @@ export class NavToggle extends Component {
   };
 
   createClassName() {
+    console.log(styles.navToggle)
     return [
       styles.navToggle,
       this.props.isActive ? styles.isActive : '',
