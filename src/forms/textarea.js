@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
-import kebabCase from 'lodash.kebabCase';
 
 export default class Textarea extends Component {
   static propTypes = {
@@ -43,7 +42,7 @@ export default class Textarea extends Component {
   createControlClassName() {
     return [
       styles.control,
-      styles[kebabCase(this.props.state)],
+      styles[this.props.state],
       this.props.className,
     ].join(' ').trim();
   }
@@ -51,14 +50,14 @@ export default class Textarea extends Component {
   createTextareaClassName() {
     return [
       styles.textarea,
-      styles[kebabCase(this.props.color)],
+      styles[this.props.color],
     ].join(' ').trim();
   }
 
   renderHelp() {
     if (!this.props.help) return null;
     return (
-      <span className={[styles.help, styles[kebabCase(this.props.help.color)]].join(' ')}>
+      <span className={[styles.help, styles[this.props.help.color]].join(' ')}>
         {this.props.help.text}
       </span>
     );

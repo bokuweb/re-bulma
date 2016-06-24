@@ -50,7 +50,7 @@ export class MediaLeft extends Component {
 
   createClassName() {
     return [
-      styles['media-left'],
+      styles.mediaLeft,
       this.props.className,
     ].join(' ').trim();
   }
@@ -83,7 +83,7 @@ export class MediaContent extends Component {
   createClassName() {
    
     return [
-      styles['media-content'],
+      styles.mediaContent,
       this.props.className,
     ].join(' ').trim();
   }
@@ -115,7 +115,7 @@ export class MediaRight extends Component {
 
   createClassName() {
     return [
-      styles['media-right'],
+      styles.mediaRight,
       this.props.className,
     ].join(' ').trim();
   }

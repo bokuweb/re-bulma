@@ -18,8 +18,8 @@ export default class Container extends Component {
   createClassName() {
     return [
       styles.container,
-      this.props.isFluid ? styles['is-fluid'] : '',
-      this.props.hasTextCentered ? styles['has-text-centered'] : '',
+      this.props.isFluid ? styles.isFluid : '',
+      this.props.hasTextCentered ? styles.hasTextCentered : '',
       this.props.className,
     ].join(' ').trim();
   }

@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../build/styles';
-import kebabCase from 'lodash.kebabCase';
 
 export default class Icon extends Component {
   static propTypes = {
@@ -23,7 +22,7 @@ export default class Icon extends Component {
   createClassName() {
     return [
       styles.icon,
-      styles[kebabCase(this.props.size)],
+      styles[this.props.size],
       this.props.className,
     ].join(' ').trim();
   }

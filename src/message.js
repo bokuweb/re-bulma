@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import kebabCase from 'lodash.kebabCase';
 import styles from '../build/styles';
 
 export default class Message extends Component {
@@ -30,7 +29,7 @@ export default class Message extends Component {
   createClassName() {
     return [
       styles.message,
-      styles[kebabCase(this.props.color)],
+      styles[this.props.color],
       this.props.className,
     ].join(' ').trim();
   }
@@ -42,12 +41,12 @@ export default class Message extends Component {
           this.props.header === ''
             ? null
             : (
-              <div className={styles['message-header']}>
+              <div className={styles.messageHeader}>
                 {this.props.header}
               </div>
             )
         }
-        <div className={styles['message-body']}>
+        <div className={styles.messageBody}>
           {this.props.children}
         </div>
       </article>

@@ -21,7 +21,7 @@ export class Card extends Component {
     
     return [
       styles.card,
-      this.props.isFullwidth ? styles['is-fullwidth'] : '',
+      this.props.isFullwidth ? styles.isFullwidth : '',
       this.props.className,
     ].join(' ').trim();
   }
@@ -54,7 +54,7 @@ export class CardImage extends Component {
   createClassName() {
     
     return [
-      styles['card-image'],
+      styles.cardImage,
       this.props.className,
     ].join(' ').trim();
   }
@@ -87,7 +87,7 @@ export class CardContent extends Component {
   createClassName() {
     
     return [
-      styles['card-content'],
+      styles.cardContent,
       this.props.className,
     ].join(' ').trim();
   }
@@ -120,7 +120,7 @@ export class CardHeader extends Component {
   createClassName() {
     
     return [
-      styles['card-header'],
+      styles.cardHeader,
       this.props.className,
     ].join(' ').trim();
   }
@@ -153,7 +153,7 @@ export class CardHeaderTitle extends Component {
   createClassName() {
     
     return [
-      styles['card-header-title'],
+      styles.cardHeaderTitle,
       this.props.className,
     ].join(' ').trim();
   }
@@ -186,7 +186,7 @@ export class CardHeaderIcon extends Component {
   createClassName() {
     
     return [
-      styles['card-header-icon'],
+      styles.cardHeaderIcon,
       this.props.className,
     ].join(' ').trim();
   }
@@ -225,7 +225,7 @@ export class CardFooter extends Component {
   createClassName() {
     
     return [
-      styles['card-footer'],
+      styles.cardFooter,
       this.props.className,
     ].join(' ').trim();
   }
@@ -257,7 +257,7 @@ export class CardFooterItem extends Component {
 
   createClassName() {
     return [
-      styles['card-footer-item'],
+      styles.cardFooterItem,
       this.props.className,
     ].join(' ').trim();
   }

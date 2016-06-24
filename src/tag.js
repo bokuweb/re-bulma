@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import kebabCase from 'lodash.kebabCase';
 import styles from '../build/styles';
 
 export default class Tag extends Component {
@@ -28,8 +27,8 @@ export default class Tag extends Component {
   createClassName() {
     return [
       styles.tag,
-      styles[kebabCase(this.props.size)],
-      styles[kebabCase(this.props.color)],
+      styles[this.props.size],
+      styles[this.props.color],
       this.props.className,
     ].join(' ').trim();
   }

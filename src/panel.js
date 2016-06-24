@@ -41,7 +41,7 @@ export class PanelHeading extends Component {
 
   createClassName() {
     return [
-      styles['panel-heading'],
+      styles.panelHeading,
       this.props.className,
     ].join(' ').trim();
   }
@@ -67,7 +67,7 @@ export class PanelTabs extends Component {
 
   createClassName() {
     return [
-      styles['panel-tabs'],
+      styles.panelTabs,
       this.props.className,
     ].join(' ').trim();
   }
@@ -95,8 +95,8 @@ export class PanelBlock extends Component {
 
   createClassName() {
     return [
-      styles['panel-block'],
-      this.props.isActive ? styles['is-active'] : '',
+      styles.panelBlock,
+      this.props.isActive ? styles.isActive : '',
       this.props.className,
     ].join(' ').trim();
   }
@@ -107,7 +107,7 @@ export class PanelBlock extends Component {
         {
           this.props.icon
             ? (
-              <span className={styles['panel-icon']}>
+              <span className={styles.panelIcon}>
                 <i className={[styles.fa, this.props.icon].join(' ')} />
               </span>
             )

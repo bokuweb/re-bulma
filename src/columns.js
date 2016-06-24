@@ -2,7 +2,6 @@
 
 import React, { Component, PropTypes } from 'react';
 import styles from '../build/styles';
-import kebabCase from 'lodash.kebabCase';
 
 export class Columns extends Component {
   static propTypes = {
@@ -21,9 +20,9 @@ export class Columns extends Component {
     
     return [
       styles.columns,
-      styles[kebabCase(this.props.responsive)],
-      this.props.isMultiline ? styles['is-multiline'] : '',
-      this.props.isGapless ? styles['is-gapless'] : '',
+      styles[this.props.responsive],
+      this.props.isMultiline ? styles.isMultiline : '',
+      this.props.isGapless ? styles.isGapless : '',
       this.props.className,
     ].join(' ').trim();
   }
@@ -165,8 +164,8 @@ export class Column extends Component {
   createClassName() {
     return [
       styles.column,
-      styles[kebabCase(this.props.size)],
-      styles[kebabCase(this.props.offset)],
+      styles[this.props.size],
+      styles[this.props.offset],
       this.props.className,
     ].join(' ').trim();
   }

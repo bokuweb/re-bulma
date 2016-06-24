@@ -3,7 +3,6 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
 import { getCallbacks } from '../helper/helper';
-import kebabCase from 'lodash.kebabCase';
 
 export class Hero extends Component {
   static propTypes = {
@@ -40,9 +39,9 @@ export class Hero extends Component {
   createClassName() {
     return [
       styles.hero,
-      this.props.isBold ? styles['is-bold'] : '',
-      styles[kebabCase(this.props.size)],
-      styles[kebabCase(this.props.color)],
+      this.props.isBold ? styles.isBold : '',
+      styles[this.props.size],
+      styles[this.props.color],
       this.props.className,
     ].join(' ').trim();
   }
@@ -74,7 +73,7 @@ export class HeroBody extends Component {
 
   createClassName() {
     return [
-      styles['hero-body'],
+      styles.heroBody,
       this.props.className,
     ].join(' ').trim();
   }
@@ -106,7 +105,7 @@ export class HeroHead extends Component {
 
   createClassName() {
     return [
-      styles['hero-head'],
+      styles.heroHead,
       this.props.className,
     ].join(' ').trim();
   }
@@ -138,7 +137,7 @@ export class HeroFoot extends Component {
 
   createClassName() {
     return [
-      styles['hero-foot'],
+      styles.heroFoot,
       this.props.className,
     ].join(' ').trim();
   }

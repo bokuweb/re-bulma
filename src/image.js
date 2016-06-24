@@ -9,21 +9,21 @@ export default class Image extends Component {
     src: PropTypes.string,
     alt: PropTypes.string,
     size: PropTypes.oneOf([
-      'is16x16',
-      'is24x24',
-      'is32x32',
-      'is48x48',
-      'is64x64',
-      'is96x96',
-      'is128x128',
+      'is16X16',
+      'is24X24',
+      'is32X32',
+      'is48X48',
+      'is64X64',
+      'is96X96',
+      'is128X128',
     ]),
     ratio: PropTypes.oneOf([
       'isSquare',
-      'is1by1',
-      'is4by3',
-      'is3by2',
-      'is16by9',
-      'is2by1',
+      'is1By1',
+      'is4By3',
+      'is3By2',
+      'is16By9',
+      'is2By1',
     ]),
   };
 
@@ -36,8 +36,8 @@ export default class Image extends Component {
   createClassName() {
     return [
       styles.image,
-      this.props.size && styles[this.props.size.replace('is', 'is-')],
-      this.props.ratio && styles[this.props.ratio.replace('is', 'is-')],
+      styles[this.props.size],
+      styles[this.props.ratio],
       this.props.className,
     ].join(' ').trim();
   }

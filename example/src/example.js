@@ -379,7 +379,7 @@ export default class Example extends Component {
         id porttitor mi magna a neque. Donec dui urna, vehicula et
         sem eget, facilisis sodales sem.</Message>
 
-      <Image src="http://placehold.it/256x256" size="is128x128" onClick={()=> console.log('asdasd')}/>
+      <Image src="http://placehold.it/256x256" size="is128X128" onClick={()=> console.log('asdasd')}/>
 
         <Notification>
           Warning lorem ipsum dolor sit amet, consectetur
@@ -417,7 +417,7 @@ export default class Example extends Component {
 
         <Card>
           <CardImage>
-            <Image src="http://placehold.it/300x225" ratio="is4by3" onClick={()=> console.log('asdasd')}/>
+            <Image src="http://placehold.it/300x225" ratio="is4By3" onClick={()=> console.log('asdasd')}/>
           </CardImage>
           <CardContent>
             <Content>
@@ -745,7 +745,7 @@ export default class Example extends Component {
             <Tabs tabStyle="isBoxed">
               <Container>
                 <ul>
-                  <Tab className={styles['is-active']}>Overview</Tab>
+                  <Tab className={styles.isActive}>Overview</Tab>
                   <Tab>Modifiers</Tab>
                   <Tab>Grid</Tab>
                   <Tab>Elements</Tab>

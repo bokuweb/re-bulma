@@ -51,7 +51,7 @@ export class LevelRight extends Component {
   createClassName() {
     
     return [
-      styles['level-right'],
+      styles.levelRight,
       this.props.className,
     ].join(' ').trim();
   }
@@ -84,7 +84,7 @@ export class LevelLeft extends Component {
   createClassName() {
     
     return [
-      styles['level-left'],
+      styles.levelLeft,
       this.props.className,
     ].join(' ').trim();
   }
@@ -118,8 +118,8 @@ export class LevelItem extends Component {
   createClassName() {
     
     return [
-      styles['level-item'],
-      this.props.hasTextCentered ? styles['has-text-centered'] : '',
+      styles.levelItem,
+      this.props.hasTextCentered ? styles.hasTextCentered : '',
       this.props.className,
     ].join(' ').trim();
   }

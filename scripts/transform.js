@@ -1,6 +1,6 @@
 const csjs = require('csjs');
 const fs = require('fs');
-
+const camelCase = require('lodash.camelcase');
 const path = process.argv[2];
 const dist = process.argv[3];
 
@@ -14,6 +14,7 @@ files.forEach(file => {
 });
 
 const csjsObj = csjs`${combinedCss}`;
+const styles = {};
 
 fs.writeFileSync(
   `${dist}css.js`,
@@ -21,12 +22,12 @@ fs.writeFileSync(
 );
 
 Object.keys(csjsObj).forEach(c => {
-  csjsObj[c] = csjsObj[c].toString();
+  styles[camelCase(c)] = csjsObj[c].toString();
 });
 
 
 fs.writeFileSync(
   `${dist}styles.js`,
-  `module.exports = ${JSON.stringify(csjsObj)}`
+  `module.exports = ${JSON.stringify(styles)}`
 );
 

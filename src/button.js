@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import kebabCase from 'lodash.kebabCase';
 import styles from '../build/styles';
 
 export default class Button extends Component {
@@ -47,10 +46,10 @@ export default class Button extends Component {
   createClassName() {
     return [
       styles.button,
-      styles[kebabCase(this.props.size)],
-      styles[kebabCase(this.props.color)],
-      styles[kebabCase(this.props.buttonStyle)],
-      styles[kebabCase(this.props.state)],
+      styles[this.props.size],
+      styles[this.props.color],
+      styles[this.props.buttonStyle],
+      styles[this.props.state],
       this.props.delete ? styles.delete : '',
       this.props.className,
     ].join(' ').trim();
@@ -63,7 +62,6 @@ export default class Button extends Component {
   }
 
   render() {
-    
     return (
       <button
         {...this.props}
