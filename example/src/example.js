@@ -69,6 +69,7 @@ import {
   HeroBody,
   HeroFoot,
   HeroHead,
+  styles,
 } from '../../src';
 
 export default class Example extends Component {
@@ -744,7 +745,7 @@ export default class Example extends Component {
             <Tabs tabStyle="isBoxed">
               <Container>
                 <ul>
-                  <Tab>Overview</Tab>
+                  <Tab className={styles['is-active']}>Overview</Tab>
                   <Tab>Modifiers</Tab>
                   <Tab>Grid</Tab>
                   <Tab>Elements</Tab>

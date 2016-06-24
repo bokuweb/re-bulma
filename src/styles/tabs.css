@@ -32,7 +32,7 @@
   white-space: nowrap;
 }
 
-.tabs span {
+.tabs span, .tabs a {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -52,7 +52,7 @@
   vertical-align: top;
 }
 
-.tabs span:hover {
+.tabs span:hover, .tabs a:hover {
   border-bottom-color: #222324;
   color: #222324;
 }
@@ -61,7 +61,7 @@
   display: block;
 }
 
-.tabs li.is-active span {
+.tabs li.is-active span, .tabs li.is-active a {
   border-bottom-color: #1fc8db;
   color: #1fc8db;
 }
@@ -133,19 +133,19 @@
           justify-content: flex-end;
 }
 
-.tabs.is-boxed span {
+.tabs.is-boxed span, .tabs.is-boxed a {
   border: 1px solid transparent;
   border-radius: 3px 3px 0 0;
   padding-bottom: 5px;
   padding-top: 5px;
 }
 
-.tabs.is-boxed span:hover {
+.tabs.is-boxed span:hover, .tabs.is-boxed a:hover {
   background: #f5f7fa;
   border-bottom-color: #d3d6db;
 }
 
-.tabs.is-boxed li.is-active span {
+.tabs.is-boxed li.is-active span, .tabs.is-boxed li.is-active a {
   background: #fff;
   border-color: #d3d6db;
   border-bottom-color: transparent !important;
@@ -158,7 +158,7 @@
           flex: 1;
 }
 
-.tabs.is-toggle span {
+.tabs.is-toggle span, .tabs.is-toggle a {
   border: 1px solid #d3d6db;
   margin-bottom: 0;
   padding-bottom: 5px;
@@ -176,7 +176,7 @@
   margin-left: -1px;
 }
 
-.tabs.is-toggle li:first-child span {
+.tabs.is-toggle li:first-child span, .tabs.is-toggle li:first-child a {
   border-radius: 3px 0 0 3px;
 }
 
@@ -184,7 +184,7 @@
   border-radius: 0 3px 3px 0;
 }
 
-.tabs.is-toggle li.is-active span {
+.tabs.is-toggle li.is-active span, .tabs.is-toggle li.is-active a {
   background: #1fc8db;
   border-color: #1fc8db;
   color: white;
@@ -199,11 +199,12 @@
   font-size: 11px;
 }
 
-.tabs.is-small span {
+.tabs.is-small span, .tabs.is-small a {
   padding: 2px 8px;
 }
 
-.tabs.is-small.is-boxed span, .tabs.is-small.is-toggle span {
+.tabs.is-small.is-boxed span, .tabs.is-small.is-toggle span,
+.tabs.is-small.is-boxed a, .tabs.is-small.is-toggle a {
   padding-bottom: 1px;
   padding-top: 1px;
 }
@@ -212,11 +213,12 @@
   font-size: 18px;
 }
 
-.tabs.is-medium span {
+.tabs.is-medium span, .tabs.is-medium a {
   padding: 10px 16px;
 }
 
-.tabs.is-medium.is-boxed span, .tabs.is-medium.is-toggle span {
+.tabs.is-medium.is-boxed span, .tabs.is-medium.is-toggle span,
+.tabs.is-medium.is-boxed a, .tabs.is-medium.is-toggle a {
   padding-bottom: 9px;
   padding-top: 9px;
 }
@@ -225,11 +227,12 @@
   font-size: 28px;
 }
 
-.tabs.is-large span {
+.tabs.is-large span, .tabs.is-large a {
   padding: 14px 20px;
 }
 
-.tabs.is-large.is-boxed span, .tabs.is-large.is-toggle span {
+.tabs.is-large.is-boxed span, .tabs.is-large.is-toggle span,
+.tabs.is-large.is-boxed a, .tabs.is-large.is-toggle a {
   padding-bottom: 13px;
   padding-top: 13px;
 }
