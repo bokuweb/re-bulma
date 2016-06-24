@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import {
   Button,
   Columns,
@@ -63,6 +62,13 @@ import {
   PanelTabs,
   PanelBlock,
   PanelHeading,
+  Container,
+  Footer,
+  Section,
+  Hero,
+  HeroBody,
+  HeroFoot,
+  HeroHead,
 } from '../../src';
 
 export default class Example extends Component {
@@ -196,19 +202,19 @@ export default class Example extends Component {
             </Tr>
           </Tbody>
         </Table>
-        <p><Title size="is1">Title</Title></p>
-        <p><Title size="is2">Title</Title></p>
-        <p><Title size="is3">Title</Title></p>
-        <p><Title size="is4">Title</Title></p>
-        <p><Title size="is5">Title</Title></p>
-        <p><Title size="is6">Title</Title></p>
+        <Title size="is1">Title</Title>
+        <Title size="is2">Title</Title>
+        <Title size="is3">Title</Title>
+        <Title size="is4">Title</Title>
+        <Title size="is5">Title</Title>
+        <Title size="is6">Title</Title>
 
-        <p><Subtitle size="is1">Title</Subtitle></p>
-        <p><Subtitle size="is2">Title</Subtitle></p>
-        <p><Subtitle size="is3">Title</Subtitle></p>
-        <p><Subtitle size="is4">Title</Subtitle></p>
-        <p><Subtitle size="is5">Title</Subtitle></p>
-        <p><Subtitle size="is6">Title</Subtitle></p>
+        <Subtitle size="is1">Title</Subtitle>
+        <Subtitle size="is2">Title</Subtitle>
+        <Subtitle size="is3">Title</Subtitle>
+        <Subtitle size="is4">Title</Subtitle>
+        <Subtitle size="is5">Title</Subtitle>
+        <Subtitle size="is6">Title</Subtitle>
         <Box>sadasdasdsad</Box>
         <Icon icon="fa fa-heart" size="isSmall" style={{color: 'red'}} className="hge" />
         <Icon icon="fa fa-heart" />
@@ -632,6 +638,71 @@ export default class Example extends Component {
             <Button isFullwidth>asdasd</Button>
           </PanelBlock>
         </Panel>
+
+        <Container>
+          <Notification>
+            This container is <strong>centered</strong> on desktop.
+          </Notification>
+        </Container>
+
+        <Footer>
+          <Content>
+            <p>
+              <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+              <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+              is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+            </p>
+          </Content>
+        </Footer>
+
+        <Section>
+          asdsadsadsa
+        </Section>
+
+        <Hero>
+          <HeroBody>
+            <Container>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+        </Hero>
+
+        <Hero color="isPrimary">
+          <HeroBody>
+            <Container>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+        </Hero>
+
+        <Hero color="isDanger">
+          <HeroBody>
+            <Container>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+        </Hero>
+
+        <Hero color="isSuccess" isBold size="isMedium">
+          <HeroBody>
+            <Container>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+        </Hero>
+
+        <Hero color="isInfo" isBold size="isLarge">
+          <HeroBody>
+            <Container>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+        </Hero>
       </div>
     );
   }

@@ -22,9 +22,9 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <Footer {...this.props} className={this.createClassName()}>
+      <footer {...this.props} className={this.createClassName()}>
         {this.props.children}
-      </Footer>
+      </footer>
     );
   }
 }

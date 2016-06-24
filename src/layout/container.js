@@ -17,7 +17,7 @@ export default class Container extends Component {
   createClassName() {
     return [
       styles.container,
-      this.props.isFluid ? styles['is-fluid'],
+      this.props.isFluid ? styles['is-fluid'] : '',
       this.props.className,
     ].join(' ').trim();
   }

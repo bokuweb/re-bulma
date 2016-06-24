@@ -32,9 +32,9 @@ export class Title extends Component {
 
   render() {
     return (
-      <span {...this.props} className={this.createClassName()}>
+      <p {...this.props} className={this.createClassName()}>
         {this.props.children}
-      </span>
+      </p>
     );
   }
 }
@@ -58,7 +58,6 @@ export class Subtitle extends Component {
   };
 
   createClassName() {
-   
     return [
       styles.subtitle,
       styles[kebabCase(this.props.size)],
@@ -68,9 +67,9 @@ export class Subtitle extends Component {
 
   render() {
     return (
-      <span {...this.props} className={this.createClassName()}>
+      <p {...this.props} className={this.createClassName()}>
         {this.props.children}
-      </span>
+      </p>
     );
   }
 }

@@ -1,6 +1,6 @@
 .hero-video, .hero-buttons, .hero,
 .hero-body, .hero-foot, .hero-head {
-  box-sizing: border-box;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
   border: 0;

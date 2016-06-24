@@ -22,9 +22,9 @@ export default class Section extends Component {
 
   render() {
     return (
-      <Section {...this.props} className={this.createClassName()}>
+      <section {...this.props} className={this.createClassName()}>
         {this.props.children}
-      </Section>
+      </section>
     );
   }
 }
