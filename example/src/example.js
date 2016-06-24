@@ -56,6 +56,7 @@ import {
   NavGloup,
   NavItem,
   NavToggle,
+  NavTabs,
   Pagination,
   PageButton,
   Panel,
@@ -703,6 +704,60 @@ export default class Example extends Component {
             </Container>
           </HeroBody>
         </Hero>
+
+
+        <Hero color="isPrimary" size="isMedium">
+          <HeroHead>
+            <Nav>
+              <Container>
+                <NavGloup align="left">
+                  <NavItem>
+                    <img src="images/bulma-white.png" alt="Logo" />
+                  </NavItem>
+                </NavGloup>
+                <NavToggle />
+
+                <NavGloup align="right" isMenu>
+                  <NavItem isActive>
+                    Home
+                  </NavItem>
+                  <NavItem>
+                    Examples
+                  </NavItem>
+                  <NavItem>
+                    Documentation
+                  </NavItem>
+                  <NavItem>
+                    <Button states="isInverted" icon="fa fa-github">Github</Button>
+                  </NavItem>
+                </NavGloup>
+              </Container>
+            </Nav>
+          </HeroHead>
+
+          <HeroBody>
+            <Container hasTextCentered>
+              <Title>Hero title</Title>
+              <Subtitle>Hero subtitle</Subtitle>
+            </Container>
+          </HeroBody>
+          <HeroFoot>
+            <NavTabs tabStyle="isBoxed">
+              <Container>
+                <ul>
+                  <Tab>Overview</Tab>
+                  <Tab>Modifiers</Tab>
+                  <Tab>Grid</Tab>
+                  <Tab>Elements</Tab>
+                  <Tab>Components</Tab>
+                  <Tab>Layout</Tab>
+                </ul>
+              </Container>
+            </NavTabs>
+          </HeroFoot>
+        </Hero>
+
+
       </div>
     );
   }

@@ -1,6 +1,5 @@
 .container {
-  box-sizing: border-box;
-  margin: 0;
+  box-sizing: inherit;
   padding: 0;
   border: 0;
   font-size: 100%;

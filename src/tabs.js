@@ -31,7 +31,6 @@ export class Tabs extends Component {
   };
 
   createClassName() {
-   
     return [
       styles.tabs,
       styles[kebabCase(this.props.alignment)],
