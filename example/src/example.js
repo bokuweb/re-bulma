@@ -56,7 +56,6 @@ import {
   NavGloup,
   NavItem,
   NavToggle,
-  NavTabs,
   Pagination,
   PageButton,
   Panel,
@@ -742,7 +741,7 @@ export default class Example extends Component {
             </Container>
           </HeroBody>
           <HeroFoot>
-            <NavTabs tabStyle="isBoxed">
+            <Tabs tabStyle="isBoxed">
               <Container>
                 <ul>
                   <Tab>Overview</Tab>
@@ -753,7 +752,7 @@ export default class Example extends Component {
                   <Tab>Layout</Tab>
                 </ul>
               </Container>
-            </NavTabs>
+            </Tabs>
           </HeroFoot>
         </Hero>
 
