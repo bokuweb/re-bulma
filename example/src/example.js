@@ -3,8 +3,8 @@ import {
   Button,
   Columns,
   Column,
-  FormAddon,
-  FormGroup,
+  Addons,
+  Group,
   FormHorizontal,
   ControlLabel,
   Input,
@@ -121,12 +121,12 @@ export default class Example extends Component {
           }}
         />
 
-        <FormAddon color="isInfo">
+        <Addons color="isInfo">
           <Input placeholder="Find a repository" />
           <Button>Search</Button>
-        </FormAddon>
+        </Addons>
 
-        <FormAddon help={{
+        <Addons help={{
                      text: 'help text',
                      color: 'isSuccess',
                    }}>
@@ -137,9 +137,9 @@ export default class Example extends Component {
           </Select>
           <Input type="text" placeholder="Amount of money" isExpanded />
           <Button coloe="isSuccess">Transfer</Button>
-        </FormAddon>
+        </Addons>
 
-        <FormAddon hasAddonsCentered>
+        <Addons hasAddonsCentered>
           <Select>
             <option>$</option>
             <option>£</option>
@@ -147,9 +147,9 @@ export default class Example extends Component {
           </Select>
           <Input type="text" placeholder="Amount of money" />
           <Button coloe="isSuccess">Transfer</Button>
-        </FormAddon>
+        </Addons>
 
-        <FormAddon hasAddonsRight>
+        <Addons hasAddonsRight>
           <Select>
             <option>$</option>
             <option>£</option>
@@ -157,19 +157,19 @@ export default class Example extends Component {
           </Select>
           <Input type="text" placeholder="Amount of money" />
           <Button coloe="isSuccess">Transfer</Button>
-        </FormAddon>
+        </Addons>
 
-        <FormGroup>
+        <Group>
           <Input type="text" placeholder="Find ad repository" isExpanded />
           <Button color="isSuccess">Search</Button>
-        </FormGroup>
+        </Group>
 
         <FormHorizontal>
           <ControlLabel>asdasddas</ControlLabel>
-          <FormGroup>
+          <Group>
             <Input type="text" placeholder="Find ad repository" isExpanded />
             <Input type="text" placeholder="Find ad repository" isExpanded />
-          </FormGroup>
+          </Group>
         </FormHorizontal>
 
         <Label>examples</Label>
