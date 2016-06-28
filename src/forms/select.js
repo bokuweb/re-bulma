@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
+import { getCallbacks } from '../helper/helper';
 
 export default class Select extends Component {
   static propTypes = {
@@ -8,6 +9,7 @@ export default class Select extends Component {
     style: PropTypes.object,
     defaultValue: PropTypes.string,
     value: PropTypes.string,
+    hasAddons: PropTypes.bool,
     size: PropTypes.oneOf([
       'isSmall',
       'isMedium',
@@ -59,19 +61,27 @@ export default class Select extends Component {
     );
   }
 
+  renderSelect() {
+    return (
+      <span className={this.createSelectClassName()} style={this.props.style}>
+        <select
+          {...getCallbacks(this.props)}
+          disabled={this.props.state === 'isDisabled'}
+        >
+          {this.props.children}
+        </select>
+        {this.renderHelp()}
+      </span>
+    );
+  }
+
   render() {
+    if (this.props.hasAddons) {
+      return this.renderSelect();
+    }
     return (
       <p className={this.createControlClassName()} style={this.props.style}>
-        <span className={this.createSelectClassName()}>
-          <select
-            {...this.props}
-            style={{}}
-            disabled={this.props.state === 'isDisabled'}
-          >
-            {this.props.children}
-          </select>
-          {this.renderHelp()}
-        </span>
+        {this.renderSelect()}
       </p>
     );
   }

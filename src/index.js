@@ -6,7 +6,7 @@ import styles from '../build/styles';
 import Button from './button';
 import { Columns, Column } from './columns';
 import Label from './label';
-import { FormAddon } from './forms/';
+import { FormAddon, FormGroup, FormHorizontal, ControlLabel } from './forms/';
 import Input from './forms/input';
 import Textarea from './forms/textarea';
 import Select from './forms/select';
@@ -49,6 +49,9 @@ export {
   Column,
   Label,
   FormAddon,
+  FormGroup,
+  FormHorizontal,
+  ControlLabel,
   Input,
   Textarea,
   Select,

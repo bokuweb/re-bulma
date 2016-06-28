@@ -15,6 +15,7 @@ export default class Input extends Component {
     value: PropTypes.string,
     hasAddons: PropTypes.bool,
     readOnly: PropTypes.bool,
+    isExpanded: PropTypes.bool,
     color: PropTypes.oneOf([
       'isPrimary',
       'isInfo',
@@ -64,6 +65,7 @@ export default class Input extends Component {
   createInputClassName() {
     return [
       styles.input,
+      this.props.isExpanded ? styles.isExpanded : '',
       styles[this.props.color],
       styles[this.props.size],
     ].join(' ').trim();
@@ -95,18 +97,14 @@ export default class Input extends Component {
 
   render() {
     if (this.props.hasAddons) {
-      return (
-        <span>
-          {this.renderInput()}
-          <i className={[styles.fa, this.props.icon].join(' ')} />
-          {this.renderHelp()}
-        </span>
-      );
+      return this.renderInput();
     }
     return (
       <p className={this.createControlClassName()} style={this.props.style}>
         {this.renderInput()}
-        <i className={[styles.fa, this.props.icon].join(' ')} />
+        {this.props.icon
+          ? <i className={[styles.fa, this.props.icon].join(' ')} />
+          : null}
         {this.renderHelp()}
       </p>
     );
