@@ -1,10 +1,16 @@
 .input {
   vertical-align: middle;
   font: 99% sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 select.select {
   vertical-align: middle;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+    
 }
 
 input[type="text"].input {
@@ -29,6 +35,9 @@ input[type=file].input,
 input.input,
 textarea.textarea {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 input.input,
