@@ -3,6 +3,10 @@ import {
   Button,
   Columns,
   Column,
+  FormAddon,
+  FormGroup,
+  FormHorizontal,
+  ControlLabel,
   Input,
   Textarea,
   Select,
@@ -100,7 +104,6 @@ export default class Example extends Component {
           <Column>cccc</Column>
         </Columns>
         <Input
-          hasAddons
           state="isDisabled"
           color="isDanger"
           icon="fa fa-heart"
@@ -117,6 +120,58 @@ export default class Example extends Component {
             color: 'isSuccess',
           }}
         />
+
+        <FormAddon color="isInfo">
+          <Input placeholder="Find a repository" />
+          <Button>Search</Button>
+        </FormAddon>
+
+        <FormAddon help={{
+                     text: 'help text',
+                     color: 'isSuccess',
+                   }}>
+          <Select>
+            <option>$</option>
+            <option>£</option>
+            <option>€</option>
+          </Select>
+          <Input type="text" placeholder="Amount of money" isExpanded />
+          <Button coloe="isSuccess">Transfer</Button>
+        </FormAddon>
+
+        <FormAddon hasAddonsCentered>
+          <Select>
+            <option>$</option>
+            <option>£</option>
+            <option>€</option>
+          </Select>
+          <Input type="text" placeholder="Amount of money" />
+          <Button coloe="isSuccess">Transfer</Button>
+        </FormAddon>
+
+        <FormAddon hasAddonsRight>
+          <Select>
+            <option>$</option>
+            <option>£</option>
+            <option>€</option>
+          </Select>
+          <Input type="text" placeholder="Amount of money" />
+          <Button coloe="isSuccess">Transfer</Button>
+        </FormAddon>
+
+        <FormGroup>
+          <Input type="text" placeholder="Find ad repository" isExpanded />
+          <Button color="isSuccess">Search</Button>
+        </FormGroup>
+
+        <FormHorizontal>
+          <ControlLabel>asdasddas</ControlLabel>
+          <FormGroup>
+            <Input type="text" placeholder="Find ad repository" isExpanded />
+            <Input type="text" placeholder="Find ad repository" isExpanded />
+          </FormGroup>
+        </FormHorizontal>
+
         <Label>examples</Label>
         <Select>
           <option>Select dropdown</option>

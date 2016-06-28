@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
+import { getCallbacks } from '../helper/helper';
 
 export default class Input extends Component {
   static propTypes = {
@@ -13,6 +14,8 @@ export default class Input extends Component {
     defaultValue: PropTypes.string,
     value: PropTypes.string,
     hasAddons: PropTypes.bool,
+    readOnly: PropTypes.bool,
+    isExpanded: PropTypes.bool,
     color: PropTypes.oneOf([
       'isPrimary',
       'isInfo',
@@ -62,6 +65,7 @@ export default class Input extends Component {
   createInputClassName() {
     return [
       styles.input,
+      this.props.isExpanded ? styles.isExpanded : '',
       styles[this.props.color],
       styles[this.props.size],
     ].join(' ').trim();
@@ -76,34 +80,31 @@ export default class Input extends Component {
     );
   }
 
-  renderForm() {
+  renderInput() {
     return (
-      <span>
-        <input
-          {...this.props}
-          style={{}}
-          className={this.createInputClassName()}
-          disabled={this.props.state === 'isDisabled'}
-        />
-        <i className={[styles.fa, this.props.icon].join(' ')} />
-        {this.renderHelp()}
-      </span>
+      <input
+        {...getCallbacks(this.props)}
+        className={this.createInputClassName()}
+        disabled={this.props.state === 'isDisabled'}
+        type={this.props.type}
+        readOnly={this.props.readOnly}
+        value={this.props.value}
+        defaultValue={this.props.defaultValue}
+        placeholder={this.props.placeholder}
+      />
     );
   }
 
   render() {
-    // if (this.props.hasAddons) {
-    //   return this.renderForm();
-    // }
+    if (this.props.hasAddons) {
+      return this.renderInput();
+    }
     return (
       <p className={this.createControlClassName()} style={this.props.style}>
-        <input
-          {...this.props}
-          style={{}}
-          className={this.createInputClassName()}
-          disabled={this.props.state === 'isDisabled'}
-        />
-        <i className={[styles.fa, this.props.icon].join(' ')} />
+        {this.renderInput()}
+        {this.props.icon
+          ? <i className={[styles.fa, this.props.icon].join(' ')} />
+          : null}
         {this.renderHelp()}
       </p>
     );

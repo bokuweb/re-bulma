@@ -1,10 +1,16 @@
 .input {
   vertical-align: middle;
   font: 99% sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 select.select {
   vertical-align: middle;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+   
 }
 
 input[type="text"].input {
@@ -29,6 +35,9 @@ input[type=file].input,
 input.input,
 textarea.textarea {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 input.input,
@@ -462,6 +471,13 @@ input[type=button].input {
 }
 
 .control {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
   position: relative;
   text-align: left;
 }
@@ -706,12 +722,28 @@ input[type=button].input {
 
 @media screen and (min-width: 769px) {
   .control.is-horizontal {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
   .control.is-horizontal > .control {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -762,5 +794,33 @@ input[type=button].input {
   to {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .control-label {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 5px;
+    vertical-align: baseline;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .control-label {
+    vertical-align: baseline;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-right: 20px;
+    padding-top: 7px;
+    text-align: right;
   }
 }

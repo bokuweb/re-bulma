@@ -56,8 +56,8 @@ export default class Button extends Component {
   }
 
   createIconSize() {
-    if (this.props.size === 'isLarge') return 'is-medium';
-    if (this.props.size === 'isSmall') return 'is-small';
+    if (this.props.size === 'isLarge') return 'isMedium';
+    if (this.props.size === 'isSmall') return 'isSmall';
     return '';
   }
 

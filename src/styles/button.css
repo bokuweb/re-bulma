@@ -9,6 +9,9 @@
   width: auto;
   overflow: visible;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .button:hover {

@@ -167,28 +167,32 @@
   color: #111;
 }
 
-.hero.is-white .tabs a {
+.hero.is-white .tabs a, .hero.is-white .tabs span {
   color: #111;
   opacity: 0.5;
 }
 
-.hero.is-white .tabs a:hover {
+.hero.is-white .tabs a:hover, .hero.is-white .tabs span:hover {
   opacity: 1;
 }
 
-.hero.is-white .tabs li.is-active a {
+.hero.is-white .tabs li.is-active a,
+.hero.is-white .tabs li.is-active span {
   opacity: 1;
 }
 
-.hero.is-white .tabs.is-boxed a, .hero.is-white .tabs.is-toggle a {
+.hero.is-white .tabs.is-boxed a, .hero.is-white .tabs.is-toggle a,
+.hero.is-white .tabs.is-boxed span, .hero.is-white .tabs.is-toggle span {
   color: #111;
 }
 
-.hero.is-white .tabs.is-boxed a:hover, .hero.is-white .tabs.is-toggle a:hover {
+.hero.is-white .tabs.is-boxed a:hover, .hero.is-white .tabs.is-toggle a:hover,
+.hero.is-white .tabs.is-boxed span:hover, .hero.is-white .tabs.is-toggle span:hover {
   background: rgba(17, 17, 17, 0.1);
 }
 
-.hero.is-white .tabs.is-boxed li.is-active a, .hero.is-white .tabs.is-boxed li.is-active a:hover, .hero.is-white .tabs.is-toggle li.is-active a, .hero.is-white .tabs.is-toggle li.is-active a:hover {
+.hero.is-white .tabs.is-boxed li.is-active a, .hero.is-white .tabs.is-boxed li.is-active a:hover, .hero.is-white .tabs.is-toggle li.is-active a, .hero.is-white .tabs.is-toggle li.is-active a:hover,
+.hero.is-white .tabs.is-boxed li.is-active span, .hero.is-white .tabs.is-boxed li.is-active span:hover, .hero.is-white .tabs.is-toggle li.is-active span, .hero.is-white .tabs.is-toggle li.is-active span:hover {
   background: #111;
   border-color: #111;
   color: #fff;
@@ -258,28 +262,28 @@
   color: #fff;
 }
 
-.hero.is-black .tabs a {
+.hero.is-black .tabs span {
   color: #fff;
   opacity: 0.5;
 }
 
-.hero.is-black .tabs a:hover {
+.hero.is-black .tabs span:hover {
   opacity: 1;
 }
 
-.hero.is-black .tabs li.is-active a {
+.hero.is-black .tabs li.is-active span {
   opacity: 1;
 }
 
-.hero.is-black .tabs.is-boxed a, .hero.is-black .tabs.is-toggle a {
+.hero.is-black .tabs.is-boxed span, .hero.is-black .tabs.is-toggle span {
   color: #fff;
 }
 
-.hero.is-black .tabs.is-boxed a:hover, .hero.is-black .tabs.is-toggle a:hover {
+.hero.is-black .tabs.is-boxed span:hover, .hero.is-black .tabs.is-toggle span:hover {
   background: rgba(17, 17, 17, 0.1);
 }
 
-.hero.is-black .tabs.is-boxed li.is-active a, .hero.is-black .tabs.is-boxed li.is-active a:hover, .hero.is-black .tabs.is-toggle li.is-active a, .hero.is-black .tabs.is-toggle li.is-active a:hover {
+.hero.is-black .tabs.is-boxed li.is-active span, .hero.is-black .tabs.is-boxed li.is-active span:hover, .hero.is-black .tabs.is-toggle li.is-active span, .hero.is-black .tabs.is-toggle li.is-active span:hover {
   background: #fff;
   border-color: #fff;
   color: #111;
@@ -349,28 +353,28 @@
   color: #69707a;
 }
 
-.hero.is-light .tabs a {
+.hero.is-light .tabs span {
   color: #69707a;
   opacity: 0.5;
 }
 
-.hero.is-light .tabs a:hover {
+.hero.is-light .tabs span:hover {
   opacity: 1;
 }
 
-.hero.is-light .tabs li.is-active a {
+.hero.is-light .tabs li.is-active span {
   opacity: 1;
 }
 
-.hero.is-light .tabs.is-boxed a, .hero.is-light .tabs.is-toggle a {
+.hero.is-light .tabs.is-boxed span, .hero.is-light .tabs.is-toggle span {
   color: #69707a;
 }
 
-.hero.is-light .tabs.is-boxed a:hover, .hero.is-light .tabs.is-toggle a:hover {
+.hero.is-light .tabs.is-boxed span:hover, .hero.is-light .tabs.is-toggle span:hover {
   background: rgba(17, 17, 17, 0.1);
 }
 
-.hero.is-light .tabs.is-boxed li.is-active a, .hero.is-light .tabs.is-boxed li.is-active a:hover, .hero.is-light .tabs.is-toggle li.is-active a, .hero.is-light .tabs.is-toggle li.is-active a:hover {
+.hero.is-light .tabs.is-boxed li.is-active span, .hero.is-light .tabs.is-boxed li.is-active span:hover, .hero.is-light .tabs.is-toggle li.is-active span, .hero.is-light .tabs.is-toggle li.is-active span:hover {
   background: #69707a;
   border-color: #69707a;
   color: #f5f7fa;
@@ -440,28 +444,28 @@
   color: #f5f7fa;
 }
 
-.hero.is-dark .tabs a {
+.hero.is-dark .tabs span {
   color: #f5f7fa;
   opacity: 0.5;
 }
 
-.hero.is-dark .tabs a:hover {
+.hero.is-dark .tabs span:hover {
   opacity: 1;
 }
 
-.hero.is-dark .tabs li.is-active a {
+.hero.is-dark .tabs li.is-active span {
   opacity: 1;
 }
 
-.hero.is-dark .tabs.is-boxed a, .hero.is-dark .tabs.is-toggle a {
+.hero.is-dark .tabs.is-boxed span, .hero.is-dark .tabs.is-toggle span {
   color: #f5f7fa;
 }
 
-.hero.is-dark .tabs.is-boxed a:hover, .hero.is-dark .tabs.is-toggle a:hover {
+.hero.is-dark .tabs.is-boxed span:hover, .hero.is-dark .tabs.is-toggle span:hover {
   background: rgba(17, 17, 17, 0.1);
 }
 
-.hero.is-dark .tabs.is-boxed li.is-active a, .hero.is-dark .tabs.is-boxed li.is-active a:hover, .hero.is-dark .tabs.is-toggle li.is-active a, .hero.is-dark .tabs.is-toggle li.is-active a:hover {
+.hero.is-dark .tabs.is-boxed li.is-active span, .hero.is-dark .tabs.is-boxed li.is-active span:hover, .hero.is-dark .tabs.is-toggle li.is-active span, .hero.is-dark .tabs.is-toggle li.is-active span:hover {
   background: #f5f7fa;
   border-color: #f5f7fa;
   color: #69707a;
@@ -520,39 +524,39 @@
   }
 }
 
-.hero.is-primary a.nav-item,
+.hero.is-primary span.nav-item,
 .hero.is-primary .nav-item a:not(.button) {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.hero.is-primary a.nav-item:hover, .hero.is-primary a.nav-item.is-active,
+.hero.is-primary span.nav-item:hover, .hero.is-primary span.nav-item.is-active,
 .hero.is-primary .nav-item a:not(.button):hover,
 .hero.is-primary .nav-item a:not(.button).is-active {
   color: white;
 }
 
-.hero.is-primary .tabs a {
+.hero.is-primary .tabs span {
   color: white;
   opacity: 0.5;
 }
 
-.hero.is-primary .tabs a:hover {
+.hero.is-primary .tabs span:hover {
   opacity: 1;
 }
 
-.hero.is-primary .tabs li.is-active a {
+.hero.is-primary .tabs li.is-active span {
   opacity: 1;
 }
 
-.hero.is-primary .tabs.is-boxed a, .hero.is-primary .tabs.is-toggle a {
+.hero.is-primary .tabs.is-boxed span, .hero.is-primary .tabs.is-toggle span {
   color: white;
 }
 
-.hero.is-primary .tabs.is-boxed a:hover, .hero.is-primary .tabs.is-toggle a:hover {
+.hero.is-primary .tabs.is-boxed span:hover, .hero.is-primary .tabs.is-toggle span:hover {
   background: rgba(17, 17, 17, 0.1);
 }
 
-.hero.is-primary .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle li.is-active a:hover {
+.hero.is-primary .tabs.is-boxed li.is-active span, .hero.is-primary .tabs.is-boxed li.is-active span:hover, .hero.is-primary .tabs.is-toggle li.is-active span, .hero.is-primary .tabs.is-toggle li.is-active span:hover {
   background: white;
   border-color: white;
   color: #1fc8db;
@@ -611,39 +615,39 @@
   }
 }
 
-.hero.is-info a.nav-item,
-.hero.is-info .nav-item a:not(.button) {
+.hero.is-info span.nav-item,
+.hero.is-info .nav-item span:not(.button) {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.hero.is-info a.nav-item:hover, .hero.is-info a.nav-item.is-active,
+.hero.is-info span.nav-item:hover, .hero.is-info span.nav-item.is-active,
 .hero.is-info .nav-item a:not(.button):hover,
 .hero.is-info .nav-item a:not(.button).is-active {
   color: white;
 }
 
-.hero.is-info .tabs a {
+.hero.is-info .tabs span {
   color: white;
   opacity: 0.5;
 }
 
-.hero.is-info .tabs a:hover {
+.hero.is-info .tabs span:hover {
   opacity: 1;
 }
 
-.hero.is-info .tabs li.is-active a {
+.hero.is-info .tabs li.is-active span {
   opacity: 1;
 }
 
-.hero.is-info .tabs.is-boxed a, .hero.is-info .tabs.is-toggle a {
+.hero.is-info .tabs.is-boxed span, .hero.is-info .tabs.is-toggle span {
   color: white;
 }
 
-.hero.is-info .tabs.is-boxed a:hover, .hero.is-info .tabs.is-toggle a:hover {
+.hero.is-info .tabs.is-boxed span:hover, .hero.is-info .tabs.is-toggle span:hover {
   background: rgba(17, 17, 17, 0.1);
 }
 
-.hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover {
+.hero.is-info .tabs.is-boxed li.is-active span, .hero.is-info .tabs.is-boxed li.is-active span:hover, .hero.is-info .tabs.is-toggle li.is-active span, .hero.is-info .tabs.is-toggle li.is-active span:hover {
   background: white;
   border-color: white;
   color: #42afe3;
@@ -702,39 +706,39 @@
   }
 }
 
-.hero.is-success a.nav-item,
+.hero.is-success span.nav-item,
 .hero.is-success .nav-item a:not(.button) {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.hero.is-success a.nav-item:hover, .hero.is-success a.nav-item.is-active,
+.hero.is-success span.nav-item:hover, .hero.is-success span.nav-item.is-active,
 .hero.is-success .nav-item a:not(.button):hover,
 .hero.is-success .nav-item a:not(.button).is-active {
   color: white;
 }
 
-.hero.is-success .tabs a {
+.hero.is-success .tabs span {
   color: white;
   opacity: 0.5;
 }
 
-.hero.is-success .tabs a:hover {
+.hero.is-success .tabs span:hover {
   opacity: 1;
 }
 
-.hero.is-success .tabs li.is-active a {
+.hero.is-success .tabs li.is-active span {
   opacity: 1;
 }
 
-.hero.is-success .tabs.is-boxed a, .hero.is-success .tabs.is-toggle a {
+.hero.is-success .tabs.is-boxed span, .hero.is-success .tabs.is-toggle span {
   color: white;
 }
 
-.hero.is-success .tabs.is-boxed a:hover, .hero.is-success .tabs.is-toggle a:hover {
+.hero.is-success .tabs.is-boxed span:hover, .hero.is-success .tabs.is-toggle span:hover {
   background: rgba(17, 17, 17, 0.1);
 }
 
-.hero.is-success .tabs.is-boxed li.is-active a, .hero.is-success .tabs.is-boxed li.is-active a:hover, .hero.is-success .tabs.is-toggle li.is-active a, .hero.is-success .tabs.is-toggle li.is-active a:hover {
+.hero.is-success .tabs.is-boxed li.is-active span, .hero.is-success .tabs.is-boxed li.is-active span:hover, .hero.is-success .tabs.is-toggle li.is-active span, .hero.is-success .tabs.is-toggle li.is-active span:hover {
   background: white;
   border-color: white;
   color: #97cd76;
@@ -793,39 +797,39 @@
   }
 }
 
-.hero.is-warning a.nav-item,
+.hero.is-warning span.nav-item,
 .hero.is-warning .nav-item a:not(.button) {
   color: rgba(17, 17, 17, 0.5);
 }
 
-.hero.is-warning a.nav-item:hover, .hero.is-warning a.nav-item.is-active,
-.hero.is-warning .nav-item a:not(.button):hover,
-.hero.is-warning .nav-item a:not(.button).is-active {
+.hero.is-warning span.nav-item:hover, .hero.is-warning span.nav-item.is-active,
+.hero.is-warning .nav-item span:not(.button):hover,
+.hero.is-warning .nav-item span:not(.button).is-active {
   color: rgba(17, 17, 17, 0.5);
 }
 
-.hero.is-warning .tabs a {
+.hero.is-warning .tabs span {
   color: rgba(17, 17, 17, 0.5);
   opacity: 0.5;
 }
 
-.hero.is-warning .tabs a:hover {
+.hero.is-warning .tabs span:hover {
   opacity: 1;
 }
 
-.hero.is-warning .tabs li.is-active a {
+.hero.is-warning .tabs li.is-active span {
   opacity: 1;
 }
 
-.hero.is-warning .tabs.is-boxed a, .hero.is-warning .tabs.is-toggle a {
+.hero.is-warning .tabs.is-boxed span, .hero.is-warning .tabs.is-toggle span {
   color: rgba(17, 17, 17, 0.5);
 }
 
-.hero.is-warning .tabs.is-boxed a:hover, .hero.is-warning .tabs.is-toggle a:hover {
+.hero.is-warning .tabs.is-boxed span:hover, .hero.is-warning .tabs.is-toggle span:hover {
   background: rgba(17, 17, 17, 0.1);
 }
 
-.hero.is-warning .tabs.is-boxed li.is-active a, .hero.is-warning .tabs.is-boxed li.is-active a:hover, .hero.is-warning .tabs.is-toggle li.is-active a, .hero.is-warning .tabs.is-toggle li.is-active a:hover {
+.hero.is-warning .tabs.is-boxed li.is-active span, .hero.is-warning .tabs.is-boxed li.is-active span:hover, .hero.is-warning .tabs.is-toggle li.is-active span, .hero.is-warning .tabs.is-toggle li.is-active span:hover {
   background: rgba(17, 17, 17, 0.5);
   border-color: rgba(17, 17, 17, 0.5);
   color: #fce473;
@@ -884,39 +888,39 @@
   }
 }
 
-.hero.is-danger a.nav-item,
-.hero.is-danger .nav-item a:not(.button) {
+.hero.is-danger span.nav-item,
+.hero.is-danger .nav-item span:not(.button) {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.hero.is-danger a.nav-item:hover, .hero.is-danger a.nav-item.is-active,
-.hero.is-danger .nav-item a:not(.button):hover,
-.hero.is-danger .nav-item a:not(.button).is-active {
+.hero.is-danger span.nav-item:hover, .hero.is-danger span.nav-item.is-active,
+.hero.is-danger .nav-item span:not(.button):hover,
+.hero.is-danger .nav-item span:not(.button).is-active {
   color: white;
 }
 
-.hero.is-danger .tabs a {
+.hero.is-danger .tabs span {
   color: white;
   opacity: 0.5;
 }
 
-.hero.is-danger .tabs a:hover {
+.hero.is-danger .tabs span:hover {
   opacity: 1;
 }
 
-.hero.is-danger .tabs li.is-active a {
+.hero.is-danger .tabs li.is-active span {
   opacity: 1;
 }
 
-.hero.is-danger .tabs.is-boxed a, .hero.is-danger .tabs.is-toggle a {
+.hero.is-danger .tabs.is-boxed span, .hero.is-danger .tabs.is-toggle span {
   color: white;
 }
 
-.hero.is-danger .tabs.is-boxed a:hover, .hero.is-danger .tabs.is-toggle a:hover {
+.hero.is-danger .tabs.is-boxed span:hover, .hero.is-danger .tabs.is-toggle span:hover {
   background: rgba(17, 17, 17, 0.1);
 }
 
-.hero.is-danger .tabs.is-boxed li.is-active a, .hero.is-danger .tabs.is-boxed li.is-active a:hover, .hero.is-danger .tabs.is-toggle li.is-active a, .hero.is-danger .tabs.is-toggle li.is-active a:hover {
+.hero.is-danger .tabs.is-boxed li.is-active span, .hero.is-danger .tabs.is-boxed li.is-active span:hover, .hero.is-danger .tabs.is-toggle li.is-active span, .hero.is-danger .tabs.is-toggle li.is-active span:hover {
   background: white;
   border-color: white;
   color: #ed6c63;
