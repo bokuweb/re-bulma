@@ -1,9 +1,12 @@
 import insertCss from 'insert-css';
 import css from '../build/css';
 import styles from '../build/styles';
+
+// 
 import Button from './button';
 import { Columns, Column } from './columns';
 import Label from './label';
+import { FormAddon } from './forms/';
 import Input from './forms/input';
 import Textarea from './forms/textarea';
 import Select from './forms/select';
@@ -45,6 +48,7 @@ export {
   Columns,
   Column,
   Label,
+  FormAddon,
   Input,
   Textarea,
   Select,

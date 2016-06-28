@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
+import { getCallbacks } from '../helper/helper';
 
 export default class Input extends Component {
   static propTypes = {
@@ -13,6 +14,7 @@ export default class Input extends Component {
     defaultValue: PropTypes.string,
     value: PropTypes.string,
     hasAddons: PropTypes.bool,
+    readOnly: PropTypes.bool,
     color: PropTypes.oneOf([
       'isPrimary',
       'isInfo',
@@ -76,33 +78,34 @@ export default class Input extends Component {
     );
   }
 
-  renderForm() {
+  renderInput() {
     return (
-      <span>
-        <input
-          {...this.props}
-          style={{}}
-          className={this.createInputClassName()}
-          disabled={this.props.state === 'isDisabled'}
-        />
-        <i className={[styles.fa, this.props.icon].join(' ')} />
-        {this.renderHelp()}
-      </span>
+      <input
+        {...getCallbacks(this.props)}
+        className={this.createInputClassName()}
+        disabled={this.props.state === 'isDisabled'}
+        type={this.props.type}
+        readOnly={this.props.readOnly}
+        value={this.props.value}
+        defaultValue={this.props.defaultValue}
+        placeholder={this.props.placeholder}
+      />
     );
   }
 
   render() {
-    // if (this.props.hasAddons) {
-    //   return this.renderForm();
-    // }
+    if (this.props.hasAddons) {
+      return (
+        <span>
+          {this.renderInput()}
+          <i className={[styles.fa, this.props.icon].join(' ')} />
+          {this.renderHelp()}
+        </span>
+      );
+    }
     return (
       <p className={this.createControlClassName()} style={this.props.style}>
-        <input
-          {...this.props}
-          style={{}}
-          className={this.createInputClassName()}
-          disabled={this.props.state === 'isDisabled'}
-        />
+        {this.renderInput()}
         <i className={[styles.fa, this.props.icon].join(' ')} />
         {this.renderHelp()}
       </p>

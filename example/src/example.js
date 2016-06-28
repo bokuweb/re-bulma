@@ -3,6 +3,7 @@ import {
   Button,
   Columns,
   Column,
+  FormAddon,
   Input,
   Textarea,
   Select,
@@ -100,7 +101,6 @@ export default class Example extends Component {
           <Column>cccc</Column>
         </Columns>
         <Input
-          hasAddons
           state="isDisabled"
           color="isDanger"
           icon="fa fa-heart"
@@ -117,6 +117,12 @@ export default class Example extends Component {
             color: 'isSuccess',
           }}
         />
+
+        <FormAddon color="isInfo">
+          <Input placeholder="Find a repository" />
+          <Button>Search</Button>
+        </FormAddon>
+
         <Label>examples</Label>
         <Select>
           <option>Select dropdown</option>
