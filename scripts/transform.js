@@ -21,6 +21,11 @@ fs.writeFileSync(
   `module.exports = \`${csjs.getCss(csjsObj)}\`\;`
 );
 
+fs.writeFileSync(
+  'styleguide/style.css',
+  `${csjs.getCss(csjsObj)}`
+);
+
 Object.keys(csjsObj).forEach(c => {
   styles[camelCase(c)] = csjsObj[c].toString();
 });

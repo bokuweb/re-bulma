@@ -35,12 +35,11 @@ export default class Button extends Component {
       'isDisabled',
     ]),
     delete: PropTypes.bool,
+    isIconRight: PropTypes.bool,
   };
 
   static defaultProps = {
     className: '',
-    isLoading: false,
-    isActive: false,
   };
 
   createClassName() {
@@ -70,14 +69,23 @@ export default class Button extends Component {
         {
           this.props.icon
             ? (
-              <span>
-                <span className={[styles.icon, styles[this.createIconSize()]].join(' ')}>
-                  <i className={[styles.fa, this.props.icon].join(' ')} />
-                </span>
-                <span style={{ lineHeight: this.props.size === 'isLarge' ? '32px' : 'auto' }}>
-                  {this.props.children}
-                </span>
-              </span>
+              this.props.isIconRight
+                ? <span>
+                    <span style={{ lineHeight: this.props.size === 'isLarge' ? '32px' : 'auto' }}>
+                      {this.props.children}
+                    </span>
+                    <span className={[styles.icon, styles[this.createIconSize()]].join(' ')}>
+                      <i className={[styles.fa, this.props.icon].join(' ')} />
+                    </span>
+                  </span>
+                : <span>
+                    <span className={[styles.icon, styles[this.createIconSize()]].join(' ')}>
+                      <i className={[styles.fa, this.props.icon].join(' ')} />
+                    </span>
+                    <span style={{ lineHeight: this.props.size === 'isLarge' ? '32px' : 'auto' }}>
+                      {this.props.children}
+                    </span>
+                  </span>
             )
             : this.props.children
         }
