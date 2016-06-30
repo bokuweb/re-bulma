@@ -12,6 +12,7 @@ import Icon from './elements/icon';
 import Image from './elements/image';
 import Notification from './elements/notification';
 import Tag from './elements/tag';
+import Progress from './elements/progress';
 
 import { Columns, Column } from './columns';
 import Label from './label';
@@ -25,7 +26,6 @@ import Checkbox from './forms/checkbox';
 import Radio from './forms/radio';
 import { Table, Td, Th, Tr, Tbody, Thead, Tfoot } from './table';
 import { Tabs, TabGroup, Tab } from './tabs';
-import Progress from './progress';
 import Message from './message';
 import { Card, CardHeader, CardImage, CardContent, CardHeaderTitle,
          CardHeaderIcon, CardFooter, CardFooterItem } from './card';

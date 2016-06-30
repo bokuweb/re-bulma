@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import styles from '../build/styles';
+import styles from '../../build/styles';
 
 export default class Progress extends Component {
   static propTypes = {
