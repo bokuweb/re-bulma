@@ -11,6 +11,7 @@ import Subtitle from './elements/subtitle';
 import Icon from './elements/icon';
 import Image from './elements/image';
 import Notification from './elements/notification';
+import Tag from './elements/tag';
 
 import { Columns, Column } from './columns';
 import Label from './label';
@@ -24,7 +25,6 @@ import Checkbox from './forms/checkbox';
 import Radio from './forms/radio';
 import { Table, Td, Th, Tr, Tbody, Thead, Tfoot } from './table';
 import { Tabs, TabGroup, Tab } from './tabs';
-import Tag from './tag';
 import Progress from './progress';
 import Message from './message';
 import { Card, CardHeader, CardImage, CardContent, CardHeaderTitle,
@@ -37,11 +37,13 @@ import { Menu, MenuLabel, MenuList, MenuLink } from './menu';
 import { Nav, NavGloup, NavItem, NavToggle, NavContainer } from './nav';
 import { Pagination, PageButton } from './pagination';
 import { Panel, PanelBlock, PanelHeading, PanelTabs } from './panel';
+
 // Layout
 import Container from './layout/container';
 import Footer from './layout/footer';
 import Section from './layout/section';
 import { Hero, HeroFoot, HeroHead, HeroBody } from './layout/hero';
+
 // Grid
 import Tile from './grid/tile';
 
