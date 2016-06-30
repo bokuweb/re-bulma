@@ -9,6 +9,8 @@ import Content from './elements/content';
 import Title from './elements/title';
 import Subtitle from './elements/subtitle';
 import Icon from './elements/icon';
+import Image from './elements/image';
+import Notification from './elements/notification';
 
 import { Columns, Column } from './columns';
 import Label from './label';
@@ -25,8 +27,6 @@ import { Tabs, TabGroup, Tab } from './tabs';
 import Tag from './tag';
 import Progress from './progress';
 import Message from './message';
-import Image from './image';
-import Notification from './notification';
 import { Card, CardHeader, CardImage, CardContent, CardHeaderTitle,
          CardHeaderIcon, CardFooter, CardFooterItem } from './card';
 import Heading from './heading';
