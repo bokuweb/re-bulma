@@ -1,34 +1,27 @@
 import React, { Component, PropTypes } from 'react';
-import styles from '../build/styles';
+import styles from '../../build/styles';
 
-export default class Tag extends Component {
+export default class Icon extends Component {
   static propTypes = {
-    children: PropTypes.any,
+    style: PropTypes.object,
     className: PropTypes.string,
+    icon: PropTypes.string,
     size: PropTypes.oneOf([
       'isSmall',
       'isMedium',
       'isLarge',
     ]),
-    color: PropTypes.oneOf([
-      'isPrimary',
-      'isInfo',
-      'isSuccess',
-      'isWarning',
-      'isDanger',
-      'isDark',
-    ]),
   };
 
   static defaultProps = {
+    style: {},
     className: '',
   };
 
   createClassName() {
     return [
-      styles.tag,
+      styles.icon,
       styles[this.props.size],
-      styles[this.props.color],
       this.props.className,
     ].join(' ').trim();
   }
@@ -36,7 +29,7 @@ export default class Tag extends Component {
   render() {
     return (
       <span {...this.props} className={this.createClassName()}>
-        {this.props.children}
+        <i className={[styles.fa, this.props.icon].join(' ').trim()} />
       </span>
     );
   }

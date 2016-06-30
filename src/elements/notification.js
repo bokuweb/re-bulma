@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import styles from '../build/styles';
-import { getCallbacks } from './helper/helper';
+import styles from '../../build/styles';
+import { getCallbacks } from '../helper/helper';
 
 export default class Notification extends Component {
   static propTypes = {
@@ -33,7 +33,11 @@ export default class Notification extends Component {
 
   render() {
     return (
-      <div {...getCallbacks(this.props)} className={this.createClassName()}>
+      <div
+        {...getCallbacks(this.props)}
+        className={this.createClassName()}
+        style={this.props.style}
+      >
         <button className={styles.delete} {...this.props.closeButtonProps} />
         {this.props.children}
       </div>
