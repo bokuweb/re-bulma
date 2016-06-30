@@ -2,7 +2,14 @@ import insertCss from 'insert-css';
 import css from '../build/css';
 import styles from '../build/styles';
 
-import Button from './button';
+// Elements
+import Box from './elements/box';
+import Button from './elements/button';
+import Content from './elements/content';
+import Title from './elements/title';
+import Subtitle from './elements/subtitle';
+import Icon from './elements/icon';
+
 import { Columns, Column } from './columns';
 import Label from './label';
 import { FormHorizontal, ControlLabel } from './forms/';
@@ -14,13 +21,9 @@ import Select from './forms/select';
 import Checkbox from './forms/checkbox';
 import Radio from './forms/radio';
 import { Table, Td, Th, Tr, Tbody, Thead, Tfoot } from './table';
-import { Title, Subtitle } from './title';
-import Box from './box';
-import Icon from './icon';
 import { Tabs, TabGroup, Tab } from './tabs';
 import Tag from './tag';
 import Progress from './progress';
-import Content from './content';
 import Message from './message';
 import Image from './image';
 import Notification from './notification';

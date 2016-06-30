@@ -1,6 +1,6 @@
   ### Import
   
-  import { Button } from 're-bulma';
+  `import { Button } from 're-bulma';`
   
   ### Colors
     
@@ -90,3 +90,24 @@
       <Button icon="fa fa-check" color="isSuccess">Save</Button> 
       <Button icon="fa fa-times" color="isDanger" isIconRight>Delete</Button> 
     </div>
+
+  ### Button Group
+
+    const Group = require('../group').default;
+    
+    <Group>
+      <Button color="isPrimary">Save changes</Button> 
+      <Button>Cancel</Button> 
+      <Button color="isDanger">Delete post</Button>       
+    </Group>
+
+  ### Button Addons
+
+    const Addons = require('../addons').default;
+    
+    <Addons>
+      <Button icon="fa fa-align-left">Left</Button> 
+      <Button icon="fa fa-align-center">Center</Button> 
+      <Button icon="fa fa-align-right">Right</Button> 
+    </Addons>
+   

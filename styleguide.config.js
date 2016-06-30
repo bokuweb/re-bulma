@@ -1,4 +1,5 @@
 const path = require('path');
+const docgen = require('react-docgen');
 
 module.exports = {
   title: '',
@@ -15,5 +16,6 @@ module.exports = {
   components: 'src/**/*.js',
   skipComponentsWithoutExample: true,
   getExampleFilename: componentpath => componentpath.replace(/\.js$/, '.examples.md'),
+  resolver: docgen.resolver.findAllComponentDefinitions,
 };
 

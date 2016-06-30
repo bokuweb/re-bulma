@@ -1,9 +1,8 @@
 import React, { Component, PropTypes } from 'react';
-import styles from '../build/styles';
+import styles from '../../build/styles';
 
 export default class Icon extends Component {
   static propTypes = {
-    children: PropTypes.string,
     style: PropTypes.object,
     className: PropTypes.string,
     icon: PropTypes.string,
