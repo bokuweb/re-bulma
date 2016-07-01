@@ -1,6 +1,6 @@
 {
   "name": "re-bulma",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "prepublish": "npm run compile",
     "styleguide-server": "styleguidist server",
     "styleguide-build": "styleguidist build",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "update-gh-pages": "git push react-bulma `git subtree split --prefix styleguide master`:gh-pages --force"
   },
   "repository": {
     "type": "git",

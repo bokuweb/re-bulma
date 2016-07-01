@@ -13,17 +13,17 @@ import Image from './elements/image';
 import Notification from './elements/notification';
 import Tag from './elements/tag';
 import Progress from './elements/progress';
-
-import { Columns, Column } from './columns';
-import Label from './label';
-import { FormHorizontal, ControlLabel } from './forms/';
+import { FormHorizontal, ControlLabel } from './elements/forms/';
+import Label from './elements/label';
 import Group from './group';
 import Addons from './addons';
-import Input from './forms/input';
-import Textarea from './forms/textarea';
-import Select from './forms/select';
-import Checkbox from './forms/checkbox';
-import Radio from './forms/radio';
+import Input from './elements/forms/input';
+import Textarea from './elements/forms/textarea';
+import Select from './elements/forms/select';
+import Checkbox from './elements/forms/checkbox';
+import Radio from './elements/forms/radio';
+
+import { Columns, Column } from './columns';
 import { Table, Td, Th, Tr, Tbody, Thead, Tfoot } from './table';
 import { Tabs, TabGroup, Tab } from './tabs';
 import Message from './message';

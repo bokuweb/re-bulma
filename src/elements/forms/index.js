@@ -1,8 +1,8 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
-import styles from '../../build/styles';
-import { getCallbacks } from '../helper/helper';
+import styles from '../../../build/styles';
+import { getCallbacks } from '../../helper/helper';
 
 export class FormHorizontal extends Component {
   static propTypes = {
