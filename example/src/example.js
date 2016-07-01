@@ -103,15 +103,29 @@ export default class Example extends Component {
           <Column>bbbb</Column>
           <Column>cccc</Column>
         </Columns>
-        <Input
-          state="isDisabled"
-          color="isDanger"
-          icon="fa fa-heart"
+        <div style={{ width: '300px'}}>
+          <Label>asdasd</Label>
+          <Input
+             state="isDisabled"
+             color="isDanger"
+             icon="fa fa-heart"
           help={{
-            text: 'help text',
-            color: 'isSuccess',
-          }}
-        />
+               text: 'help text',
+               color: 'isSuccess',
+             }}
+             />
+          <Label>asdasd</Label>
+          <Input
+             color="isDanger"
+             icon="fa fa-heart"
+             hasIconRight
+             value="hoge"
+             help={{
+               text: 'help text',
+               color: 'isSuccess',
+             }}
+             />
+          </div>
         <Textarea
           state="isLoading"
           color="isInfo"

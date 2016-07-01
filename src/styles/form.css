@@ -1,10 +1,12 @@
 .input {
+  box-sizing: border-box;
   vertical-align: middle;
   font: 99% sans-serif;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 select.select {
+  box-sizing: border-box;
   vertical-align: middle;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -23,6 +25,7 @@ input[type="checkbox"].input {
 
 select.select, textarea.textarea {
   font: 99% sans-serif;
+  box-sizing: border-box;
 }
 
 input[type=button].input,
