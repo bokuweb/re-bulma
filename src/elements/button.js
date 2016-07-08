@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
+import { getCallbacks } from '../helper/helper';
 
 export default class Button extends Component {
   static propTypes = {
@@ -60,33 +61,47 @@ export default class Button extends Component {
     return '';
   }
 
+  renderLeftIcon() {
+    return (
+      <span>
+        <span className={[styles.icon, styles[this.createIconSize()]].join(' ')}>
+          <i className={[styles.fa, this.props.icon].join(' ')} />
+        </span>
+        <span style={{ lineHeight: this.props.size === 'isLarge' ? '32px' : 'auto' }}>
+          {this.props.children}
+        </span>
+      </span>
+    );
+  }
+
+  renderRightIcon() {
+    return (
+      <span>
+        <span style={{ lineHeight: this.props.size === 'isLarge' ? '32px' : 'auto' }}>
+          {this.props.children}
+        </span>
+        <span className={[styles.icon, styles[this.createIconSize()]].join(' ')}>
+          <i className={[styles.fa, this.props.icon].join(' ')} />
+        </span>
+      </span>
+    );
+  }
+
+  renderIcon() {
+    return this.props.isIconRight
+      ? this.renderRightIcon()
+      : this.renderLeftIcon();
+  }
+
   render() {
     return (
       <button
-        {...this.props}
+        {...getCallbacks(this.props)}
         className={this.createClassName()}
       >
         {
           this.props.icon
-            ? (
-              this.props.isIconRight
-                ? <span>
-                    <span style={{ lineHeight: this.props.size === 'isLarge' ? '32px' : 'auto' }}>
-                      {this.props.children}
-                    </span>
-                    <span className={[styles.icon, styles[this.createIconSize()]].join(' ')}>
-                      <i className={[styles.fa, this.props.icon].join(' ')} />
-                    </span>
-                  </span>
-                : <span>
-                    <span className={[styles.icon, styles[this.createIconSize()]].join(' ')}>
-                      <i className={[styles.fa, this.props.icon].join(' ')} />
-                    </span>
-                    <span style={{ lineHeight: this.props.size === 'isLarge' ? '32px' : 'auto' }}>
-                      {this.props.children}
-                    </span>
-                  </span>
-            )
+            ? this.renderIcon()
             : this.props.children
         }
       </button>
