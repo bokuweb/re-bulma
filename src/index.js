@@ -2,6 +2,10 @@ import insertCss from 'insert-css';
 import css from '../build/css';
 import styles from '../build/styles';
 
+// grid
+import { Columns, Column } from './columns';
+import Tile from './grid/tile';
+
 // Elements
 import Box from './elements/box';
 import Button from './elements/button';
@@ -31,11 +35,18 @@ import Tbody from './elements/tbody';
 import Thead from './elements/thead';
 import Tfoot from './elements/tfoot';
 
-import { Columns, Column } from './columns';
+// components
+import Card from './components/card/card';
+import CardHeader from './components/card/card-header';
+import CardImage from './components/card/card-image';
+import CardContent from './components/card/card-content';
+import CardHeaderTitle from './components/card/card-header-title';
+import CardHeaderIcon from './components/card/card-header-icon';
+import CardFooter from './components/card/card-footer';
+import CardFooterItem from './components/card/card-footer-item';
+
 import { Tabs, TabGroup, Tab } from './tabs';
 import Message from './message';
-import { Card, CardHeader, CardImage, CardContent, CardHeaderTitle,
-         CardHeaderIcon, CardFooter, CardFooterItem } from './card';
 import Heading from './heading';
 import { Level, LevelRight, LevelLeft, LevelItem } from './level';
 import Modal from './modal';
@@ -50,9 +61,6 @@ import Container from './layout/container';
 import Footer from './layout/footer';
 import Section from './layout/section';
 import { Hero, HeroFoot, HeroHead, HeroBody } from './layout/hero';
-
-// Grid
-import Tile from './grid/tile';
 
 insertCss(css, { prepend: true });
 

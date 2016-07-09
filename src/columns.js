@@ -17,7 +17,6 @@ export class Columns extends Component {
   };
 
   createClassName() {
-    
     return [
       styles.columns,
       styles[this.props.responsive],
