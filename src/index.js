@@ -13,7 +13,8 @@ import Image from './elements/image';
 import Notification from './elements/notification';
 import Tag from './elements/tag';
 import Progress from './elements/progress';
-import { FormHorizontal, ControlLabel } from './elements/forms/';
+import FormHorizontal from './elements/forms/form-horizontal';
+import ControlLabel from './elements/forms/control-label';
 import Label from './elements/label';
 import Group from './elements/group';
 import Addons from './elements/addons';
@@ -22,9 +23,15 @@ import Textarea from './elements/forms/textarea';
 import Select from './elements/forms/select';
 import Checkbox from './elements/forms/checkbox';
 import Radio from './elements/forms/radio';
+import Table from './elements/table';
+import Td from './elements/td';
+import Th from './elements/th';
+import Tr from './elements/tr';
+import Tbody from './elements/tbody';
+import Thead from './elements/thead';
+import Tfoot from './elements/tfoot';
 
 import { Columns, Column } from './columns';
-import { Table, Td, Th, Tr, Tbody, Thead, Tfoot } from './table';
 import { Tabs, TabGroup, Tab } from './tabs';
 import Message from './message';
 import { Card, CardHeader, CardImage, CardContent, CardHeaderTitle,

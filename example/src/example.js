@@ -178,6 +178,7 @@ export default class Example extends Component {
           <Button color="isSuccess">Search</Button>
         </Group>
 
+
         <FormHorizontal>
           <ControlLabel>asdasddas</ControlLabel>
           <Group>
@@ -193,24 +194,7 @@ export default class Example extends Component {
         </Select>
         <Checkbox>Remember me</Checkbox>
 
-        <Table isStriped>
-          <Thead>
-            <Tr>
-              <Th>One</Th>
-              <Th>Two</Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            <Tr>
-              <Td>Three</Td>
-              <Td>Four</Td>
-            </Tr>
-            <Tr>
-              <Td>Three</Td>
-              <Td>Four</Td>
-            </Tr>
-          </Tbody>
-        </Table>
+
         <Table>
           <Thead>
             <Tr>
