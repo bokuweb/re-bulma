@@ -23,9 +23,15 @@ import Textarea from './elements/forms/textarea';
 import Select from './elements/forms/select';
 import Checkbox from './elements/forms/checkbox';
 import Radio from './elements/forms/radio';
+import Table from './elements/table';
+import Td from './elements/td';
+import Th from './elements/th';
+import Tr from './elements/tr';
+import Tbody from './elements/tbody';
+import Thead from './elements/thead';
+import Tfoot from './elements/tfoot';
 
 import { Columns, Column } from './columns';
-import { Table, Td, Th, Tr, Tbody, Thead, Tfoot } from './table';
 import { Tabs, TabGroup, Tab } from './tabs';
 import Message from './message';
 import { Card, CardHeader, CardImage, CardContent, CardHeaderTitle,
