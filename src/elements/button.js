@@ -8,6 +8,7 @@ export default class Button extends Component {
     className: PropTypes.string,
     icon: PropTypes.string,
     type: PropTypes.string,
+    style: PropTypes.object,
     size: PropTypes.oneOf([
       'isSmall',
       'isMedium',
@@ -40,6 +41,7 @@ export default class Button extends Component {
   };
 
   static defaultProps = {
+    style: {},
     className: '',
   };
 
@@ -97,6 +99,7 @@ export default class Button extends Component {
     return (
       <button
         {...getCallbacks(this.props)}
+        style={this.props.style}
         className={this.createClassName()}
       >
         {
