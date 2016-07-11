@@ -1,6 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 
 import React, { Component, PropTypes } from 'react';
+import { getCallbacks } from './helper/helper';
 import styles from '../build/styles';
 
 export class Tabs extends Component {
@@ -42,7 +43,7 @@ export class Tabs extends Component {
 
   render() {
     return (
-      <div {...this.props} className={this.createClassName()}>
+      <div {...getCallbacks(this.props)} className={this.createClassName()}>
         {this.props.children}
       </div>
     );
@@ -73,7 +74,7 @@ export class TabGroup extends Component {
 
   render() {
     return (
-      <ul {...this.props} className={this.createClassName()}>
+      <ul {...getCallbacks(this.props)} className={this.createClassName()}>
         {this.props.children}
       </ul>
     );
@@ -100,7 +101,7 @@ export class Tab extends Component {
 
   render() {
     return (
-      <li {...this.props} className={this.createClassName()}>
+      <li {...getCallbacks(this.props)} className={this.createClassName()}>
         <span>
           {this.props.children}
         </span>
