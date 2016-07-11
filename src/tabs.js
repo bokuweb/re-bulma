@@ -91,6 +91,7 @@ export class Tab extends Component {
     children: PropTypes.any,
     className: PropTypes.string,
     isActive: PropTypes.bool,
+    style: PropTypes.object,
   };
 
   static defaultProps = {
