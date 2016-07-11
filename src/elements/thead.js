@@ -6,10 +6,12 @@ export default class Thead extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
+    style: PropTypes.object,
   };
 
   static defaultProps = {
     className: '',
+    style: {},
   };
 
   createClassName() {
@@ -24,6 +26,7 @@ export default class Thead extends Component {
       <thead
         {...getCallbacks(this.props)}
         className={this.createClassName()}
+        style={this.props.style}
       >
         {this.props.children}
       </thead>

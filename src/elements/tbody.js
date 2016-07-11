@@ -6,6 +6,7 @@ export default class Tbody extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
+    style: PropTypes.object,
   };
 
   static defaultProps = {
@@ -24,6 +25,7 @@ export default class Tbody extends Component {
       <tbody
         {...getCallbacks(this.props)}
         className={this.createClassName()}
+        style={this.props.style}
       >
         {this.props.children}
       </tbody>

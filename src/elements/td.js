@@ -7,6 +7,7 @@ export default class Td extends Component {
     children: PropTypes.any,
     className: PropTypes.string,
     isIcon: PropTypes.bool,
+    style: PropTypes.object,
   };
 
   static defaultProps = {
@@ -26,6 +27,7 @@ export default class Td extends Component {
       <td
         {...getCallbacks(this.props)}
         className={this.createClassName()}
+        style={this.props.style}
       >
         {this.props.children}
       </td>

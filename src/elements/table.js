@@ -9,6 +9,7 @@ export default class Table extends Component {
     isBordered: PropTypes.bool,
     isStriped: PropTypes.bool,
     isNarrow: PropTypes.bool,
+    style: PropTypes.object,
   };
 
   static defaultProps = {
@@ -31,6 +32,7 @@ export default class Table extends Component {
       <table
         {...getCallbacks(this.props)}
         className={this.createClassName()}
+        style={this.psops.style}
       >
         {this.props.children}
       </table>

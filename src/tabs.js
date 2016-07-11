@@ -43,7 +43,11 @@ export class Tabs extends Component {
 
   render() {
     return (
-      <div {...getCallbacks(this.props)} className={this.createClassName()}>
+      <div
+        {...getCallbacks(this.props)}
+        className={this.createClassName()}
+        style={this.props.style}
+      >
         {this.props.children}
       </div>
     );
@@ -54,6 +58,7 @@ export class TabGroup extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
+    style: PropTypes.object,
     alignment: PropTypes.oneOf([
       'isLeft',
       'isCenter',
@@ -101,7 +106,11 @@ export class Tab extends Component {
 
   render() {
     return (
-      <li {...getCallbacks(this.props)} className={this.createClassName()}>
+      <li
+        {...getCallbacks(this.props)}
+        className={this.createClassName()}
+        style={this.props.style}
+      >
         <span>
           {this.props.children}
         </span>
