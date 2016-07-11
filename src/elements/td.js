@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { getCallbacks } from '../helper/helper';
 import styles from '../../build/styles';
 
 export default class Td extends Component {
@@ -23,7 +24,7 @@ export default class Td extends Component {
   render() {
     return (
       <td
-        {...this.props}
+        {...getCallbacks(this.props)}
         className={this.createClassName()}
       >
         {this.props.children}

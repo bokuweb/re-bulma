@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
+import { getCallbacks } from '../helper/helper';
 
 export default class Thead extends Component {
   static propTypes = {
@@ -21,7 +22,7 @@ export default class Thead extends Component {
   render() {
     return (
       <thead
-        {...this.props}
+        {...getCallbacks(this.props)}
         className={this.createClassName()}
       >
         {this.props.children}

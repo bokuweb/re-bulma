@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { getCallbacks } from '../helper/helper';
 import styles from '../../build/styles';
 
 export default class Th extends Component {
@@ -21,7 +22,7 @@ export default class Th extends Component {
   render() {
     return (
       <th
-        {...this.props}
+        {...getCallbacks(this.props)}
         className={this.createClassName()}
       >
         {this.props.children}
