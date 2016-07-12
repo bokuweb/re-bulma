@@ -3,6 +3,7 @@ const fs = require('fs');
 const camelCase = require('lodash.camelcase');
 const path = process.argv[2];
 const dist = process.argv[3];
+const CleanCSS = require('clean-css');
 
 let combinedCss = '';
 
@@ -18,7 +19,7 @@ const styles = {};
 
 fs.writeFileSync(
   `${dist}css.js`,
-  `module.exports = \`${csjs.getCss(csjsObj)}\`\;`
+  `module.exports = \'${new CleanCSS().minify(csjs.getCss(csjsObj)).styles}\'\;`
 );
 
 fs.writeFileSync(

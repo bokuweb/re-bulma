@@ -38,6 +38,7 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-1": "^6.3.13",
     "bulma": "0.0.28",
+    "clean-css": "^3.4.18",
     "csjs": "^1.0.4",
     "eslint": "^2.11.1",
     "eslint-config-airbnb": "^9.0.1",
