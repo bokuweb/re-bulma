@@ -50,12 +50,13 @@ import Modal from './components/modal/modal';
 import Tabs from './components/tabs/tabs';
 import TabGroup from './components/tabs/tab-group';
 import Tab from './components/tabs/tab';
+import Pagination from './components/pagination/pagination';
+import PageButton from './components/pagination/page-button';
 
 import { Level, LevelRight, LevelLeft, LevelItem } from './level';
 import { Media, MediaLeft, MediaContent, MediaRight } from './media-object';
 import { Menu, MenuLabel, MenuList, MenuLink } from './menu';
 import { Nav, NavGloup, NavItem, NavToggle, NavContainer } from './nav';
-import { Pagination, PageButton } from './pagination';
 import { Panel, PanelBlock, PanelHeading, PanelTabs } from './panel';
 
 // Layout
