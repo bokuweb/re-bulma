@@ -47,8 +47,10 @@ import CardFooterItem from './components/card/card-footer-item';
 import Message from './components/message/message';
 import Heading from './components/heading/heading';
 import Modal from './components/modal/modal';
+import Tabs from './components/tabs/tabs';
+import TabGroup from './components/tabs/tab-group';
+import Tab from './components/tabs/tab';
 
-import { Tabs, TabGroup, Tab } from './tabs';
 import { Level, LevelRight, LevelLeft, LevelItem } from './level';
 import { Media, MediaLeft, MediaContent, MediaRight } from './media-object';
 import { Menu, MenuLabel, MenuList, MenuLink } from './menu';
