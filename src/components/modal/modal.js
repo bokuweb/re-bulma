@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import styles from '../build/styles';
-import { getCallbacks } from './helper/helper';
+import styles from '../../../build/styles';
+import { getCallbacks } from '../../helper/helper';
 
 export default class Modal extends Component {
   static propTypes = {

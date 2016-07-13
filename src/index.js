@@ -44,12 +44,12 @@ import CardHeaderTitle from './components/card/card-header-title';
 import CardHeaderIcon from './components/card/card-header-icon';
 import CardFooter from './components/card/card-footer';
 import CardFooterItem from './components/card/card-footer-item';
+import Message from './components/message/message';
+import Heading from './components/heading/heading';
+import Modal from './components/modal/modal';
 
 import { Tabs, TabGroup, Tab } from './tabs';
-import Message from './message';
-import Heading from './heading';
 import { Level, LevelRight, LevelLeft, LevelItem } from './level';
-import Modal from './modal';
 import { Media, MediaLeft, MediaContent, MediaRight } from './media-object';
 import { Menu, MenuLabel, MenuList, MenuLink } from './menu';
 import { Nav, NavGloup, NavItem, NavToggle, NavContainer } from './nav';
