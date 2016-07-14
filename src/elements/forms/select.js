@@ -67,6 +67,8 @@ export default class Select extends Component {
         <select
           {...getCallbacks(this.props)}
           disabled={this.props.state === 'isDisabled'}
+          defaultValue={this.props.defaultValue}
+          value={this.props.value}
         >
           {this.props.children}
         </select>
