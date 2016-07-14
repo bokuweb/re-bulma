@@ -64,9 +64,17 @@ import Menu from './components/menu/menu';
 import MenuLabel from './components/menu/menu-label';
 import MenuList from './components/menu/menu-list';
 import MenuLink from './components/menu/menu-link';
+import Panel from './components/panel/panel';
+import PanelBlock from './components/panel/panel-block';
+import PanelHeading from './components/panel/panel-heading';
+import PanelTabs from './components/panel/panel-tabs';
 
-import { Nav, NavGloup, NavItem, NavToggle, NavContainer } from './nav';
-import { Panel, PanelBlock, PanelHeading, PanelTabs } from './panel';
+import Nav from './components/nav/nav';
+import NavGloup from './components/nav/nav-group';
+import NavItem from './components/nav/nav-item';
+import NavToggle from './components/nav/nav-toggle';
+import NavContainer from './components/nav/nav-container';
+
 
 // Layout
 import Container from './layout/container';

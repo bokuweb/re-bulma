@@ -2,6 +2,6 @@
   
   `import { MenuLabel } from 're-bulma';`
   
-  ### Menu Lael
+  ### Menu Label
 
   see. `<Menu />`
