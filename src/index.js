@@ -44,17 +44,37 @@ import CardHeaderTitle from './components/card/card-header-title';
 import CardHeaderIcon from './components/card/card-header-icon';
 import CardFooter from './components/card/card-footer';
 import CardFooterItem from './components/card/card-footer-item';
+import Message from './components/message/message';
+import Heading from './components/heading/heading';
+import Modal from './components/modal/modal';
+import Tabs from './components/tabs/tabs';
+import TabGroup from './components/tabs/tab-group';
+import Tab from './components/tabs/tab';
+import Pagination from './components/pagination/pagination';
+import PageButton from './components/pagination/page-button';
+import Level from './components/level/level';
+import LevelRight from './components/level/level-right';
+import LevelLeft from './components/level/level-left';
+import LevelItem from './components/level/level-item';
+import Media from './components/media/media';
+import MediaLeft from './components/media/media-left';
+import MediaContent from './components/media/media-content';
+import MediaRight from './components/media/media-right';
+import Menu from './components/menu/menu';
+import MenuLabel from './components/menu/menu-label';
+import MenuList from './components/menu/menu-list';
+import MenuLink from './components/menu/menu-link';
+import Panel from './components/panel/panel';
+import PanelBlock from './components/panel/panel-block';
+import PanelHeading from './components/panel/panel-heading';
+import PanelTabs from './components/panel/panel-tabs';
 
-import { Tabs, TabGroup, Tab } from './tabs';
-import Message from './message';
-import Heading from './heading';
-import { Level, LevelRight, LevelLeft, LevelItem } from './level';
-import Modal from './modal';
-import { Media, MediaLeft, MediaContent, MediaRight } from './media-object';
-import { Menu, MenuLabel, MenuList, MenuLink } from './menu';
-import { Nav, NavGloup, NavItem, NavToggle, NavContainer } from './nav';
-import { Pagination, PageButton } from './pagination';
-import { Panel, PanelBlock, PanelHeading, PanelTabs } from './panel';
+import Nav from './components/nav/nav';
+import NavGloup from './components/nav/nav-group';
+import NavItem from './components/nav/nav-item';
+import NavToggle from './components/nav/nav-toggle';
+import NavContainer from './components/nav/nav-container';
+
 
 // Layout
 import Container from './layout/container';

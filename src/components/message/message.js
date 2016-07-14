@@ -1,11 +1,13 @@
 import React, { Component, PropTypes } from 'react';
-import styles from '../build/styles';
+import styles from '../../../build/styles';
+import { getCallbacks } from '../../helper/helper';
 
 export default class Message extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
     header: PropTypes.any,
+    style: PropTypes.onbject,
     color: PropTypes.oneOf([
       'isPrimary',
       'isInfo',
@@ -23,6 +25,7 @@ export default class Message extends Component {
 
   static defaultProps = {
     className: '',
+    style: {},
     header: '',
   };
 
@@ -34,18 +37,22 @@ export default class Message extends Component {
     ].join(' ').trim();
   }
 
+  renderHeader() {
+    return (
+      <div className={styles.messageHeader}>
+        {this.props.header}
+      </div>
+    );
+  }
+
   render() {
     return (
-      <article {...this.props} className={this.createClassName()} >
-        {
-          this.props.header === ''
-            ? null
-            : (
-              <div className={styles.messageHeader}>
-                {this.props.header}
-              </div>
-            )
-        }
+      <article
+        {...getCallbacks(this.props)}
+        className={this.createClassName()}
+        style={this.props.style}
+      >
+        {this.props.header === '' ? null : this.renderHeader()}
         <div className={styles.messageBody}>
           {this.props.children}
         </div>
