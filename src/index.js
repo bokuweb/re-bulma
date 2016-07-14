@@ -52,10 +52,19 @@ import TabGroup from './components/tabs/tab-group';
 import Tab from './components/tabs/tab';
 import Pagination from './components/pagination/pagination';
 import PageButton from './components/pagination/page-button';
+import Level from './components/level/level';
+import LevelRight from './components/level/level-right';
+import LevelLeft from './components/level/level-left';
+import LevelItem from './components/level/level-item';
+import Media from './components/media/media';
+import MediaLeft from './components/media/media-left';
+import MediaContent from './components/media/media-content';
+import MediaRight from './components/media/media-right';
+import Menu from './components/menu/menu';
+import MenuLabel from './components/menu/menu-label';
+import MenuList from './components/menu/menu-list';
+import MenuLink from './components/menu/menu-link';
 
-import { Level, LevelRight, LevelLeft, LevelItem } from './level';
-import { Media, MediaLeft, MediaContent, MediaRight } from './media-object';
-import { Menu, MenuLabel, MenuList, MenuLink } from './menu';
 import { Nav, NavGloup, NavItem, NavToggle, NavContainer } from './nav';
 import { Panel, PanelBlock, PanelHeading, PanelTabs } from './panel';
 
