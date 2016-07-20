@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
+import { getCallbacks } from '../helper/helper';
 
 export default class Container extends Component {
   static propTypes = {
@@ -26,7 +27,11 @@ export default class Container extends Component {
 
   render() {
     return (
-      <div {...this.props} className={this.createClassName()}>
+      <div
+        {...getCallbacks(this.props)}
+        className={this.createClassName()}
+        style={this.props.style}
+      >
         {this.props.children}
       </div>
     );

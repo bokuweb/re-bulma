@@ -2,10 +2,10 @@ import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
 import { getCallbacks } from '../helper/helper';
 
-export default class Footer extends Component {
+export default class HeroFoot extends Component {
   static propTypes = {
-    children: PropTypes.any,
     style: PropTypes.object,
+    children: PropTypes.any,
     className: PropTypes.string,
   };
 
@@ -16,20 +16,20 @@ export default class Footer extends Component {
 
   createClassName() {
     return [
-      styles.footer,
+      styles.heroFoot,
       this.props.className,
     ].join(' ').trim();
   }
 
   render() {
     return (
-      <footer
+      <section
         {...getCallbacks(this.props)}
-        className={this.createClassName()}
         style={this.props.style}
+        className={this.createClassName()}
       >
         {this.props.children}
-      </footer>
+      </section>
     );
   }
 }
