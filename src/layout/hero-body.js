@@ -2,31 +2,11 @@ import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
 import { getCallbacks } from '../helper/helper';
 
-export default class Hero extends Component {
+export default class HeroBody extends Component {
   static propTypes = {
     style: PropTypes.object,
     children: PropTypes.any,
     className: PropTypes.string,
-    isBold: PropTypes.bool,
-    size: PropTypes.oneOf([
-      'isSmall',
-      'isMedium',
-      'isLarge',
-      'isFullhieght',
-    ]),
-    color: PropTypes.oneOf([
-      'isPrimary',
-      'isInfo',
-      'isSuccess',
-      'isWarning',
-      'isDanger',
-      'isLink',
-      'isWhite',
-      'isLight',
-      'isDark',
-      'isBlack',
-      'isLink',
-    ]),
   };
 
   static defaultProps = {
@@ -36,10 +16,7 @@ export default class Hero extends Component {
 
   createClassName() {
     return [
-      styles.hero,
-      this.props.isBold ? styles.isBold : '',
-      styles[this.props.size],
-      styles[this.props.color],
+      styles.heroBody,
       this.props.className,
     ].join(' ').trim();
   }

@@ -74,12 +74,14 @@ import NavItem from './components/nav/nav-item';
 import NavToggle from './components/nav/nav-toggle';
 import NavContainer from './components/nav/nav-container';
 
-
 // Layout
 import Container from './layout/container';
 import Footer from './layout/footer';
 import Section from './layout/section';
-import { Hero, HeroFoot, HeroHead, HeroBody } from './layout/hero';
+import Hero from './layout/hero';
+import HeroFoot from './layout/hero-foot';
+import HeroHead from './layout/hero-head';
+import HeroBody from './layout/hero-body';
 
 insertCss(css, { prepend: true });
 
