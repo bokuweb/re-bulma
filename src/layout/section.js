@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
+import { getCallbacks } from '../helper/helper';
 
 export default class Section extends Component {
   static propTypes = {
@@ -22,7 +23,11 @@ export default class Section extends Component {
 
   render() {
     return (
-      <section {...this.props} className={this.createClassName()}>
+      <section
+        {...getCallbacks(this.props)}
+        className={this.createClassName()}
+        style={this.props.style}
+      >
         {this.props.children}
       </section>
     );
