@@ -31,7 +31,7 @@
   }
 
   .nav-toggle span {
-      background: #69707a;
+      background-color: #69707a;
       display: block;
       height: 1px;
       left: 50%;
@@ -60,11 +60,11 @@
   }
   
   .nav-toggle:hover {
-      background: #f5f7fa;
+      background-color: #f5f7fa;
 }
   
 .is-active.nav-toggle span {
-    background: #1fc8db;
+    background-color: #1fc8db;
 }
 
 .is-active.nav-toggle span:nth-child(1) {
@@ -174,7 +174,7 @@ a.nav-item.is-tab.is-active {
             justify-content: flex-start;
   }
   .nav-menu {
-    background: #fff;
+    background-color: #fff;
     box-shadow: 0 4px 7px rgba(17, 17, 17, 0.1);
     left: 0;
     display: none;
@@ -254,7 +254,7 @@ a.nav-item.is-tab.is-active {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  background: #fff;
+  background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

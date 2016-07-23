@@ -5,7 +5,7 @@
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
 }
 
 .content {
@@ -16,7 +16,7 @@
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
   font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -76,7 +76,7 @@
 }
 
 .content blockquote {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   border-left: 5px solid #d3d6db;
   padding: 1.5em;
 }
@@ -134,7 +134,7 @@
 
 .content.is-medium code {
   font-size: 14px;
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   color: #ed6c63;
   font-size: 12px;
   font-weight: normal;
@@ -147,7 +147,7 @@
 
 .content.is-large code {
   font-size: 18px;
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   color: #ed6c63;
   font-size: 12px;
   font-weight: normal;

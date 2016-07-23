@@ -1,10 +1,12 @@
 import React, { Component, PropTypes } from 'react';
-import styles from '../../build/styles';
+import styles from '../../../build/styles';
+import { getCallbacks } from '../../helper/helper';
 
 export default class Tile extends Component {
   static propTypes = {
     children: PropTypes.any,
     className: PropTypes.string,
+    style: PropTypes.object,
     context: PropTypes.oneOf([
       'isAncestor',
       'isParent',
@@ -29,6 +31,7 @@ export default class Tile extends Component {
 
   static defaultProps = {
     className: '',
+    style: {},
   };
 
   createClassName() {
@@ -43,7 +46,11 @@ export default class Tile extends Component {
 
   render() {
     return (
-      <div {...this.props} className={this.createClassName()}>
+      <div
+        {...getCallbacks(this.props)}
+        className={this.createClassName()}
+        style={this.props.style}
+      >
         {this.props.children}
       </div>
     );

@@ -8,6 +8,7 @@ export default class Notification extends Component {
     style: PropTypes.object,
     className: PropTypes.string,
     closeButtonProps: PropTypes.object,
+    enableCloseButton: PropTypes.bool,
     color: PropTypes.oneOf([
       'isPrimary',
       'isInfo',
@@ -18,7 +19,7 @@ export default class Notification extends Component {
   };
 
   static defaultProps = {
-    src: '',
+    enableCloseButton: false,
     style: {},
     className: '',
   };
@@ -38,7 +39,9 @@ export default class Notification extends Component {
         className={this.createClassName()}
         style={this.props.style}
       >
-        <button className={styles.delete} {...this.props.closeButtonProps} />
+        {this.props.enableCloseButton
+          ? <button className={styles.delete} {...this.props.closeButtonProps} />
+          : null}
         {this.props.children}
       </div>
     );

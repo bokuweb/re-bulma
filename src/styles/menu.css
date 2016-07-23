@@ -32,12 +32,12 @@
 }
 
 .menu-list a:hover {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   color: #1fc8db;
 }
 
 .menu-list a.is-active {
-  background: #1fc8db;
+  background-color: #1fc8db;
   color: white;
 }
 

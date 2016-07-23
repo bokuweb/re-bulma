@@ -41,7 +41,7 @@
 }
 
 .table {
-  background: #fff;
+  background-color: #fff;
   color: #222324;
   margin-bottom: 20px;
   width: 100%;
@@ -97,7 +97,7 @@
 
 .table td.is-link > a:hover,
 .table th.is-link > a:hover {
-  background: #1fc8db;
+  background-color: #1fc8db;
   color: white;
 }
 
@@ -113,7 +113,7 @@
 }
 
 .table tr:hover {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   color: #222324;
 }
 
@@ -175,13 +175,13 @@
 }
 
 .table.is-striped tbody tr:hover {
-  background: #eef2f7;
+  background-color: #eef2f7;
 }
 
 .table.is-striped tbody tr:nth-child(2n) {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
 }
 
 .table.is-striped tbody tr:nth-child(2n):hover {
-  background: #eef2f7;
+  background-color: #eef2f7;
 }

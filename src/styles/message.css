@@ -26,7 +26,7 @@
 }
 
 .message-header {
-  background: #69707a;
+  background-color: #69707a;
   border-radius: 3px 3px 0 0;
   color: white;
   padding: 7px 10px;
@@ -42,16 +42,16 @@
 }
 
 .message {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   border-radius: 3px;
 }
 
 .message.is-white {
-  background: white;
+  background-color: white;
 }
 
 .message.is-white .message-header {
-  background: #fff;
+  background-color: #fff;
   color: #111;
 }
 
@@ -61,11 +61,11 @@
 }
 
 .message.is-black {
-  background: whitesmoke;
+  background-color: whitesmoke;
 }
 
 .message.is-black .message-header {
-  background: #111;
+  background-color: #111;
   color: #fff;
 }
 
@@ -75,11 +75,11 @@
 }
 
 .message.is-light {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
 }
 
 .message.is-light .message-header {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   color: #69707a;
 }
 
@@ -89,11 +89,11 @@
 }
 
 .message.is-dark {
-  background: #f4f5f6;
+  background-color: #f4f5f6;
 }
 
 .message.is-dark .message-header {
-  background: #69707a;
+  background-color: #69707a;
   color: #f5f7fa;
 }
 
@@ -103,11 +103,11 @@
 }
 
 .message.is-primary {
-  background: #edfbfc;
+  background-color: #edfbfc;
 }
 
 .message.is-primary .message-header {
-  background: #1fc8db;
+  background-color: #1fc8db;
   color: white;
 }
 
@@ -117,11 +117,11 @@
 }
 
 .message.is-info {
-  background: #edf7fc;
+  background-color: #edf7fc;
 }
 
 .message.is-info .message-header {
-  background: #42afe3;
+  background-color: #42afe3;
   color: white;
 }
 
@@ -131,11 +131,11 @@
 }
 
 .message.is-success {
-  background: #f4faf0;
+  background-color: #f4faf0;
 }
 
 .message.is-success .message-header {
-  background: #97cd76;
+  background-color: #97cd76;
   color: white;
 }
 
@@ -145,11 +145,11 @@
 }
 
 .message.is-warning {
-  background: #fffbeb;
+  background-color: #fffbeb;
 }
 
 .message.is-warning .message-header {
-  background: #fce473;
+  background-color: #fce473;
   color: rgba(17, 17, 17, 0.5);
 }
 
@@ -159,11 +159,11 @@
 }
 
 .message.is-danger {
-  background: #fdeeed;
+  background-color: #fdeeed;
 }
 
 .message.is-danger .message-header {
-  background: #ed6c63;
+  background-color: #ed6c63;
   color: white;
 }
 

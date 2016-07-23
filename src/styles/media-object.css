@@ -5,7 +5,7 @@
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
   display: block;
   margin-right: 10px;
 }
@@ -17,7 +17,7 @@
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
   display: block;
 
   margin-left: 10px;
@@ -30,7 +30,7 @@
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
   display: block;
 
   -webkit-box-flex: 1;
@@ -47,7 +47,7 @@
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
   display: block;
 
   -webkit-box-align: start;
