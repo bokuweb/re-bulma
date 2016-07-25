@@ -5,6 +5,9 @@ languages:
   Python: true
 exclude_paths:
 - example/*
+- build/*
 - example/**/*
 - karma.conf.js
 - test/*
+- lib/*
+- server.js
