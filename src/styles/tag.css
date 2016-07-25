@@ -3,7 +3,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   border-radius: 290486px;
   color: #69707a;
   display: -webkit-inline-box;
@@ -29,47 +29,47 @@
 }
 
 .tag.is-white {
-  background: #fff;
+  background-color: #fff;
   color: #111;
 }
 
 .tag.is-black {
-  background: #111;
+  background-color: #111;
   color: #fff;
 }
 
 .tag.is-light {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   color: #69707a;
 }
 
 .tag.is-dark {
-  background: #69707a;
+  background-color: #69707a;
   color: #f5f7fa;
 }
 
 .tag.is-primary {
-  background: #1fc8db;
+  background-color: #1fc8db;
   color: white;
 }
 
 .tag.is-info {
-  background: #42afe3;
+  background-color: #42afe3;
   color: white;
 }
 
 .tag.is-success {
-  background: #97cd76;
+  background-color: #97cd76;
   color: white;
 }
 
 .tag.is-warning {
-  background: #fce473;
+  background-color: #fce473;
   color: rgba(17, 17, 17, 0.5);
 }
 
 .tag.is-danger {
-  background: #ed6c63;
+  background-color: #ed6c63;
   color: white;
 }
 
@@ -104,7 +104,7 @@
 .delete {
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: rgba(17, 17, 17, 0.2);
+  background-color: rgba(17, 17, 17, 0.2);
   border: none;
   border-radius: 290486px;
   cursor: pointer;
@@ -121,7 +121,7 @@
 }
 
 .delete:before, .delete:after {
-  background: #fff;
+  background-color: #fff;
   content: "";
   display: block;
   height: 2px;
@@ -144,7 +144,7 @@
 }
 
 .delete:hover {
-  background: rgba(17, 17, 17, 0.5);
+  background-color: rgba(17, 17, 17, 0.5);
 }
 
 .delete.is-small, .tag:not(.is-large) .delete {

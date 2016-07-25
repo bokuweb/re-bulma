@@ -7,7 +7,7 @@
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
 }
 
 .panel-icon {
@@ -33,7 +33,7 @@ p.panel-heading {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   border-bottom: 1px solid #d3d6db;
   border-radius: 4px 4px 0 0;
   color: #222324;
@@ -95,7 +95,7 @@ p.panel-tabs {
 }
 
 span.panel-block:hover {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
 }
 
 .panel {

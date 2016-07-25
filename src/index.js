@@ -3,8 +3,9 @@ import css from '../build/css';
 import styles from '../build/styles';
 
 // grid
-import { Columns, Column } from './columns';
-import Tile from './grid/tile';
+import Columns from './grid/columns';
+import Column from './grid/column';
+import Tile from './grid/tile/tile';
 
 // Elements
 import Box from './elements/box';

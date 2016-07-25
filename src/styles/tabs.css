@@ -5,7 +5,7 @@
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -141,12 +141,12 @@
 }
 
 .tabs.is-boxed span:hover, .tabs.is-boxed a:hover {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   border-bottom-color: #d3d6db;
 }
 
 .tabs.is-boxed li.is-active span, .tabs.is-boxed li.is-active a {
-  background: #fff;
+  background-color: #fff;
   border-color: #d3d6db;
   border-bottom-color: transparent !important;
 }
@@ -167,7 +167,7 @@
 }
 
 .tabs.is-toggle span:hover {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   border-color: #aeb1b5;
   z-index: 2;
 }
@@ -185,7 +185,7 @@
 }
 
 .tabs.is-toggle li.is-active span, .tabs.is-toggle li.is-active a {
-  background: #1fc8db;
+  background-color: #1fc8db;
   border-color: #1fc8db;
   color: white;
   z-index: 1;

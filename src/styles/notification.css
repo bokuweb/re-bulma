@@ -19,7 +19,7 @@
   font-size: 14px;
   font-weight: normal;
   vertical-align: baseline;
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   border-radius: 3px;
   padding: 16px 20px;
   position: relative;
@@ -43,46 +43,46 @@
 }
 
 .notification.is-white {
-  background: #fff;
+  background-color: #fff;
   color: #111;
 }
 
 .notification.is-black {
-  background: #111;
+  background-color: #111;
   color: #fff;
 }
 
 .notification.is-light {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   color: #69707a;
 }
 
 .notification.is-dark {
-  background: #69707a;
+  background-color: #69707a;
   color: #f5f7fa;
 }
 
 .notification.is-primary {
-  background: #1fc8db;
+  background-color: #1fc8db;
   color: white;
 }
 
 .notification.is-info {
-  background: #42afe3;
+  background-color: #42afe3;
   color: white;
 }
 
 .notification.is-success {
-  background: #97cd76;
+  background-color: #97cd76;
   color: white;
 }
 
 .notification.is-warning {
-  background: #fce473;
+  background-color: #fce473;
   color: rgba(17, 17, 17, 0.5);
 }
 
 .notification.is-danger {
-  background: #ed6c63;
+  background-color: #ed6c63;
   color: white;
 }

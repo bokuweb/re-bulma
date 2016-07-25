@@ -6,11 +6,11 @@
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
 }
 
 .footer {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   padding: 40px 20px 80px;
 }
 

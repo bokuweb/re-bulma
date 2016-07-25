@@ -61,7 +61,7 @@ input[type=button].input {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: white;
+  background-color: white;
   border: 1px solid #d3d6db;
   border-radius: 3px;
   color: #222324;
@@ -100,7 +100,7 @@ input[type=button].input {
 }
 
 .input[disabled], [disabled].textarea, .input.is-disabled, .is-disabled.textarea {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   border-color: #d3d6db;
   cursor: not-allowed;
   pointer-events: none;
@@ -261,7 +261,7 @@ input[type=button].input {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: white;
+  background-color: white;
   border: 1px solid #d3d6db;
   border-radius: 3px;
   color: #222324;
@@ -296,7 +296,7 @@ input[type=button].input {
 }
 
 .select select[disabled], .select select.is-disabled {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   border-color: #d3d6db;
   cursor: not-allowed;
   pointer-events: none;
@@ -732,7 +732,7 @@ input[type=button].input {
     font-size: 100%;
     font-weight: normal;
     vertical-align: baseline;
-    background: transparent;
+    background-color: transparent;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -746,7 +746,7 @@ input[type=button].input {
     font-size: 100%;
     font-weight: normal;
     vertical-align: baseline;
-    background: transparent;
+    background-color: transparent;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

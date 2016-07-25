@@ -1,45 +1,11 @@
-/* eslint-disable react/no-multi-comp */
-
 import React, { Component, PropTypes } from 'react';
-import styles from '../build/styles';
+import styles from '../../build/styles';
+import { getCallbacks } from '../helper/helper';
 
-export class Columns extends Component {
+export default class Column extends Component {
   static propTypes = {
     children: PropTypes.any,
-    className: PropTypes.string,
-    responsive: PropTypes.oneOf([
-      'isMobile',
-      'isDesktop',
-      'isTablet',
-    ]),
-    isMultiline: PropTypes.bool,
-    isGapless: PropTypes.bool,
-  };
-
-  createClassName() {
-    return [
-      styles.columns,
-      styles[this.props.responsive],
-      this.props.isMultiline ? styles.isMultiline : '',
-      this.props.isGapless ? styles.isGapless : '',
-      this.props.className,
-    ].join(' ').trim();
-  }
-
-  render() {
-    return (
-      <div {...this.props} className={this.createClassName()}>
-        { this.props.children }
-      </div>
-    );
-  }
-}
-
-
-export class Column extends Component {
-  static propTypes = {
-    children: PropTypes.any,
-    customStyle: PropTypes.object,
+    style: PropTypes.object,
     className: PropTypes.string,
     isMultiline: PropTypes.bool,
     size: PropTypes.oneOf([
@@ -171,8 +137,12 @@ export class Column extends Component {
 
   render() {
     return (
-      <div className={this.createClassName()} style={this.props.customStyle}>
-        { this.props.children }
+      <div
+        {...getCallbacks(this.props)}
+        className={this.createClassName()}
+        style={this.props.style}
+      >
+        {this.props.children}
       </div>
     );
   }

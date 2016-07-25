@@ -13,7 +13,12 @@ module.exports = {
     });
     return webpackConfig;
   },
-  components: 'src/**/*.js',
+  sections: [
+    { name: 'Grid', components: 'src/grid/**/*.js' },
+    { name: 'Elements', components: 'src/elements/**/*.js' },
+    { name: 'Components', components: 'src/components/**/*.js' },
+    { name: 'Layout', components: 'src/layout/**/*.js' },
+  ],
   skipComponentsWithoutExample: true,
   getExampleFilename: componentpath => componentpath.replace(/\.js$/, '.examples.md'),
   resolver: docgen.resolver.findAllComponentDefinitions,

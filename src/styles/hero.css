@@ -7,7 +7,7 @@
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
 }
 
 .hero-video {
@@ -98,7 +98,7 @@
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  background: #fff;
+  background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -115,7 +115,7 @@
 }
 
 .hero .nav {
-  background: none;
+  background-color: none;
   box-shadow: 0 1px 0 rgba(211, 214, 219, 0.3);
 }
 
@@ -124,7 +124,7 @@
 }
 
 .hero.is-white {
-  background: #fff;
+  background-color: #fff;
   color: #111;
 }
 
@@ -152,7 +152,7 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-white .nav-menu {
-    background: #fff;
+    background-color: #fff;
   }
 }
 
@@ -188,12 +188,12 @@
 
 .hero.is-white .tabs.is-boxed a:hover, .hero.is-white .tabs.is-toggle a:hover,
 .hero.is-white .tabs.is-boxed span:hover, .hero.is-white .tabs.is-toggle span:hover {
-  background: rgba(17, 17, 17, 0.1);
+  background-color: rgba(17, 17, 17, 0.1);
 }
 
 .hero.is-white .tabs.is-boxed li.is-active a, .hero.is-white .tabs.is-boxed li.is-active a:hover, .hero.is-white .tabs.is-toggle li.is-active a, .hero.is-white .tabs.is-toggle li.is-active a:hover,
 .hero.is-white .tabs.is-boxed li.is-active span, .hero.is-white .tabs.is-boxed li.is-active span:hover, .hero.is-white .tabs.is-toggle li.is-active span, .hero.is-white .tabs.is-toggle li.is-active span:hover {
-  background: #111;
+  background-color: #111;
   border-color: #111;
   color: #fff;
 }
@@ -205,13 +205,13 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-white .nav-toggle span {
-    background: #111;
+    background-color: #111;
   }
   .hero.is-white .nav-toggle:hover {
-    background: rgba(17, 17, 17, 0.1);
+    background-color: rgba(17, 17, 17, 0.1);
   }
   .hero.is-white .nav-toggle.is-active span {
-    background: #111;
+    background-color: #111;
   }
   .hero.is-white .nav-menu .nav-item {
     border-top-color: rgba(17, 17, 17, 0.2);
@@ -219,7 +219,7 @@
 }
 
 .hero.is-black {
-  background: #111;
+  background-color: #111;
   color: #fff;
 }
 
@@ -247,7 +247,7 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-black .nav-menu {
-    background: #111;
+    background-color: #111;
   }
 }
 
@@ -280,11 +280,11 @@
 }
 
 .hero.is-black .tabs.is-boxed span:hover, .hero.is-black .tabs.is-toggle span:hover {
-  background: rgba(17, 17, 17, 0.1);
+  background-color: rgba(17, 17, 17, 0.1);
 }
 
 .hero.is-black .tabs.is-boxed li.is-active span, .hero.is-black .tabs.is-boxed li.is-active span:hover, .hero.is-black .tabs.is-toggle li.is-active span, .hero.is-black .tabs.is-toggle li.is-active span:hover {
-  background: #fff;
+  background-color: #fff;
   border-color: #fff;
   color: #111;
 }
@@ -296,13 +296,13 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-black .nav-toggle span {
-    background: #fff;
+    background-color: #fff;
   }
   .hero.is-black .nav-toggle:hover {
-    background: rgba(17, 17, 17, 0.1);
+    background-color: rgba(17, 17, 17, 0.1);
   }
   .hero.is-black .nav-toggle.is-active span {
-    background: #fff;
+    background-color: #fff;
   }
   .hero.is-black .nav-menu .nav-item {
     border-top-color: rgba(255, 255, 255, 0.2);
@@ -310,7 +310,7 @@
 }
 
 .hero.is-light {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   color: #69707a;
 }
 
@@ -338,7 +338,7 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-light .nav-menu {
-    background: #f5f7fa;
+    background-color: #f5f7fa;
   }
 }
 
@@ -371,11 +371,11 @@
 }
 
 .hero.is-light .tabs.is-boxed span:hover, .hero.is-light .tabs.is-toggle span:hover {
-  background: rgba(17, 17, 17, 0.1);
+  background-color: rgba(17, 17, 17, 0.1);
 }
 
 .hero.is-light .tabs.is-boxed li.is-active span, .hero.is-light .tabs.is-boxed li.is-active span:hover, .hero.is-light .tabs.is-toggle li.is-active span, .hero.is-light .tabs.is-toggle li.is-active span:hover {
-  background: #69707a;
+  background-color: #69707a;
   border-color: #69707a;
   color: #f5f7fa;
 }
@@ -387,13 +387,13 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-light .nav-toggle span {
-    background: #69707a;
+    background-color: #69707a;
   }
   .hero.is-light .nav-toggle:hover {
-    background: rgba(17, 17, 17, 0.1);
+    background-color: rgba(17, 17, 17, 0.1);
   }
   .hero.is-light .nav-toggle.is-active span {
-    background: #69707a;
+    background-color: #69707a;
   }
   .hero.is-light .nav-menu .nav-item {
     border-top-color: rgba(105, 112, 122, 0.2);
@@ -401,7 +401,7 @@
 }
 
 .hero.is-dark {
-  background: #69707a;
+  background-color: #69707a;
   color: #f5f7fa;
 }
 
@@ -429,7 +429,7 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-dark .nav-menu {
-    background: #69707a;
+    background-color: #69707a;
   }
 }
 
@@ -462,11 +462,11 @@
 }
 
 .hero.is-dark .tabs.is-boxed span:hover, .hero.is-dark .tabs.is-toggle span:hover {
-  background: rgba(17, 17, 17, 0.1);
+  background-color: rgba(17, 17, 17, 0.1);
 }
 
 .hero.is-dark .tabs.is-boxed li.is-active span, .hero.is-dark .tabs.is-boxed li.is-active span:hover, .hero.is-dark .tabs.is-toggle li.is-active span, .hero.is-dark .tabs.is-toggle li.is-active span:hover {
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   border-color: #f5f7fa;
   color: #69707a;
 }
@@ -478,13 +478,13 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-dark .nav-toggle span {
-    background: #f5f7fa;
+    background-color: #f5f7fa;
   }
   .hero.is-dark .nav-toggle:hover {
-    background: rgba(17, 17, 17, 0.1);
+    background-color: rgba(17, 17, 17, 0.1);
   }
   .hero.is-dark .nav-toggle.is-active span {
-    background: #f5f7fa;
+    background-color: #f5f7fa;
   }
   .hero.is-dark .nav-menu .nav-item {
     border-top-color: rgba(245, 247, 250, 0.2);
@@ -492,7 +492,7 @@
 }
 
 .hero.is-primary {
-  background: #1fc8db;
+  background-color: #1fc8db;
   color: white;
 }
 
@@ -520,7 +520,7 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-primary .nav-menu {
-    background: #1fc8db;
+    background-color: #1fc8db;
   }
 }
 
@@ -553,11 +553,11 @@
 }
 
 .hero.is-primary .tabs.is-boxed span:hover, .hero.is-primary .tabs.is-toggle span:hover {
-  background: rgba(17, 17, 17, 0.1);
+  background-color: rgba(17, 17, 17, 0.1);
 }
 
 .hero.is-primary .tabs.is-boxed li.is-active span, .hero.is-primary .tabs.is-boxed li.is-active span:hover, .hero.is-primary .tabs.is-toggle li.is-active span, .hero.is-primary .tabs.is-toggle li.is-active span:hover {
-  background: white;
+  background-color: white;
   border-color: white;
   color: #1fc8db;
 }
@@ -569,13 +569,13 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-primary .nav-toggle span {
-    background: white;
+    background-color: white;
   }
   .hero.is-primary .nav-toggle:hover {
-    background: rgba(17, 17, 17, 0.1);
+    background-color: rgba(17, 17, 17, 0.1);
   }
   .hero.is-primary .nav-toggle.is-active span {
-    background: white;
+    background-color: white;
   }
   .hero.is-primary .nav-menu .nav-item {
     border-top-color: rgba(255, 255, 255, 0.2);
@@ -583,7 +583,7 @@
 }
 
 .hero.is-info {
-  background: #42afe3;
+  background-color: #42afe3;
   color: white;
 }
 
@@ -611,7 +611,7 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-info .nav-menu {
-    background: #42afe3;
+    background-color: #42afe3;
   }
 }
 
@@ -644,11 +644,11 @@
 }
 
 .hero.is-info .tabs.is-boxed span:hover, .hero.is-info .tabs.is-toggle span:hover {
-  background: rgba(17, 17, 17, 0.1);
+  background-color: rgba(17, 17, 17, 0.1);
 }
 
 .hero.is-info .tabs.is-boxed li.is-active span, .hero.is-info .tabs.is-boxed li.is-active span:hover, .hero.is-info .tabs.is-toggle li.is-active span, .hero.is-info .tabs.is-toggle li.is-active span:hover {
-  background: white;
+  background-color: white;
   border-color: white;
   color: #42afe3;
 }
@@ -660,13 +660,13 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-info .nav-toggle span {
-    background: white;
+    background-color: white;
   }
   .hero.is-info .nav-toggle:hover {
-    background: rgba(17, 17, 17, 0.1);
+    background-color: rgba(17, 17, 17, 0.1);
   }
   .hero.is-info .nav-toggle.is-active span {
-    background: white;
+    background-color: white;
   }
   .hero.is-info .nav-menu .nav-item {
     border-top-color: rgba(255, 255, 255, 0.2);
@@ -674,7 +674,7 @@
 }
 
 .hero.is-success {
-  background: #97cd76;
+  background-color: #97cd76;
   color: white;
 }
 
@@ -702,7 +702,7 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-success .nav-menu {
-    background: #97cd76;
+    background-color: #97cd76;
   }
 }
 
@@ -735,11 +735,11 @@
 }
 
 .hero.is-success .tabs.is-boxed span:hover, .hero.is-success .tabs.is-toggle span:hover {
-  background: rgba(17, 17, 17, 0.1);
+  background-color: rgba(17, 17, 17, 0.1);
 }
 
 .hero.is-success .tabs.is-boxed li.is-active span, .hero.is-success .tabs.is-boxed li.is-active span:hover, .hero.is-success .tabs.is-toggle li.is-active span, .hero.is-success .tabs.is-toggle li.is-active span:hover {
-  background: white;
+  background-color: white;
   border-color: white;
   color: #97cd76;
 }
@@ -751,13 +751,13 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-success .nav-toggle span {
-    background: white;
+    background-color: white;
   }
   .hero.is-success .nav-toggle:hover {
-    background: rgba(17, 17, 17, 0.1);
+    background-color: rgba(17, 17, 17, 0.1);
   }
   .hero.is-success .nav-toggle.is-active span {
-    background: white;
+    background-color: white;
   }
   .hero.is-success .nav-menu .nav-item {
     border-top-color: rgba(255, 255, 255, 0.2);
@@ -765,7 +765,7 @@
 }
 
 .hero.is-warning {
-  background: #fce473;
+  background-color: #fce473;
   color: rgba(17, 17, 17, 0.5);
 }
 
@@ -793,7 +793,7 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-warning .nav-menu {
-    background: #fce473;
+    background-color: #fce473;
   }
 }
 
@@ -826,11 +826,11 @@
 }
 
 .hero.is-warning .tabs.is-boxed span:hover, .hero.is-warning .tabs.is-toggle span:hover {
-  background: rgba(17, 17, 17, 0.1);
+  background-color: rgba(17, 17, 17, 0.1);
 }
 
 .hero.is-warning .tabs.is-boxed li.is-active span, .hero.is-warning .tabs.is-boxed li.is-active span:hover, .hero.is-warning .tabs.is-toggle li.is-active span, .hero.is-warning .tabs.is-toggle li.is-active span:hover {
-  background: rgba(17, 17, 17, 0.5);
+  background-color: rgba(17, 17, 17, 0.5);
   border-color: rgba(17, 17, 17, 0.5);
   color: #fce473;
 }
@@ -842,13 +842,13 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-warning .nav-toggle span {
-    background: rgba(17, 17, 17, 0.5);
+    background-color: rgba(17, 17, 17, 0.5);
   }
   .hero.is-warning .nav-toggle:hover {
-    background: rgba(17, 17, 17, 0.1);
+    background-color: rgba(17, 17, 17, 0.1);
   }
   .hero.is-warning .nav-toggle.is-active span {
-    background: rgba(17, 17, 17, 0.5);
+    background-color: rgba(17, 17, 17, 0.5);
   }
   .hero.is-warning .nav-menu .nav-item {
     border-top-color: rgba(17, 17, 17, 0.2);
@@ -856,7 +856,7 @@
 }
 
 .hero.is-danger {
-  background: #ed6c63;
+  background-color: #ed6c63;
   color: white;
 }
 
@@ -884,7 +884,7 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-danger .nav-menu {
-    background: #ed6c63;
+    background-color: #ed6c63;
   }
 }
 
@@ -917,11 +917,11 @@
 }
 
 .hero.is-danger .tabs.is-boxed span:hover, .hero.is-danger .tabs.is-toggle span:hover {
-  background: rgba(17, 17, 17, 0.1);
+  background-color: rgba(17, 17, 17, 0.1);
 }
 
 .hero.is-danger .tabs.is-boxed li.is-active span, .hero.is-danger .tabs.is-boxed li.is-active span:hover, .hero.is-danger .tabs.is-toggle li.is-active span, .hero.is-danger .tabs.is-toggle li.is-active span:hover {
-  background: white;
+  background-color: white;
   border-color: white;
   color: #ed6c63;
 }
@@ -933,13 +933,13 @@
 
 @media screen and (max-width: 768px) {
   .hero.is-danger .nav-toggle span {
-    background: white;
+    background-color: white;
   }
   .hero.is-danger .nav-toggle:hover {
-    background: rgba(17, 17, 17, 0.1);
+    background-color: rgba(17, 17, 17, 0.1);
   }
   .hero.is-danger .nav-toggle.is-active span {
-    background: white;
+    background-color: white;
   }
   .hero.is-danger .nav-menu .nav-item {
     border-top-color: rgba(255, 255, 255, 0.2);

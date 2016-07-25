@@ -1,7 +1,7 @@
 .modal-close {
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: rgba(17, 17, 17, 0.2);
+  background-color: rgba(17, 17, 17, 0.2);
   border: none;
   border-radius: 290486px;
   cursor: pointer;
@@ -14,7 +14,7 @@
 }
 
 .modal-close:before, .modal-close:after {
-  background: #fff;
+  background-color: #fff;
   content: "";
   display: block;
   height: 2px;
@@ -37,7 +37,7 @@
 }
 
 .modal-close:hover {
-  background: rgba(17, 17, 17, 0.5);
+  background-color: rgba(17, 17, 17, 0.5);
 }
 
 .is-small.modal-close {
@@ -69,7 +69,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  background: rgba(17, 17, 17, 0.86);
+  background-color: rgba(17, 17, 17, 0.86);
 }
 
 .modal-content, .modal-card {
@@ -89,7 +89,7 @@
 }
 
 .modal-close {
-  background: none;
+  background-color: none;
   height: 40px;
   position: fixed;
   right: 20px;
@@ -98,7 +98,7 @@
 }
 
 .modal-card {
-  background: #fff;
+  background-color: #fff;
   border-radius: 5px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -119,7 +119,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #f5f7fa;
+  background-color: #f5f7fa;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -137,7 +137,7 @@
 
 .modal-card-head {
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
   border-bottom: 1px solid #d3d6db;
 }
 
@@ -148,7 +148,7 @@
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent;
+  background-color: transparent;
   color: #222324;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -237,7 +237,7 @@
 .modal .delete {
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: rgba(17, 17, 17, 0.2);
+  background-color: rgba(17, 17, 17, 0.2);
   border: none;
   border-radius: 290486px;
   cursor: pointer;
@@ -250,7 +250,7 @@
 }
 
 .modal .delete:before, .delete:after {
-  background: #fff;
+  background-color: #fff;
   content: "";
   display: block;
   height: 2px;
@@ -273,7 +273,7 @@
 }
 
 .modal .delete:hover {
-  background: rgba(17, 17, 17, 0.5);
+  background-color: rgba(17, 17, 17, 0.5);
 }
 
 .modal .delete.is-small {
