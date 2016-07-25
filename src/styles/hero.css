@@ -115,7 +115,7 @@
 }
 
 .hero .nav {
-  background-color: none;
+  background-color: inherit;
   box-shadow: 0 1px 0 rgba(211, 214, 219, 0.3);
 }
 
