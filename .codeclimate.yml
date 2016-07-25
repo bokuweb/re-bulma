@@ -11,3 +11,5 @@ exclude_paths:
 - test/*
 - lib/*
 - server.js
+- styleguide/*
+- src/styles/*
