@@ -1,6 +1,7 @@
 # ![ReBulma](https://github.com/bokuweb/re-bulma/blob/master/docs/logo.png?raw=true)
 
 Bulma components build with react (based bulma v0.1.0)
+This repository is heavily under development and unstable.
 
 [![Version](https://img.shields.io/npm/v/re-bulma.svg?style=flat-square)](https://www.npmjs.com/package/re-bulma)
 [![Code Climate](https://img.shields.io/codeclimate/github/bokuweb/re-bulma/badges/gpa.svg?style=flat-square)](https://codeclimate.com/github/bokuweb/re-bulma)
