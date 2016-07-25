@@ -1,6 +1,6 @@
 # ![ReBulma](https://github.com/bokuweb/re-bulma/blob/master/docs/logo.png?raw=true)
 
-Bulma components build with react (based bulma v0.1.0)
+Bulma components build with react (based bulma(https://github.com/jgthms/bulma) v0.1.0)
 This repository is heavily under development and unstable.
 
 [![Version](https://img.shields.io/npm/v/re-bulma.svg?style=flat-square)](https://www.npmjs.com/package/re-bulma)
