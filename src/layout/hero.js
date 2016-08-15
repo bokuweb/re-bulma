@@ -12,7 +12,7 @@ export default class Hero extends Component {
       'isSmall',
       'isMedium',
       'isLarge',
-      'isFullhieght',
+      'isFullheight',
     ]),
     color: PropTypes.oneOf([
       'isPrimary',
