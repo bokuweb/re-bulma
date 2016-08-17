@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import styles from '../../../build/styles';
 import { getCallbacks } from './../../helper/helper';
 
-export class NavContainer extends Component {
+export default class NavContainer extends Component {
   static propTypes = {
     style: PropTypes.object,
     children: PropTypes.any,
