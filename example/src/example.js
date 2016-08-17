@@ -57,7 +57,7 @@ import {
   MenuList,
   Nav,
   NavContainer,
-  NavGloup,
+  NavGroup,
   NavItem,
   NavToggle,
   Pagination,
@@ -106,14 +106,14 @@ export default class Example extends Component {
         <div style={{ width: '300px'}}>
           <Label>asdasd</Label>
           <Input
-             state="isDisabled"
-             color="isDanger"
-             icon="fa fa-heart"
-          help={{
+            state="isDisabled"
+            color="isDanger"
+            icon="fa fa-heart"
+            help={{
                text: 'help text',
                color: 'isSuccess',
              }}
-             />
+          />
           <Label>asdasd</Label>
           <Input
              color="isDanger"
@@ -569,22 +569,22 @@ export default class Example extends Component {
 
 
         <Nav>
-          <NavGloup align="left">
+          <NavGroup align="left">
             <NavItem>
               hoge
             </NavItem>
-          </NavGloup>
+          </NavGroup>
 
-          <NavGloup align="center">
+          <NavGroup align="center">
             <NavItem>
               <Icon icon="fa fa-github" />
             </NavItem>
             <NavItem>
               <Icon icon="fa fa-twitter" />
             </NavItem>
-          </NavGloup>
+          </NavGroup>
           <NavToggle />
-          <NavGloup align="right" isMenu>
+          <NavGroup align="right" isMenu>
             <NavItem>
               Home
             </NavItem>
@@ -599,7 +599,7 @@ export default class Example extends Component {
               <Button icon="fa fa-twitter">Tweet</Button>
               <Button icon="fa fa-download">Download</Button>
             </NavItem>
-          </NavGloup>
+          </NavGroup>
         </Nav>
 
 
@@ -730,14 +730,14 @@ export default class Example extends Component {
           <HeroHead>
             <Nav>
               <Container>
-                <NavGloup align="left">
+                <NavGroup align="left">
                   <NavItem>
                     <img src="images/bulma-white.png" alt="Logo" />
                   </NavItem>
-                </NavGloup>
+                </NavGroup>
                 <NavToggle />
 
-                <NavGloup align="right" isMenu>
+                <NavGroup align="right" isMenu>
                   <NavItem isActive>
                     Home
                   </NavItem>
@@ -750,7 +750,7 @@ export default class Example extends Component {
                   <NavItem>
                     <Button states="isInverted" icon="fa fa-github">Github</Button>
                   </NavItem>
-                </NavGloup>
+                </NavGroup>
               </Container>
             </Nav>
           </HeroHead>
