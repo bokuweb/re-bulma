@@ -1,8 +1,8 @@
   ### Import
-  
-  `import { Pagenaition } from 're-bulma';`
-  
-  ### Pagenaition
+
+  `import { Pagination } from 're-bulma';`
+
+  ### Pagination
 
     <Pagination>
       <PageButton>Previous</PageButton>
