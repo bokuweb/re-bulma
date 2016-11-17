@@ -84,7 +84,7 @@ import HeroFoot from './layout/hero-foot';
 import HeroHead from './layout/hero-head';
 import HeroBody from './layout/hero-body';
 
-insertCss(css, { prepend: true });
+if (typeof document !== 'undefined' || document !== null) insertCss(css, { prepend: true });
 
 export {
   Button,
