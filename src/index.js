@@ -84,7 +84,9 @@ import HeroFoot from './layout/hero-foot';
 import HeroHead from './layout/hero-head';
 import HeroBody from './layout/hero-body';
 
-if (typeof document !== 'undefined' || document !== null) insertCss(css, { prepend: true });
+try {
+    if (typeof document !== 'undefined' || document !== null) insertCss(css, { prepend: true });
+} catch (e) {}
 
 export {
   Button,
@@ -163,4 +165,3 @@ export {
   Tile,
   styles,
 };
-
