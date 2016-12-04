@@ -11,7 +11,7 @@
     "compile": "npm run build:style && babel -d lib/ src/",
     "prepublish": "npm run compile",
     "styleguide-server": "styleguidist server",
-    "styleguide-build": "styleguidist build",
+    "styleguide-build": "node_modules/react-styleguidist/bin/styleguidist build",
     "lint": "eslint src",
     "update-gh-pages": "git push react-bulma `git subtree split --prefix styleguide master`:gh-pages --force"
   },
