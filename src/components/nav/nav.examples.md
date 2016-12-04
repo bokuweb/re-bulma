@@ -5,21 +5,21 @@
   ### Nav
 
     <Nav>
-      <NavGloup align="left">
+      <NavGroup align="left">
         <NavItem>
           Nav Item
         </NavItem>
-      </NavGloup>
-      <NavGloup align="center">
+      </NavGroup>
+      <NavGroup align="center">
         <NavItem>
           <Icon icon="fa fa-github" />
         </NavItem>
         <NavItem>
           <Icon icon="fa fa-twitter" />
         </NavItem>
-      </NavGloup>
+      </NavGroup>
       <NavToggle />
-      <NavGloup align="right" isMenu>
+      <NavGroup align="right" isMenu>
         <NavItem>
           Home
         </NavItem>
@@ -33,5 +33,5 @@
           <Button icon="fa fa-twitter">Tweet</Button>
           <Button icon="fa fa-download">Download</Button>
         </NavItem>
-      </NavGloup>
+      </NavGroup>
     </Nav>

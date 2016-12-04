@@ -2,6 +2,6 @@
   
   `import { NavGroup } from 're-bulma';`
   
-  ### Nav Gloup
+  ### Nav Group
 
   see. `<Nav />`

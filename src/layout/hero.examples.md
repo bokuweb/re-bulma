@@ -21,13 +21,13 @@
       <HeroHead>
         <Nav>
           <Container>
-            <NavGloup align="left">
+            <NavGroup align="left">
               <NavItem>
                 <img src="logo.png" alt="Logo" />
               </NavItem>
-            </NavGloup>
+            </NavGroup>
             <NavToggle />
-            <NavGloup align="right" isMenu>
+            <NavGroup align="right" isMenu>
               <NavItem isActive>
                   Home
                 </NavItem>
@@ -40,7 +40,7 @@
                 <NavItem>
                   <Button states="isInverted" icon="fa fa-github">Github</Button>
                 </NavItem>
-              </NavGloup>
+              </NavGroup>
             </Container>
           </Nav>
         </HeroHead>
