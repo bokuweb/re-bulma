@@ -13,6 +13,28 @@ This repository is heavily under development and unstable.
 npm i -S re-bulma
 ```
 
+## Development
+
+``` sh
+npm i
+npm start
+```
+
+- styleguide server 
+
+```
+npm run styleguide-server
+```
+
+- build style
+
+If you change src/styles/*.css, pelease rebuild styles.
+
+```
+npm run build:style
+```
+
+
 ## Document
 
 See http://bokuweb.github.io/re-bulma/, and please try to edit sample code.
