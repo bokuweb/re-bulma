@@ -1,6 +1,6 @@
 {
   "name": "re-bulma",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -9,7 +9,6 @@
     "test:watch": "karma start --auto-watch --no-single-run",
     "build:style": "node scripts/transform.js src/styles/ build/",
     "compile": "npm run build:style && babel -d lib/ src/",
-    "prepublish": "npm run compile",
     "styleguide-server": "styleguidist server",
     "styleguide-build": "node_modules/react-styleguidist/bin/styleguidist build",
     "lint": "eslint src",
