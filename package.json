@@ -59,7 +59,8 @@
   },
   "files": [
     "lib",
-    "build"
+    "build",
+    "src"
   ],
   "dependencies": {
     "insert-css": "^0.2.0"
