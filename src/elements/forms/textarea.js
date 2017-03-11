@@ -17,7 +17,6 @@ export default class Textarea extends Component {
       'isDanger',
     ]),
     state: PropTypes.oneOf([
-      'isLoading',
       'isDisabled',
     ]),
     help: PropTypes.shape({
@@ -35,8 +34,6 @@ export default class Textarea extends Component {
   static defaultProps = {
     style: {},
     className: '',
-    isLoading: false,
-    isActive: false,
   };
 
   createControlClassName() {
