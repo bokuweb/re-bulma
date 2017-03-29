@@ -102,11 +102,13 @@ export default class Button extends Component {
         style={this.props.style}
         className={this.createClassName()}
       >
+        <span>
         {
           this.props.icon
             ? this.renderIcon()
             : this.props.children
         }
+        </span>
       </button>
     );
   }
