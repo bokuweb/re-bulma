@@ -12,7 +12,7 @@ select.select {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-   
+  font-size: ${font_size_base};
 }
 
 input[type="text"].input {
@@ -69,7 +69,7 @@ input[type=button].input {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
+  font-size: ${font_size_base};
   height: 32px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -217,7 +217,7 @@ input[type=button].input {
 .checkbox, .radio {
   /* add */
   color: #69707a;
-  font-size: 14px;
+  font-size: ${font_size_base};
 
   cursor: pointer;
   display: inline-block;
@@ -269,7 +269,7 @@ input[type=button].input {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
+  font-size: ${font_size_base};
   height: 32px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -590,7 +590,7 @@ input[type=button].input {
 
 .control.has-icon > .fa {
   display: inline-block;
-  font-size: 14px;
+  font-size: ${font_size_base};
   height: 24px;
   line-height: 24px;
   text-align: center;
@@ -723,7 +723,7 @@ input[type=button].input {
           justify-content: flex-end;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .control.is-horizontal {
     box-sizing: inherit;
     margin: 0;
@@ -800,7 +800,7 @@ input[type=button].input {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .control-label {
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     -moz-osx-font-smoothing: grayscale;
@@ -811,7 +811,7 @@ input[type=button].input {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .control-label {
     vertical-align: baseline;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;

@@ -12,7 +12,7 @@
 
 .panel-icon {
   box-sizing: inherit;
-  font-size: 14px;
+  font-size: ${font_size_base};
   height: 16px;
   line-height: 16px;
   text-align: center;

@@ -1,5 +1,3 @@
-import insertCss from 'insert-css';
-import css from '../build/css';
 import styles from '../build/styles';
 
 // grid
@@ -83,10 +81,6 @@ import Hero from './layout/hero';
 import HeroFoot from './layout/hero-foot';
 import HeroHead from './layout/hero-head';
 import HeroBody from './layout/hero-body';
-
-try {
-    if (typeof document !== 'undefined' || document !== null) insertCss(css, { prepend: true });
-} catch (e) {}
 
 export {
   Button,

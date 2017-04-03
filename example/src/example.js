@@ -87,9 +87,20 @@ export default class Example extends Component {
   render() {
     return (
       <div>
+        <Columns responsive="isMobile">
+          <Column size="is2">Is Mobile 1</Column>
+          <Column size="is3">Is Mobile 2</Column>
+        </Columns>
+
+        <hr/>
+
         <Button >test</Button>
         <Button size="isLarge" states="isActive">Guthub</Button>
         <Button size="isSmall" states="isActive" icon="fa fa-github">Github</Button>
+        <Button data={[{"name":"item-name", value:"something"}]}>Data</Button>
+        <Button color="isPrimary">Primary</Button>
+        <Button color="isPrimary" state="isActive">Primary Active</Button>
+        <Button state="isDisabled">Disabled</Button>
         <Columns>
           <Column size="is2" style={{ background: '#ccc' }}>aaaa</Column>
           <Column>bbbb</Column>

@@ -5,12 +5,11 @@
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: ${font_size_base};
   font-weight: normal;
   vertical-align: baseline;
   -webkit-box-align: center;
@@ -76,7 +75,7 @@
           justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .pagination {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -99,7 +98,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .pagination > a:not(:first-child) {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;

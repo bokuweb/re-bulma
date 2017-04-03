@@ -80,7 +80,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .modal-content, .modal-card {
     margin: 0 auto;
     max-height: calc(100vh - 40px);
@@ -165,12 +165,11 @@
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: ${font_size_base};
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-size: 14px;
   font-weight: normal;
   vertical-align: baseline;
   font-weight: normal;
@@ -189,12 +188,11 @@
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: ${font_size_base};
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-size: 14px;
   font-weight: normal;
   vertical-align: baseline;
 /* FIXME: 

@@ -33,7 +33,7 @@
   opacity: 0.3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero-video {
     display: none;
   }
@@ -43,7 +43,7 @@
   margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero-buttons .button {
     display: -webkit-box;
     display: -webkit-flex;
@@ -55,7 +55,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .hero-buttons {
     display: -webkit-box;
     display: -webkit-flex;
@@ -86,7 +86,7 @@
   padding: 40px 20px;
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: ${breakpoint_desktop_min}) {
   .hero-body {
     padding-left: 0;
     padding-right: 0;
@@ -150,7 +150,7 @@
   box-shadow: 0 1px 0 rgba(17, 17, 17, 0.2);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-white .nav-menu {
     background-color: #fff;
   }
@@ -203,7 +203,7 @@
   background-image: linear-gradient(141deg, #e6e6e6 0%, #fff 71%, white 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-white .nav-toggle span {
     background-color: #111;
   }
@@ -245,7 +245,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-black .nav-menu {
     background-color: #111;
   }
@@ -294,7 +294,7 @@
   background-image: linear-gradient(141deg, black 0%, #111 71%, #1f1c1c 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-black .nav-toggle span {
     background-color: #fff;
   }
@@ -336,7 +336,7 @@
   box-shadow: 0 1px 0 rgba(105, 112, 122, 0.2);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-light .nav-menu {
     background-color: #f5f7fa;
   }
@@ -385,7 +385,7 @@
   background-image: linear-gradient(141deg, #d0e0ec 0%, #f5f7fa 71%, white 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-light .nav-toggle span {
     background-color: #69707a;
   }
@@ -427,7 +427,7 @@
   box-shadow: 0 1px 0 rgba(245, 247, 250, 0.2);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-dark .nav-menu {
     background-color: #69707a;
   }
@@ -476,7 +476,7 @@
   background-image: linear-gradient(141deg, #495a67 0%, #69707a 71%, #6e768e 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-dark .nav-toggle span {
     background-color: #f5f7fa;
   }
@@ -518,7 +518,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-primary .nav-menu {
     background-color: #1fc8db;
   }
@@ -567,7 +567,7 @@
   background-image: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 71%, #2cb5e8 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-primary .nav-toggle span {
     background-color: white;
   }
@@ -609,7 +609,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-info .nav-menu {
     background-color: #42afe3;
   }
@@ -658,7 +658,7 @@
   background-image: linear-gradient(141deg, #13bfdf 0%, #42afe3 71%, #53a1eb 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-info .nav-toggle span {
     background-color: white;
   }
@@ -700,7 +700,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-success .nav-menu {
     background-color: #97cd76;
   }
@@ -749,7 +749,7 @@
   background-image: linear-gradient(141deg, #8ecb45 0%, #97cd76 71%, #96d885 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-success .nav-toggle span {
     background-color: white;
   }
@@ -791,7 +791,7 @@
   box-shadow: 0 1px 0 rgba(17, 17, 17, 0.2);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-warning .nav-menu {
     background-color: #fce473;
   }
@@ -840,7 +840,7 @@
   background-image: linear-gradient(141deg, #ffbd3d 0%, #fce473 71%, #fffe8a 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-warning .nav-toggle span {
     background-color: rgba(17, 17, 17, 0.5);
   }
@@ -882,7 +882,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-danger .nav-menu {
     background-color: #ed6c63;
   }
@@ -931,7 +931,7 @@
   background-image: linear-gradient(141deg, #f32a3e 0%, #ed6c63 71%, #f39376 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-danger .nav-toggle span {
     background-color: white;
   }
@@ -946,14 +946,14 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .hero.is-medium .hero-body {
     padding-bottom: 120px;
     padding-top: 120px;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .hero.is-large .hero-body {
     padding-bottom: 240px;
     padding-top: 240px;

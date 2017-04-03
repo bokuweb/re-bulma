@@ -5,7 +5,7 @@
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: ${font_size_base};
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,7 +20,7 @@
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .level-item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -39,13 +39,13 @@
           flex: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: ${breakpoint_mobile_max}) {
   .level-left + .level-right {
     margin-top: 20px;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .level-left {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .level-right {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -114,7 +114,7 @@
           flex: 1;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .level {
     display: -webkit-box;
     display: -webkit-flex;

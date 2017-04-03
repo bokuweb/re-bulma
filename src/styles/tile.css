@@ -48,7 +48,7 @@
   margin-bottom: 20px !important;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .tile:not(.is-child) {
     display: -webkit-box;
     display: -webkit-flex;

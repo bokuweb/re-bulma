@@ -13,6 +13,33 @@ This repository is heavily under development and unstable.
 npm i -S re-bulma
 ```
 
+In your javascript pick up the css using 
+``` sh
+import insertCss from 'insert-css';
+import css from '<path to yours or rebulmas>/build/css';
+try {
+  if (typeof document !== 'undefined' || document !== null) insertCss(css, { prepend: true });
+} catch (e) {}
+```
+
+If you want to change the styles then do the following as well.
+``` sh
+npm install clean-css@3.4.18 --save-dev
+npm install https://github.com/bokuweb/csjs.git --save-dev
+npm install lodash.camelcase --save-dev
+
+add the following to your Gruntfile.js or do similar for your build process
+    shell: {
+      buildReBulma: {
+        command: 'node node_modules/re-bulma/scripts/transform.js
+          ./re-bulma-variables.properties node_modules/re-bulma/src/styles/ build/ no'
+      }
+and include shell:buildReBulma in the grunt.registerTask('default'...) line
+
+in the re-bulma-variables.properties specify the settings you require (see the 
+re-bulma/default/re-bulma-variables.properties for reference)
+```
+
 ## Development
 
 ``` sh

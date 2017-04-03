@@ -8,7 +8,7 @@
     "start": "node server.js",
     "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
-    "build:style": "node scripts/transform.js src/styles/ build/",
+    "build:style": "node scripts/transform.js default/re-bulma-variables.properties src/styles/ build/ yes",
     "compile": "npm run build:style && babel -d lib/ src/",
     "styleguide-server": "styleguidist server",
     "styleguide-build": "node_modules/react-styleguidist/bin/styleguidist build",
@@ -60,9 +60,11 @@
   "files": [
     "lib",
     "build",
-    "src"
+    "src",
+    "scripts"
   ],
   "dependencies": {
-    "insert-css": "^0.2.0"
+    "insert-css": "^0.2.0",
+    "properties-parser": "^0.3.1"
   }
 }
