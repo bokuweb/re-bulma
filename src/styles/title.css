@@ -111,7 +111,7 @@ p.subtitle {
   font-weight: 700;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .title + .subtitle {
     margin-top: -15px;
   }

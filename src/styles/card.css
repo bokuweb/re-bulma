@@ -6,7 +6,7 @@
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: ${font_size_base};
   margin: 0;
   padding: 0;
   border: 0;

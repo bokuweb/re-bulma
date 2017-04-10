@@ -1,6 +1,6 @@
 .icon {
     display: inline-block;
-    font-size: 21px;
+    font-size: ${font_size_base};
     height: 24px;
     line-height: 24px;
     text-align: center;

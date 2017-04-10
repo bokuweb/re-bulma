@@ -12,7 +12,7 @@
   padding: 40px 20px;
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: ${breakpoint_desktop_min}) {
   .section.is-medium {
     padding: 120px 20px;
   }

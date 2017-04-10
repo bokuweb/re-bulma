@@ -43,7 +43,7 @@
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
+  font-size: ${font_size_base};
   height: 32px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -73,8 +73,8 @@ button:active,
 
 .button[disabled],
 .button.is-disabled {
-  background-color: #f5f7fa;
-  border-color: #d3d6db;
+  background-color: ${disabled_background_color};
+  border-color: ${disabled_border_color};
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -285,15 +285,22 @@ button:active,
 }
 
 .button.is-primary {
-  background-color: #1fc8db;
+  background-color: ${primary_color};
   border-color: transparent;
   color: white;
 }
 
 .button.is-primary:hover, .button.is-primary:focus, .button.is-primary.is-active {
-  background-color: #199fae;
   border-color: transparent;
   color: white;
+}
+
+.button.is-primary:hover, .button.is-primary:focus {
+  background-color: ${primary_hover_color};
+}
+
+.button.is-primary.is-active {
+  background-color: ${primary_active_color};
 }
 
 .button.is-primary:active {
@@ -315,13 +322,13 @@ button:active,
 
 .button.is-primary.is-outlined {
   background-color: transparent;
-  border-color: #1fc8db;
-  color: #1fc8db;
+  border-color: ${primary_color};
+  color: ${primary_color};
 }
 
 .button.is-primary.is-outlined:hover, .button.is-primary.is-outlined:focus {
-  background-color: #1fc8db;
-  border-color: #1fc8db;
+  background-color: ${primary_hover_color};
+  border-color: ${primary_hover_color};
   color: white;
 }
 
@@ -525,7 +532,7 @@ button:active,
 }
 
 .button[disabled], .button.is-disabled {
-  opacity: 0.5;
+  opacity: ${disabled_opacity};
 }
 
 .button.is-fullwidth {

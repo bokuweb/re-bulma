@@ -11,7 +11,7 @@
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: 1rem;
   background: transparent;
   background-color: #fff;
   border-radius: 5px;
@@ -76,7 +76,7 @@ a.__re-bulma_box:active {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
+  font-size: 1rem;
   height: 32px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -324,9 +324,16 @@ button:active,
 }
 
 .__re-bulma_button.__re-bulma_is-primary:hover, .__re-bulma_button.__re-bulma_is-primary:focus, .__re-bulma_button.__re-bulma_is-primary.__re-bulma_is-active {
-  background-color: #199fae;
   border-color: transparent;
   color: white;
+}
+
+.__re-bulma_button.__re-bulma_is-primary:hover, .__re-bulma_button.__re-bulma_is-primary:focus {
+  background-color: #199fae;
+}
+
+.__re-bulma_button.__re-bulma_is-primary.__re-bulma_is-active {
+  background-color: #199fae;
 }
 
 .__re-bulma_button.__re-bulma_is-primary:active {
@@ -353,8 +360,8 @@ button:active,
 }
 
 .__re-bulma_button.__re-bulma_is-primary.__re-bulma_is-outlined:hover, .__re-bulma_button.__re-bulma_is-primary.__re-bulma_is-outlined:focus {
-  background-color: #1fc8db;
-  border-color: #1fc8db;
+  background-color: #199fae;
+  border-color: #199fae;
   color: white;
 }
 
@@ -727,7 +734,7 @@ button:active,
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   border: 0;
@@ -1944,7 +1951,7 @@ button:active,
   }
 }
 
-@media screen and (min-width: 769x) {
+@media screen and (min-width: 769px) {
   .__re-bulma_columns.__re-bulma_is-desktop {
     display: block;
   }
@@ -2182,7 +2189,7 @@ select.__re-bulma_select {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-   
+  font-size: 1rem;
 }
 
 input[type="text"].__re-bulma_input {
@@ -2239,7 +2246,7 @@ input[type=button].__re-bulma_input {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
+  font-size: 1rem;
   height: 32px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -2387,7 +2394,7 @@ input[type=button].__re-bulma_input {
 .__re-bulma_checkbox, .__re-bulma_radio {
   /* add */
   color: #69707a;
-  font-size: 14px;
+  font-size: 1rem;
 
   cursor: pointer;
   display: inline-block;
@@ -2439,7 +2446,7 @@ input[type=button].__re-bulma_input {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
+  font-size: 1rem;
   height: 32px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -2760,7 +2767,7 @@ input[type=button].__re-bulma_input {
 
 .__re-bulma_control.__re-bulma_has-icon > .__re-bulma_fa {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1rem;
   height: 24px;
   line-height: 24px;
   text-align: center;
@@ -3988,7 +3995,7 @@ input[type=button].__re-bulma_input {
 }
 .__re-bulma_icon {
     display: inline-block;
-    font-size: 21px;
+    font-size: 1rem;
     height: 24px;
     line-height: 24px;
     text-align: center;
@@ -4037,7 +4044,7 @@ input[type=button].__re-bulma_input {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   border: 0;
@@ -4146,7 +4153,7 @@ input[type=button].__re-bulma_input {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   border: 0;
@@ -4393,12 +4400,11 @@ input[type=button].__re-bulma_input {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-size: 14px;
   font-weight: normal;
   vertical-align: baseline;
 }
@@ -4452,7 +4458,7 @@ p.__re-bulma_menu-label {
   line-height: 1.428571428571429;
   font-weight: normal;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -4786,12 +4792,11 @@ p.__re-bulma_menu-label {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-size: 14px;
   font-weight: normal;
   vertical-align: baseline;
   font-weight: normal;
@@ -4810,12 +4815,11 @@ p.__re-bulma_menu-label {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-size: 14px;
   font-weight: normal;
   vertical-align: baseline;
 /* FIXME: 
@@ -4919,11 +4923,10 @@ p.__re-bulma_menu-label {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: 1rem;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-size: 14px;
   font-weight: normal;
   vertical-align: baseline;
 };
@@ -5223,12 +5226,11 @@ a.__re-bulma_nav-item.__re-bulma_is-tab.__re-bulma_is-active {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-size: 14px;
   font-weight: normal;
   vertical-align: baseline;
   background-color: #f5f7fa;
@@ -5305,12 +5307,11 @@ a.__re-bulma_nav-item.__re-bulma_is-tab.__re-bulma_is-active {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
   line-height: 1.428571428571429;
-  font-size: 14px;
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: normal;
   vertical-align: baseline;
   -webkit-box-align: center;
@@ -5421,7 +5422,7 @@ a.__re-bulma_nav-item.__re-bulma_is-tab.__re-bulma_is-active {
 
 .__re-bulma_panel-icon {
   box-sizing: inherit;
-  font-size: 14px;
+  font-size: 1rem;
   height: 16px;
   line-height: 16px;
   text-align: center;

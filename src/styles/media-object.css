@@ -98,7 +98,7 @@
   padding-top: 20px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: ${breakpoint_tablet_min}) {
   .media.is-large .media-number {
     margin-right: 20px;
   }

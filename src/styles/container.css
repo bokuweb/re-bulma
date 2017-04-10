@@ -9,10 +9,10 @@
   position: relative;
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: ${container_breakpoint_narrow_min}) {
   .container {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: ${container_narrow_max_width};
   }
   .container.is-fluid {
     margin: 0 20px;
@@ -20,8 +20,8 @@
   }
 }
 
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: ${container_breakpoint_wide_min}) {
   .container {
-    max-width: 1200px;
+    max-width: ${container_wide_max_width};
   }
 }
