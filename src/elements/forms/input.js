@@ -42,6 +42,7 @@ export default class Input extends Component {
         'isDanger',
       ]),
     }),
+    name: PropTypes.string,
   };
 
   static defaultProps = {
@@ -91,6 +92,7 @@ export default class Input extends Component {
         value={this.props.value}
         defaultValue={this.props.defaultValue}
         placeholder={this.props.placeholder}
+        name={this.props.name}
       />
     );
   }
