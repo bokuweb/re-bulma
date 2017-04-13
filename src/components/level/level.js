@@ -7,6 +7,11 @@ export default class Level extends Component {
     style: PropTypes.object,
     children: PropTypes.any,
     className: PropTypes.string,
+    responsive: PropTypes.oneOf([
+      'isMobile',
+      'isDesktop',
+      'isTablet',
+    ]),
   };
 
   static defaultProps = {
@@ -17,6 +22,7 @@ export default class Level extends Component {
   createClassName() {
     return [
       styles.level,
+      styles[this.props.responsive],
       this.props.className,
     ].join(' ').trim();
   }
