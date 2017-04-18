@@ -99,7 +99,7 @@
 
 .modal-card {
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: ${modal_border_radius};
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
