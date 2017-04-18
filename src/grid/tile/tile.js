@@ -27,6 +27,7 @@ export default class Tile extends Component {
       'is11',
       'is12',
     ]),
+    isDesktop: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -40,6 +41,7 @@ export default class Tile extends Component {
       styles[this.props.size],
       styles[this.props.context],
       this.props.isVertical ? styles.isVertical : '',
+      this.props.isDesktop ? styles.isDesktop : '',
       this.props.className,
     ].join(' ').trim();
   }

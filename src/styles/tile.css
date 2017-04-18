@@ -49,6 +49,99 @@
 }
 
 @media screen and (min-width: ${breakpoint_tablet_min}) {
+  .tile:not(.is-child):not(.is-desktop) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tile.is-1:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 8.33333%;
+  }
+  .tile.is-2:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 16.66667%;
+  }
+  .tile.is-3:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 25%;
+  }
+  .tile.is-4:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 33.33333%;
+  }
+  .tile.is-5:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 41.66667%;
+  }
+  .tile.is-6:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 50%;
+  }
+  .tile.is-7:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 58.33333%;
+  }
+  .tile.is-8:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 66.66667%;
+  }
+  .tile.is-9:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 75%;
+  }
+  .tile.is-10:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 83.33333%;
+  }
+  .tile.is-11:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 91.66667%;
+  }
+  .tile.is-12:not(.is-desktop) {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: ${breakpoint_desktop_min}) {
   .tile:not(.is-child) {
     display: -webkit-box;
     display: -webkit-flex;
@@ -58,85 +151,85 @@
   .tile.is-1 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 8.33333%;
   }
   .tile.is-2 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 16.66667%;
   }
   .tile.is-3 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 25%;
   }
   .tile.is-4 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 33.33333%;
   }
   .tile.is-5 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 41.66667%;
   }
   .tile.is-6 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 50%;
   }
   .tile.is-7 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 58.33333%;
   }
   .tile.is-8 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 66.66667%;
   }
   .tile.is-9 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 75%;
   }
   .tile.is-10 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 83.33333%;
   }
   .tile.is-11 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 91.66667%;
   }
   .tile.is-12 {
     -webkit-box-flex: 0;
     -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 100%;
   }
 }

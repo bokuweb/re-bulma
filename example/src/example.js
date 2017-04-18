@@ -812,7 +812,37 @@ export default class Example extends Component {
             </Box>
           </Tile>
         </Tile>
+
+
+
+        <hr/>
+
+        <Tile context="isAncestor" isDesktop>
+          <Tile size="is4" isVertical context="isParent" isDesktop>
+            <Tile context="isChild" isDesktop>
+              <Box>
+                <p class="title">One</p>
+                <p>These stack on tablet as well mobile by virtue of the isDesktop attribute. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+              </Box>
+              <Box>
+                <p class="title">Two</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+              </Box>
+            </Tile>
+          </Tile>
+          <Tile context="isParent" isDesktop>
+            <Box>
+              <p class="title">Three</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            </Box>
+          </Tile>
+        </Tile>
+
+
+
+
       </div>
+
     );
   }
 }
