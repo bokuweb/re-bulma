@@ -97,7 +97,10 @@ export default class Example extends Component {
         <Button >test</Button>
         <Button size="isLarge" states="isActive">Guthub</Button>
         <Button size="isSmall" states="isActive" icon="fa fa-github">Github</Button>
-        <Button data={[{"name":"item-name", value:"something"}]}>Data</Button>
+        <Button data={[
+          {"name":"item-name", value:"something \"quoted\""},
+          {"name":"item-number", value:5}
+        ]}>Data</Button>
         <Button color="isPrimary">Primary</Button>
         <Button color="isPrimary" state="isActive">Primary Active</Button>
         <Button state="isDisabled">Disabled</Button>
@@ -585,7 +588,7 @@ export default class Example extends Component {
 
         <Nav>
           <NavGroup align="left">
-            <NavItem>
+            <NavItem data={[{"name":"nav-item-data", value:"actual value"}]}>
               hoge
             </NavItem>
           </NavGroup>

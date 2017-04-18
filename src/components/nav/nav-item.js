@@ -1,14 +1,16 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../../build/styles';
 import { getCallbacks } from './../../helper/helper';
+import DataComponent from '../../dataComponent';
 
-export default class NavItem extends Component {
+export default class NavItem extends DataComponent {
   static propTypes = {
     style: PropTypes.object,
     children: PropTypes.any,
     className: PropTypes.string,
     isActive: PropTypes.bool,
     isTab: PropTypes.bool,
+    data: PropTypes.array,
   };
 
   static defaultProps = {
@@ -31,6 +33,7 @@ export default class NavItem extends Component {
         {...getCallbacks(this.props)}
         style={this.props.style}
         className={this.createClassName()}
+        {...this.dataProps()}
       >
         {this.props.children}
       </span>

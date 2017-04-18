@@ -1,8 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import styles from '../../build/styles';
 import { getCallbacks } from '../helper/helper';
+import DataComponent from '../dataComponent';
 
-export default class Button extends Component {
+export default class Button extends DataComponent {
   static propTypes = {
     children: PropTypes.string,
     className: PropTypes.string,
@@ -96,28 +97,13 @@ export default class Button extends Component {
       : this.renderLeftIcon();
   }
 
-  renderDataAttributes() {
-    if (this.props.data && this.props.data.length>0) {
-      return this.props.data.map(d => {
-        return "data-"+d.name + " = " + d.value;}
-      ).join(" ");
-    } else
-      return null;
-  }
-
   render() {
-    const extraProps = {};
-    if (this.props.data && this.props.data.length>0) {
-      this.props.data.map(d => {
-        extraProps["data-" + encodeURIComponent(d.name)] = encodeURIComponent(d.value);
-      })
-    }
     return (
       <button
         {...getCallbacks(this.props)}
         style={this.props.style}
         className={this.createClassName()}
-        {...extraProps}
+        {...this.dataProps()}
       >
         <span>
         {
