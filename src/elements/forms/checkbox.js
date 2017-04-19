@@ -4,6 +4,7 @@ import styles from '../../../build/styles';
 export default class Checkbox extends Component {
   static propTypes = {
     children: PropTypes.any,
+    style: PropTypes.object,
     className: PropTypes.string,
     hasIcon: PropTypes.bool,
     hasIconRight: PropTypes.bool,

@@ -49,13 +49,12 @@ export default class Modal extends Component {
             {this.props.children}
           </section>
           {
-            this.props.footerContent
-              ? (
-                <footer className={styles.modalCardFoot}>
-                  {this.props.footerContent}
-                </footer>
-              )
-              : null
+            this.props.footerContent ? (
+              <footer className={styles.modalCardFoot}>
+                {this.props.footerContent}
+              </footer>
+            )
+            : null
           }
         </div>
 
