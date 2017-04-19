@@ -1,19 +1,22 @@
 {
   "name": "re-bulma",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "",
   "main": "lib/index.js",
-  "module": "src/index.js",
+  "module": "lib-es/index.js",
   "scripts": {
     "start": "node server.js",
     "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
     "build:style": "node scripts/transform.js default/re-bulma-variables.properties src/styles/ build/ yes",
-    "compile": "npm run build:style && babel -d lib/ src/",
+    "build": "npm run build:style && npm run compile && npm run compile-es",
+    "compile": "BABEL_ENV=cjs babel -d lib/ src/",
+    "compile-es": "BABEL_ENV=es babel -d lib-es/ src/",
     "styleguide-server": "styleguidist server",
     "styleguide-build": "node_modules/react-styleguidist/bin/styleguidist build",
     "lint": "eslint src",
     "precommit": "npm run lint",
+    "prepublish": "npm run build",
     "update-gh-pages": "git push react-bulma `git subtree split --prefix styleguide master`:gh-pages --force"
   },
   "repository": {
@@ -55,10 +58,14 @@
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },
+  "keywords": [
+    "bulma"
+  ],
   "peerDependencies": {
     "react": ">=0.14.0"
   },
   "files": [
+    "lib-es",
     "lib",
     "build",
     "src",
