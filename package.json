@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "module": "lib-es/index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "BABEL_ENV=cjs node server.js",
     "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
     "build:style": "node scripts/transform.js default/re-bulma-variables.properties src/styles/ build/ yes",
