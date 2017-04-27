@@ -43,7 +43,7 @@ p.panel-heading {
 }
 
 .panel-list span {
-  color: #69707a;
+  color: ${base_color};
 }
 
 .panel-list span:hover {

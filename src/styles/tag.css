@@ -5,7 +5,7 @@
           align-items: center;
   background-color: #f5f7fa;
   border-radius: 290486px;
-  color: #69707a;
+  color: ${base_color};
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -40,11 +40,11 @@
 
 .tag.is-light {
   background-color: #f5f7fa;
-  color: #69707a;
+  color: ${base_color};
 }
 
 .tag.is-dark {
-  background-color: #69707a;
+  background-color: ${base_color};
   color: #f5f7fa;
 }
 

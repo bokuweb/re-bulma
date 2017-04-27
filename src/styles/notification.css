@@ -9,7 +9,7 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: #69707a;
+  color: ${base_color};
   line-height: 1.428571428571429;
   font-size: ${font_size_base};
   margin: 0;
@@ -53,11 +53,11 @@
 
 .notification.is-light {
   background-color: #f5f7fa;
-  color: #69707a;
+  color: ${base_color};
 }
 
 .notification.is-dark {
-  background-color: #69707a;
+  background-color: ${base_color};
   color: #f5f7fa;
 }
 

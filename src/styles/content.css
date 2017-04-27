@@ -9,7 +9,7 @@
 }
 
 .content {
-  color: #69707a;
+  color: ${base_color};
   margin: 0;
   padding: 0;
   border: 0;

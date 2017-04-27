@@ -15,7 +15,7 @@
 }
 
 .footer a, .footer a:visited {
-  color: #69707a;
+  color: ${base_color};
 }
 
 .footer a:hover, .footer a:visited:hover {

@@ -9,7 +9,7 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: #69707a;
+  color: ${base_color};
   line-height: 1.428571428571429;
   font-size: ${font_size_base};
   background: transparent;

@@ -4,7 +4,7 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: #69707a;
+  color: ${base_color};
   line-height: 1.428571428571429;
   font-size: ${font_size_base};
   margin: 0;
@@ -116,7 +116,7 @@
 .card {
   background-color: #fff;
   box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1), 0 0 0 1px rgba(17, 17, 17, 0.1);
-  color: #69707a;
+  color: ${base_color};
   max-width: 100%;
   position: relative;
   width: 300px;

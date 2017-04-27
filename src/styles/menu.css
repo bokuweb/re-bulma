@@ -3,7 +3,7 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: #69707a;
+  color: ${base_color};
   line-height: 1.428571428571429;
   font-size: ${font_size_base};
   margin: 0;
@@ -25,7 +25,7 @@
   -webkit-transition: none 86ms ease-out;
   transition: none 86ms ease-out;
   border-radius: 2px;
-  color: #69707a;
+  color: ${base_color};
   display: block;
   padding: 5px 10px;
 }

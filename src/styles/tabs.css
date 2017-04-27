@@ -38,7 +38,7 @@
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #d3d6db;
-  color: #69707a;
+  color: ${base_color};
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

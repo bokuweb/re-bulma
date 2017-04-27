@@ -141,7 +141,7 @@ input[type=button].input {
 }
 
 .input.is-dark, .is-dark.textarea {
-  border-color: #69707a;
+  border-color: ${base_color};
 }
 
 .input.is-primary, .is-primary.textarea {
@@ -216,7 +216,7 @@ input[type=button].input {
 
 .checkbox, .radio {
   /* add */
-  color: #69707a;
+  color: ${base_color};
   font-size: ${font_size_base};
 
   cursor: pointer;
@@ -331,7 +331,7 @@ input[type=button].input {
 }
 
 .select select.is-dark {
-  border-color: #69707a;
+  border-color: ${base_color};
 }
 
 .select select.is-primary {
@@ -450,7 +450,7 @@ input[type=button].input {
 }
 
 .help.is-dark {
-  color: #69707a;
+  color: ${base_color};
 }
 
 .help.is-primary {

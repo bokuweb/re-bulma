@@ -205,13 +205,13 @@ button:active,
 .button.is-light {
   background-color: #f5f7fa;
   border-color: transparent;
-  color: #69707a;
+  color: ${base_color};
 }
 
 .button.is-light:hover, .button.is-light:focus, .button.is-light.is-active {
   background-color: #d3dce9;
   border-color: transparent;
-  color: #69707a;
+  color: ${base_color};
 }
 
 .button.is-light:active {
@@ -219,7 +219,7 @@ button:active,
 }
 
 .button.is-light.is-inverted {
-  background-color: #69707a;
+  background-color: ${base_color};
   color: #f5f7fa;
 }
 
@@ -228,7 +228,7 @@ button:active,
 }
 
 .button.is-light.is-loading:after {
-  border-color: transparent transparent #69707a #69707a !important;
+  border-color: transparent transparent ${base_color} ${base_color} !important;
 }
 
 .button.is-light.is-outlined {
@@ -240,11 +240,11 @@ button:active,
 .button.is-light.is-outlined:hover, .button.is-light.is-outlined:focus {
   background-color: #f5f7fa;
   border-color: #f5f7fa;
-  color: #69707a;
+  color: ${base_color};
 }
 
 .button.is-dark {
-  background-color: #69707a;
+  background-color: ${base_color};
   border-color: transparent;
   color: #f5f7fa;
 }
@@ -261,7 +261,7 @@ button:active,
 
 .button.is-dark.is-inverted {
   background-color: #f5f7fa;
-  color: #69707a;
+  color: ${base_color};
 }
 
 .button.is-dark.is-inverted:hover {
@@ -274,13 +274,13 @@ button:active,
 
 .button.is-dark.is-outlined {
   background-color: transparent;
-  border-color: #69707a;
-  color: #69707a;
+  border-color: ${base_color};
+  color: ${base_color};
 }
 
 .button.is-dark.is-outlined:hover, .button.is-dark.is-outlined:focus {
-  background-color: #69707a;
-  border-color: #69707a;
+  background-color: ${base_color};
+  border-color: ${base_color};
   color: #f5f7fa;
 }
 
@@ -499,7 +499,7 @@ button:active,
 .button.is-link {
   background-color: transparent;
   border-color: transparent;
-  color: #69707a;
+  color: ${base_color};
   text-decoration: underline;
 }
 

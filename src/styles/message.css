@@ -1,5 +1,5 @@
 .message {
-  color: #69707a;
+  color: ${base_color};
   font-weight: 400;
   line-height: 1.428571428571429;
   font-weight: normal;
@@ -15,7 +15,7 @@
 }
 
 .message-body {
-  color: #69707a;
+  color: ${base_color};
   border: 1px solid #d3d6db;
   border-radius: 3px;
   padding: 12px 15px;
@@ -26,7 +26,7 @@
 }
 
 .message-header {
-  background-color: #69707a;
+  background-color: ${base_color};
   border-radius: 3px 3px 0 0;
   color: white;
   padding: 7px 10px;
@@ -80,7 +80,7 @@
 
 .message.is-light .message-header {
   background-color: #f5f7fa;
-  color: #69707a;
+  color: ${base_color};
 }
 
 .message.is-light .message-body {
@@ -93,12 +93,12 @@
 }
 
 .message.is-dark .message-header {
-  background-color: #69707a;
+  background-color: ${base_color};
   color: #f5f7fa;
 }
 
 .message.is-dark .message-body {
-  border-color: #69707a;
+  border-color: ${base_color};
   color: gray;
 }
 

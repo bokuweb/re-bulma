@@ -311,11 +311,11 @@
 
 .hero.is-light {
   background-color: #f5f7fa;
-  color: #69707a;
+  color: ${base_color};
 }
 
 .hero.is-light .title {
-  color: #69707a;
+  color: ${base_color};
 }
 
 .hero.is-light .title a,
@@ -329,7 +329,7 @@
 
 .hero.is-light .subtitle a,
 .hero.is-light .subtitle strong {
-  color: #69707a;
+  color: ${base_color};
 }
 
 .hero.is-light .nav {
@@ -350,11 +350,11 @@
 .hero.is-light a.nav-item:hover, .hero.is-light a.nav-item.is-active,
 .hero.is-light .nav-item a:not(.button):hover,
 .hero.is-light .nav-item a:not(.button).is-active {
-  color: #69707a;
+  color: ${base_color};
 }
 
 .hero.is-light .tabs span {
-  color: #69707a;
+  color: ${base_color};
   opacity: 0.5;
 }
 
@@ -367,7 +367,7 @@
 }
 
 .hero.is-light .tabs.is-boxed span, .hero.is-light .tabs.is-toggle span {
-  color: #69707a;
+  color: ${base_color};
 }
 
 .hero.is-light .tabs.is-boxed span:hover, .hero.is-light .tabs.is-toggle span:hover {
@@ -375,8 +375,8 @@
 }
 
 .hero.is-light .tabs.is-boxed li.is-active span, .hero.is-light .tabs.is-boxed li.is-active span:hover, .hero.is-light .tabs.is-toggle li.is-active span, .hero.is-light .tabs.is-toggle li.is-active span:hover {
-  background-color: #69707a;
-  border-color: #69707a;
+  background-color: ${base_color};
+  border-color: ${base_color};
   color: #f5f7fa;
 }
 
@@ -387,13 +387,13 @@
 
 @media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-light .nav-toggle span {
-    background-color: #69707a;
+    background-color: ${base_color};
   }
   .hero.is-light .nav-toggle:hover {
     background-color: rgba(17, 17, 17, 0.1);
   }
   .hero.is-light .nav-toggle.is-active span {
-    background-color: #69707a;
+    background-color: ${base_color};
   }
   .hero.is-light .nav-menu .nav-item {
     border-top-color: rgba(105, 112, 122, 0.2);
@@ -401,7 +401,7 @@
 }
 
 .hero.is-dark {
-  background-color: #69707a;
+  background-color: ${base_color};
   color: #f5f7fa;
 }
 
@@ -429,7 +429,7 @@
 
 @media screen and (max-width: ${breakpoint_mobile_max}) {
   .hero.is-dark .nav-menu {
-    background-color: #69707a;
+    background-color: ${base_color};
   }
 }
 
@@ -468,12 +468,12 @@
 .hero.is-dark .tabs.is-boxed li.is-active span, .hero.is-dark .tabs.is-boxed li.is-active span:hover, .hero.is-dark .tabs.is-toggle li.is-active span, .hero.is-dark .tabs.is-toggle li.is-active span:hover {
   background-color: #f5f7fa;
   border-color: #f5f7fa;
-  color: #69707a;
+  color: ${base_color};
 }
 
 .hero.is-dark.is-bold {
-  background-image: -webkit-linear-gradient(309deg, #495a67 0%, #69707a 71%, #6e768e 100%);
-  background-image: linear-gradient(141deg, #495a67 0%, #69707a 71%, #6e768e 100%);
+  background-image: -webkit-linear-gradient(309deg, #495a67 0%, ${base_color} 71%, #6e768e 100%);
+  background-image: linear-gradient(141deg, #495a67 0%, ${base_color} 71%, #6e768e 100%);
 }
 
 @media screen and (max-width: ${breakpoint_mobile_max}) {

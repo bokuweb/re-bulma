@@ -4,7 +4,7 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: #69707a;
+  color: ${base_color};
   line-height: 1.428571428571429;
   font-size: ${font_size_base};
   padding: 0;
@@ -30,7 +30,7 @@
   }
 
   .nav-toggle span {
-      background-color: #69707a;
+      background-color: ${base_color};
       display: block;
       height: 1px;
       left: 50%;
@@ -130,7 +130,7 @@
 
 .nav-item a,
 a.nav-item {
-  color: #69707a;
+  color: ${base_color};
 }
 
 .nav-item a:hover,
