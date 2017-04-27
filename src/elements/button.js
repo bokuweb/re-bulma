@@ -40,6 +40,7 @@ export default class Button extends DataComponent {
     delete: PropTypes.bool,
     isIconRight: PropTypes.bool,
     data: PropTypes.array,
+    safeHtml: PropTypes.string,
   };
 
   static defaultProps = {
@@ -97,6 +98,12 @@ export default class Button extends DataComponent {
       : this.renderLeftIcon();
   }
 
+  renderBody() {
+    return this.props.safeHtml
+      ? (<span dangerouslySetInnerHTML={{ __html: this.props.safeHtml }}></span>)
+      : (<span>{this.props.children}</span>);
+  }
+
   render() {
     return (
       <button
@@ -105,13 +112,7 @@ export default class Button extends DataComponent {
         className={this.createClassName()}
         {...this.dataProps()}
       >
-        <span>
-        {
-          this.props.icon
-            ? this.renderIcon()
-            : this.props.children
-        }
-        </span>
+        {this.props.icon ? this.renderIcon() : this.renderBody()}
       </button>
     );
   }

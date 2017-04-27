@@ -104,6 +104,7 @@ export default class Example extends Component {
         <Button color="isPrimary">Primary</Button>
         <Button color="isPrimary" state="isActive">Primary Active</Button>
         <Button state="isDisabled">Disabled</Button>
+        <Button color="isLink" safeHtml="The <strong>bold</strong> word"></Button>
         <Columns>
           <Column size="is2" style={{ background: '#ccc' }}>aaaa</Column>
           <Column>bbbb</Column>
