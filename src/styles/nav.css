@@ -14,13 +14,13 @@
   vertical-align: baseline;
 };
 
-@media screen and (min-width: ${breakpoint_tablet_min}) {
+@media screen and (min-width: ${nav_toggle_min}) {
   .nav-toggle {
     display: none;
   }
 }
 
-@media screen and (max-width: ${breakpoint_mobile_max}) {
+@media screen and (max-width: ${nav_toggle_max}) {
   .nav-toggle {
       cursor: pointer;
       display: block;
@@ -164,7 +164,7 @@ a.nav-item.is-tab.is-active {
   color: #1fc8db;
 }
 
-@media screen and (max-width: ${breakpoint_mobile_max}) {
+@media screen and (max-width: ${nav_toggle_max}) {
 
   .nav-item {
     -webkit-box-pack: start;
@@ -227,7 +227,7 @@ a.nav-item.is-tab.is-active {
           justify-content: center;
 }
 
-@media screen and (min-width: ${breakpoint_tablet_min}) {
+@media screen and (min-width: ${nav_toggle_min}) {
   .nav-right {
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
