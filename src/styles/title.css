@@ -7,7 +7,7 @@ p.subtitle {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: ${font_family};
 }
 
 .title em,

@@ -2178,7 +2178,6 @@ button:active,
 }.__re-bulma_input {
   box-sizing: border-box;
   vertical-align: middle;
-  font: 99% sans-serif;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
@@ -4812,8 +4811,8 @@ p.__re-bulma_menu-label {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #69707a;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.428571428571429;
   font-size: 1rem;
   margin: 0;

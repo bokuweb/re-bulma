@@ -1,14 +1,13 @@
 .input {
   box-sizing: border-box;
   vertical-align: middle;
-  font: 99% sans-serif;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: ${font_family};
 }
 
 select.select {
   box-sizing: border-box;
   vertical-align: middle;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: ${font_family};
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -37,7 +36,7 @@ input[type=file].input,
 
 input.input,
 textarea.textarea {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: ${font_family};
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -802,7 +801,7 @@ input[type=button].input {
 
 @media screen and (max-width: ${breakpoint_mobile_max}) {
   .control-label {
-    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: ${font_family};
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -814,7 +813,7 @@ input[type=button].input {
 @media screen and (min-width: ${breakpoint_tablet_min}) {
   .control-label {
     vertical-align: baseline;
-    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: ${font_family};
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;

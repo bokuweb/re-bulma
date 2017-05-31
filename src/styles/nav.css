@@ -3,7 +3,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: ${font_family};
   color: ${base_color};
   line-height: 1.428571428571429;
   font-size: ${font_size_base};

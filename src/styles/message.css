@@ -3,7 +3,7 @@
   font-weight: 400;
   line-height: 1.428571428571429;
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: ${font_family};
   font-size: ${font_size_base};
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
