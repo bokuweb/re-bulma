@@ -42,7 +42,7 @@ export default class Modal extends Component {
       return (
         <div className={[styles.modalCard, '__re-bulma_modal_card'].join(' ')}>
           <header className={styles.modalCardHead}>
-            <p className={styles.modalCardTitle}>{this.props.headerContent}</p>
+            <div className={styles.modalCardTitle}>{this.props.headerContent}</div>
             <button className={styles.delete} onClick={this.props.onCloseRequest} />
           </header>
           <section className={styles.modalCardBody}>
