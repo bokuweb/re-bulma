@@ -1,4 +1,4 @@
-# ![ReBulma](https://github.com/bokuweb/re-bulma/blob/master/docs/logo.png?raw=true)
+<p align="center"><img src ="https://github.com/bokuweb/re-bulma/blob/master/docs/logo.png?raw=true" /></p>
 
 Bulma components build with react (based bulma(https://github.com/jgthms/bulma) v0.1.0)    
 This repository is heavily under development and unstable.    
