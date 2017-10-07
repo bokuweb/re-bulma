@@ -7,7 +7,7 @@ export default class Message extends Component {
     children: PropTypes.any,
     className: PropTypes.string,
     header: PropTypes.any,
-    style: PropTypes.onbject,
+    style: PropTypes.object,
     color: PropTypes.oneOf([
       'isPrimary',
       'isInfo',
