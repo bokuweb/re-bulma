@@ -1,6 +1,6 @@
-# Deprecated
+# No longer maintained, sorry.
 
-Deprecated as the react-motion-menu project is no longer maintained.
+No longer maintained, sorry.
 
 ---
 
