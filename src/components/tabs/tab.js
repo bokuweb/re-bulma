@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { getCallbacks } from '../../helper/helper';
 import styles from '../../../build/styles';
 
