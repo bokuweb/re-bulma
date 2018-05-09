@@ -1,6 +1,6 @@
 {
   "name": "re-bulma",
-  "version": "0.4.6",
+  "version": "0.5.0",
   "description": "",
   "main": "lib/index.js",
   "module": "lib-es/index.js",
